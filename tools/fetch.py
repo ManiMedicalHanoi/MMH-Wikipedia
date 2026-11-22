@@ -40,6 +40,22 @@ for name, urls in rows.items():
         except Exception as e:
             rec['tries'].append({'url': url, 'err': str(e)[:300]}); continue
         k = kind(b)
+        if k == 'html' and not url.endswith(('.pdf', '.doc', '.docx')):
+            # Trang tải về: tìm link file văn bản trong trang (1 cấp)
+            import html as H
+            from urllib.parse import urljoin
+            links = re.findall(r'href=["\']([^"\']+?\.(?:pdf|docx?|PDF))(?:[?#][^"\']*)?["\']', b.decode('utf-8', 'ignore'))
+            links += re.findall(r'href=["\']([^"\']*(?:download|DownloadFile|file)[^"\']*)["\']', b.decode('utf-8', 'ignore'))
+            got = None
+            for lk in links[:8]:
+                u2 = urljoin(url, H.unescape(lk))
+                try:
+                    b2 = get(u2)
+                except Exception as e:
+                    rec['tries'].append({'url': u2, 'err': str(e)[:200]}); continue
+                if kind(b2) in ('pdf', 'doc', 'zip'):
+                    got = (u2, b2); break
+            if got: url, b = got; k = kind(b)
         if k in ('html', 'bin'):
             rec['tries'].append({'url': url, 'err': 'không phải file văn bản (%s, %d byte)' % (k, len(b))}); continue
         ext = {'pdf': 'pdf', 'doc': 'doc', 'zip': 'docx'}[k]
