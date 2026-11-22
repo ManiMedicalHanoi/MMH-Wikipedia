@@ -1,0 +1,44 @@
+# Tải văn bản gốc của Bộ Y tế (máy Claude bị chặn các trang luật; GitHub Actions tải được).
+# Chạy khi đổi danh sách nguon/fetch/urls.tsv hoặc tools/fetch.py, hoặc bấm tay (nhập tên để tải lại).
+name: Tải văn bản gốc
+
+on:
+  push:
+    paths:
+      - 'nguon/fetch/urls.tsv'
+      - 'tools/fetch.py'
+      - '.github/workflows/fetch-sources.yml'
+  workflow_dispatch:
+    inputs:
+      names:
+        description: 'Tên cần tải lại (cách nhau dấu cách, trống = các mục chưa tải được)'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cài công cụ đọc PDF / Word
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils libreoffice-writer-nogui >/dev/null
+          pip install -q python-docx
+      - name: Tải và đổi sang chữ
+        run: python3 tools/fetch.py ${{ github.event.inputs.names }}
+      - name: Lưu kết quả vào nhánh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add nguon/raw nguon/txt nguon/fetch/log.json
+          git diff --cached --quiet && echo "Không có gì mới" && exit 0
+          git commit -m "Tải văn bản gốc ($(date +%d/%m/%Y\ %H:%M))"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
