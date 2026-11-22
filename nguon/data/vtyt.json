@@ -1,0 +1,3146 @@
+[
+{
+"stt": "",
+"ma": "N01.00.000",
+"ten": "Nhóm 1. Bông, dung dịch sát khuẩn, rửa vết thương",
+"dvt": "",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "",
+"ma": "N01.01.000",
+"ten": "1.1 Bông",
+"dvt": "",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "1",
+"ma": "N01.01.010",
+"ten": "Bông (gòn), bông tẩm dung dịch các loại, các cỡ",
+"dvt": "Gram, kg, gói, cuộn",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "2",
+"ma": "N01.01.020",
+"ten": "Bông, tăm bông vô trùng các loại, các cỡ",
+"dvt": "Que, cái",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "",
+"ma": "N01.02.000",
+"ten": "1.2 Dung dịch sát khuẩn, rửa vết thương",
+"dvt": "",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "3",
+"ma": "N01.02.010",
+"ten": "Dung dịch rửa tay sát khuẩn dùng trong khám bệnh, thực hiện phẫu thuật, thủ thuật, xét nghiệm các loại",
+"dvt": "Ml, lít",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "4",
+"ma": "N01.02.020",
+"ten": "Dung dịch rửa vết thương các loại",
+"dvt": "Ml, lít, chai",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "5",
+"ma": "N01.02.030",
+"ten": "Dung dịch sát khuẩn, khử trùng dụng cụ các loại",
+"dvt": "Ml, lít",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "6",
+"ma": "N01.02.040",
+"ten": "Dung dịch sát khuẩn, khử trùng trong phòng xét nghiệm, buồng mổ, buồng bệnh các loại",
+"dvt": "Ml, lít",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "7",
+"ma": "N01.02.050",
+"ten": "Dung dịch tẩy rửa dụng cụ các loại",
+"dvt": "Ml, lít",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "",
+"ma": "N02.00.000",
+"ten": "Nhóm 2. Băng, gạc, vật liệu cầm máu, điều trị vết thương",
+"dvt": "",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "",
+"ma": "N02.01.000",
+"ten": "2.1 Băng",
+"dvt": "",
+"tt": "",
+"trang": 17
+},
+{
+"stt": "8",
+"ma": "N02.01.010",
+"ten": "Băng bột bó, vải lót bó bột, tất lót bó bột các loại, các cỡ",
+"dvt": "Cuộn",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "9",
+"ma": "N02.01.020",
+"ten": "Băng chun, băng đàn hồi các loại, các cỡ",
+"dvt": "Cuộn, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "10",
+"ma": "N02.01.030",
+"ten": "Băng cố định khớp trong điều trị chấn thương chỉnh hình các loại, các cỡ",
+"dvt": "Cuộn",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "11",
+"ma": "N02.01.040",
+"ten": "Băng cuộn, băng cá nhân các loại, các cỡ",
+"dvt": "Cuộn, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "12",
+"ma": "N02.01.050",
+"ten": "Băng dùng trong phẫu thuật, băng bó vết thương, vết bỏng, vết loét các loại, các cỡ",
+"dvt": "Cuộn, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "13",
+"ma": "N02.01.060",
+"ten": "Băng rốn các loại, các cỡ",
+"dvt": "Cuộn, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "14",
+"ma": "N02.01.070",
+"ten": "Băng vô trùng các loại, các cỡ",
+"dvt": "Cuộn, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "",
+"ma": "N02.02.000",
+"ten": "2.2 Băng dính",
+"dvt": "",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "15",
+"ma": "N02.02.010",
+"ten": "Băng dán mi các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "16",
+"ma": "N02.02.020",
+"ten": "Băng dính các loại, các cỡ",
+"dvt": "Cuộn, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "",
+"ma": "N02.03.000",
+"ten": "2.3 Gạc, băng gạc điều trị các vết thương",
+"dvt": "",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "17",
+"ma": "N02.03.010",
+"ten": "Gạc alginate các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "18",
+"ma": "N02.03.020",
+"ten": "Gạc các loại, các cỡ",
+"dvt": "Cuộn, gói, miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "19",
+"ma": "N02.03.030",
+"ten": "Gạc gắn với băng dính vô khuẩn dùng để băng các vết thương, vết mổ, vết khâu các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "20",
+"ma": "N02.03.040",
+"ten": "Gạc hydrocolloid các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "21",
+"ma": "N02.03.050",
+"ten": "Gạc hydrogel các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "22",
+"ma": "N02.03.060",
+"ten": "Gạc rốn các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 18
+},
+{
+"stt": "23",
+"ma": "N02.03.070",
+"ten": "Gạc than hoạt tính (thấm hút, không thấm hút) các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "24",
+"ma": "N02.03.080",
+"ten": "Gạc xốp, miếng xốp (foam) các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "25",
+"ma": "N02.03.090",
+"ten": "Gạc, gạc lưới có tẩm kháng sinh hoặc chất sát khuẩn các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "26",
+"ma": "N02.03.100",
+"ten": "Miếng dán sát khuẩn các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "",
+"ma": "N02.04.000",
+"ten": "2.4 Vật liệu cầm máu, điều trị các vết thương",
+"dvt": "",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "27",
+"ma": "N02.04.010",
+"ten": "Dung dịch xịt dùng ngoài điều trị phòng ngừa loét do tỳ đè các loại",
+"dvt": "Chai, lọ",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "28",
+"ma": "N02.04.020",
+"ten": "Gạc cầm máu các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "29",
+"ma": "N02.04.030",
+"ten": "Keo (sinh học) dán da, dán mô dùng trong phẫu thuật các loại",
+"dvt": "Lọ, miếng, kit",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "30",
+"ma": "N02.04.040",
+"ten": "Miếng cầm máu mũi các loại, các cỡ",
+"dvt": "Miếng, thỏi",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "3116",
+"ma": "N02.04.050",
+"ten": "Vật liệu cầm máu các loại (sáp, bone, surgicel, merocel, spongostan, gelitacel, floseal heamostatic, liotit, bột cầm máu)",
+"dvt": "Miếng, thỏi, kit, tuýp",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "32",
+"ma": "N02.04.060",
+"ten": "Vật liệu sử dụng trong điều trị tổn thương bằng phương pháp hút áp lực âm (bao gồm: miếng xốp, đầu nối, dây dẫn dịch, băng dán cố định)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "",
+"ma": "N03.00.000",
+"ten": "Nhóm 3. Bơm, kim tiêm, dây truyền, găng tay và thiết bị y tế17 sử",
+"dvt": "",
+"tt": "",
+"trang": 19
+},
+{
+"stt": "",
+"ma": "N03.01.000",
+"ten": "3.1 Bơm tiêm",
+"dvt": "",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "33",
+"ma": "N03.01.010",
+"ten": "Bơm sử dụng để bơm thức ăn cho người bệnh các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "34",
+"ma": "N03.01.020",
+"ten": "Bơm tiêm (syringe) dùng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "35",
+"ma": "N03.01.030",
+"ten": "Bơm tiêm, bơm tiêm truyền áp lực các loại, các cỡ18",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "36",
+"ma": "N03.01.040",
+"ten": "Bơm tiêm dùng cho máy tiêm điện tự động các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "37",
+"ma": "N03.01.050",
+"ten": "Bơm tiêm dùng nhiều lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "38",
+"ma": "N03.01.060",
+"ten": "Bơm tiêm insulin các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "39",
+"ma": "N03.01.070",
+"ten": "Bơm tiêm liền kim dùng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "40",
+"ma": "N03.01.080",
+"ten": "Bơm tiêm máy bơm các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "",
+"ma": "N03.02.000",
+"ten": "3.2 Kim tiêm",
+"dvt": "",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "41",
+"ma": "N03.02.010",
+"ten": "Bút chích máu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "42",
+"ma": "N03.02.020",
+"ten": "Kim cánh bướm các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "43",
+"ma": "N03.02.030",
+"ten": "Kim chích máu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "44",
+"ma": "N03.02.040",
+"ten": "Kim dùng cho buồng tiêm truyền cấy dưới da các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "45",
+"ma": "N03.02.050",
+"ten": "Kim lẩy da các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "46",
+"ma": "N03.02.060",
+"ten": "Kim lấy máu, lấy thuốc các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "47",
+"ma": "N03.02.070",
+"ten": "Kim luồn mạch máu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 20
+},
+{
+"stt": "48",
+"ma": "N03.02.080",
+"ten": "Kim tiêm dùng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "49",
+"ma": "N03.02.090",
+"ten": "Nút chặn đuôi kim luồn (có hoặc không có heparin) các loại, các cỡ",
+"dvt": "Cái, chiếc",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "",
+"ma": "N03.03.000",
+"ten": "3.3 Kim chọc dò, sinh thiết và các loại kim khác",
+"dvt": "",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "50",
+"ma": "N03.03.010",
+"ten": "Kim chọc, kim chọc dò các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "51",
+"ma": "N03.03.020",
+"ten": "Kim chọc hút tế bào qua nội soi các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "52",
+"ma": "N03.03.030",
+"ten": "Kim chọc hút tủy xương các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "53",
+"ma": "N03.03.040",
+"ten": "Kim dẫn lưu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "54",
+"ma": "N03.03.050",
+"ten": "Kim đo áp lực tĩnh mạch trung tâm (CPV) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "55",
+"ma": "N03.03.060",
+"ten": "Kim dùng trong thiết bị dẫn sóng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "56",
+"ma": "N03.03.070",
+"ten": "Kim gây tê, gây mê các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "57",
+"ma": "N03.03.080",
+"ten": "Kim lọc thận nhân tạo các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "58",
+"ma": "N03.03.090",
+"ten": "Kim sinh thiết dùng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "59",
+"ma": "N03.03.100",
+"ten": "Kim sinh thiết dùng nhiều lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "60",
+"ma": "N03.03.110",
+"ten": "Kim sinh thiết tủy xương dùng nhiều lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "61",
+"ma": "N03.03.120",
+"ten": "Kim định vị các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "62",
+"ma": "N03.03.130",
+"ten": "Kim đốt sóng cao tần, đầu đốt sóng cao tần, ống thông đốt sóng cao tần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "63",
+"ma": "N03.03.140",
+"ten": "Kim laser nội mạch, đầu đốt, dây đốt, ống thông",
+"dvt": "Cái",
+"tt": "",
+"trang": 21
+},
+{
+"stt": "64",
+"ma": "N03.03.150",
+"ten": "Kim chọc và sinh thiết tạng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "65",
+"ma": "N03.03.160",
+"ten": "Kim chọc và sinh thiết xương các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "",
+"ma": "N03.04.000",
+"ten": "3.4 Kim châm cứu",
+"dvt": "",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "66",
+"ma": "N03.04.010",
+"ten": "Kim châm cứu các loại, các cỡ",
+"dvt": "Bộ, cái",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "",
+"ma": "N03.05.000",
+"ten": "3.5 Dây truyền, dây dẫn",
+"dvt": "",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "67",
+"ma": "N03.05.010",
+"ten": "Dây dẫn, dây truyền dịch các loại, các cỡ (bao gồm cả chạc nối, bộ phân phối, cổng chia, ống nối đi kèm)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "68",
+"ma": "N03.05.020",
+"ten": "Dây dẫn, dây truyền khí các loại, các cỡ (bao gồm cả chạc nối, ống nối đi kèm)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "69",
+"ma": "N03.05.030",
+"ten": "Dây dẫn, dây truyền máu, truyền chế phẩm máu các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "70",
+"ma": "N03.05.040",
+"ten": "Dây nối đi kèm dây truyền các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "71",
+"ma": "N03.05.050",
+"ten": "Dây truyền dịch dùng cho máy truyền tự động các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "72",
+"ma": "N03.05.060",
+"ten": "Khóa đi kèm dây dẫn, đi kèm hoặc không đi kèm dây truyền được dùng trong truyền dịch, truyền máu, truyền khí các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "",
+"ma": "N03.06.000",
+"ten": "3.6 Găng tay",
+"dvt": "",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "73",
+"ma": "N03.06.010",
+"ten": "Găng cao su các loại, các cỡ",
+"dvt": "Đôi",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "74",
+"ma": "N03.06.020",
+"ten": "Găng tay chăm sóc, điều trị người bệnh các loại, các cỡ",
+"dvt": "Đôi",
+"tt": "",
+"trang": 22
+},
+{
+"stt": "75",
+"ma": "N03.06.030",
+"ten": "Găng tay sử dụng trong thăm khám các loại, các cỡ",
+"dvt": "Đôi",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "76",
+"ma": "N03.06.040",
+"ten": "Găng tay vô trùng dùng trong thăm dò chức năng, xét nghiệm các loại, các cỡ",
+"dvt": "Đôi",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "77",
+"ma": "N03.06.050",
+"ten": "Găng tay vô trùng dùng trong thủ thuật, phẫu thuật các loại, các cỡ",
+"dvt": "Đôi",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "",
+"ma": "N03.07.000",
+"ten": "3.7 Túi, lọ và vật tư bao gói khác",
+"dvt": "",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "78",
+"ma": "N03.07.010",
+"ten": "Ống, dây cho ăn các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "79",
+"ma": "N03.07.020",
+"ten": "Túi đo khối lượng máu sau sinh đẻ các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "80",
+"ma": "N03.07.030",
+"ten": "Túi, bao gói tiệt trùng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "81",
+"ma": "N03.07.040",
+"ten": "Túi, lọ đựng thức ăn, đựng dung dịch nuôi dưỡng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "82",
+"ma": "N03.07.050",
+"ten": "Túi, lọ đựng thức ăn, dung dịch nuôi dưỡng tĩnh mạch theo máy các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "83",
+"ma": "N03.07.060",
+"ten": "Túi, lọ, cát-sét (cassette) đựng hoặc đo lượng chất thải tiết, dịch xả các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "84",
+"ma": "N03.07.070",
+"ten": "Túi, lọ, hộp đựng bệnh phẩm các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "85",
+"ma": "N03.07.080",
+"ten": "Túi hậu môn nhân tạo",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "",
+"ma": "N04.00.000",
+"ten": "Nhóm 4. Ống thông, ống dẫn lưu, ống nối, dây nối, chạc nối, catheter",
+"dvt": "",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "",
+"ma": "N04.01.000",
+"ten": "4.1 Ống thông",
+"dvt": "",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "86",
+"ma": "N04.01.010",
+"ten": "Ca-nuyn (cannula) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 23
+},
+{
+"stt": "87",
+"ma": "N04.01.020",
+"ten": "Ống ca-nuyn (cannula) mở khí quản các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "88",
+"ma": "N04.01.030",
+"ten": "Ống nội khí quản sử dụng một lần các loại, các cỡ (bao gồm ống nội khí quản canlene)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "88a19",
+"ma": "N04.01.031",
+"ten": "Ống nội khí quản có cửa hút trên bóng chèn (Hi_low EVAC)",
+"dvt": "Cái",
+"tt": "Thanh toán trong trường hợp người bệnh tiên lượng thở máy trên 48 giờ",
+"trang": 24
+},
+{
+"stt": "89",
+"ma": "N04.01.040",
+"ten": "Ống nội khí quản sử dụng nhiều lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "90",
+"ma": "N04.01.050",
+"ten": "Ống nong, bộ nong các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "91",
+"ma": "N04.01.070",
+"ten": "Ống thông khí hòm nhĩ các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "92",
+"ma": "N04.01.080",
+"ten": "Ống (sonde) thở ô-xy 02 gọng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "93",
+"ma": "N04.01.090",
+"ten": "Thông (sonde) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "",
+"ma": "N04.02.000",
+"ten": "4.2 Ống dẫn lưu, ống hút",
+"dvt": "",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "94",
+"ma": "N04.02.010",
+"ten": "Bộ rửa dạ dày sử dụng một lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "95",
+"ma": "N04.02.020",
+"ten": "Ống (sonde) rửa dạ dày các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "96",
+"ma": "N04.02.030",
+"ten": "Ống dẫn lưu (drain) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "97",
+"ma": "N04.02.040",
+"ten": "Ống dẫn lưu Kehr các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "97a20",
+"ma": "N04.02.041",
+"ten": "Bộ dẫn lưu kín",
+"dvt": "Bộ",
+"tt": "Thanh toán trong trường hợp phẫu thuật sọ não",
+"trang": 24
+},
+{
+"stt": "98",
+"ma": "N04.02.050",
+"ten": "Ống hút thai các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 24
+},
+{
+"stt": "99",
+"ma": "N04.02.060",
+"ten": "Ống, dây hút đờm, dịch, khí, mỡ các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "100",
+"ma": "N04.02.070",
+"ten": "Ống, dây rửa hút dùng cho thiết bị thủ thuật, phẫu thuật các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "",
+"ma": "N04.03.000",
+"ten": "4.3 Ống nối, dây nối, chạc nối",
+"dvt": "",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "101",
+"ma": "N04.03.010",
+"ten": "Bộ dây dẫn dịch vào khớp các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "102",
+"ma": "N04.03.020",
+"ten": "Bộ dây lọc máu các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "103",
+"ma": "N04.03.030",
+"ten": "Bộ dây thở ô-xy dùng một lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "104",
+"ma": "N04.03.040",
+"ten": "Bộ phận chuyển tiếp (transfer set) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "105",
+"ma": "N04.03.050",
+"ten": "Chạc 2 dây có đầu nối an toàn sinh học các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "106",
+"ma": "N04.03.060",
+"ten": "Đầu nối, ống nối titanium các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "107",
+"ma": "N04.03.070",
+"ten": "Dây chạy máy tim phổi nhân tạo các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "108",
+"ma": "N04.03.080",
+"ten": "Ống Gone (thủy tinh) đặt lệ quản",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "109",
+"ma": "N04.03.090",
+"ten": "Ống nối, dây nối, chạc nối (adapter) dùng trong thiết bị các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "110",
+"ma": "N04.03.100",
+"ten": "Ống nối, dây nối, chạc nối (adapter), bộ phân phối (manifold) và cổng chia (stopcock) dùng trong thủ thuật, phẫu thuật, chăm sóc người bệnh các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "111",
+"ma": "N04.03.110",
+"ten": "Bộ dây thẩm phân phúc mạc (cassette) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "112",
+"ma": "N04.03.120",
+"ten": "Bộ dây máy thở cao tần các loại, các cỡ (bao",
+"dvt": "Bộ",
+"tt": "",
+"trang": 25
+},
+{
+"stt": "",
+"ma": "N04.04.000",
+"ten": "4.4 Catheter",
+"dvt": "",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "113",
+"ma": "N04.04.010",
+"ten": "Ống thông (catheter) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "114",
+"ma": "N04.04.020",
+"ten": "Ống thông dẫn đường (guiding catheter) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "115",
+"ma": "N04.04.030",
+"ten": "Vi ống thông (micro- catheter) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "116",
+"ma": "N04.04.040",
+"ten": "Nắp đóng bộ chuyển tiếp của catheter chuyên dụng trong lọc màng bụng (minicap) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "",
+"ma": "N05.00.000",
+"ten": "Nhóm 5. Kim khâu, chỉ khâu, dao phẫu thuật",
+"dvt": "",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "",
+"ma": "N05.01.000",
+"ten": "5.1 Kim khâu",
+"dvt": "",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "117",
+"ma": "N05.01.010",
+"ten": "Kim khâu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "",
+"ma": "N05.02.000",
+"ten": "5.2 Chỉ khâu",
+"dvt": "",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "118",
+"ma": "N05.02.010",
+"ten": "Chỉ cố định thủy tinh thể nhân tạo các loại, các cỡ",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "119",
+"ma": "N05.02.020",
+"ten": "Chỉ khâu đặc biệt các loại, các cỡ",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "120",
+"ma": "N05.02.030",
+"ten": "Chỉ khâu không tiêu các loại, các cỡ",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "121",
+"ma": "N05.02.040",
+"ten": "Chỉ khâu liền kim các loại, các cỡ",
+"dvt": "Sợi, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "122",
+"ma": "N05.02.050",
+"ten": "Chỉ khâu tiêu chậm các loại, các cỡ",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "123",
+"ma": "N05.02.060",
+"ten": "Chỉ khâu tiêu nhanh các loại, các cỡ",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "124",
+"ma": "N05.02.070",
+"ten": "Chỉ thép, dây thép dùng trong phẫu thuật",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "125",
+"ma": "N05.02.080",
+"ten": "Vật liệu thay thế chỉ khâu các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "126",
+"ma": "N05.02.090",
+"ten": "Chỉ khâu tiêu trung bình các loại, các cỡ",
+"dvt": "Sợi, cuộn, tép",
+"tt": "",
+"trang": 26
+},
+{
+"stt": "",
+"ma": "N05.03.000",
+"ten": "5.3 Dao phẫu thuật",
+"dvt": "",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "127",
+"ma": "N05.03.010",
+"ten": "Bản cực trung tính cho dao mổ điện sử dụng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "128",
+"ma": "N05.03.020",
+"ten": "Các loại dao, lưỡi dao sử dụng trong phẫu thuật các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "129",
+"ma": "N05.03.030",
+"ten": "Dao mổ liền cán sử dụng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "130",
+"ma": "N05.03.040",
+"ten": "Đầu đốt (đơn cực, lưỡng cực, kết hợp đơn cực lưỡng cực), lưỡi dao mổ điện, dao mổ laser, dao mổ siêu âm, dao mổ plasma, dao radio, dao cắt gan siêu âm, dao cắt hàn mạch, hàn mô các loại, các cỡ (bao gồm cả tay dao và dây dao)",
+"dvt": "Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "130a21",
+"ma": "N05.03.041",
+"ten": "Dao siêu âm không dây, bao gồm: - Tay dao - Bộ phát năng lượng - Pin - Bộ sạc",
+"dvt": "Bộ, Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "131",
+"ma": "N05.03.050",
+"ten": "Dây cưa sử dụng trong thủ thuật, phẫu thuật các loại, các cỡ",
+"dvt": "Sợi, dây",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "132",
+"ma": "N05.03.060",
+"ten": "Lưỡi bào, lưỡi cắt, dao cắt sụn, lưỡi đốt dùng trong phẫu thuật các loại, các cỡ (bao gồm cả tay dao)",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "133",
+"ma": "N05.03.070",
+"ten": "Lưỡi dao cắt mô, lưỡi nghiền mô các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "134",
+"ma": "N05.03.080",
+"ten": "Lưỡi dao mổ sử dụng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 27
+},
+{
+"stt": "135",
+"ma": "N05.03.090",
+"ten": "Lưỡi cắt, đốt bằng sóng radio các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "",
+"ma": "N06.00.000",
+"ten": "Nhóm 6. Vật liệu thay thế, vật liệu cấy ghép nhân tạo",
+"dvt": "",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "",
+"ma": "N06.01.000",
+"ten": "6.1 Van nhân tạo, mạch máu nhân tạo",
+"dvt": "",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "136",
+"ma": "N06.01.010",
+"ten": "Mạch máu nhân tạo các loại, các cỡ",
+"dvt": "Cái, đoạn",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "137",
+"ma": "N06.01.020",
+"ten": "Van dẫn lưu nhân tạo các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "138",
+"ma": "N06.01.030",
+"ten": "Van tim nhân tạo, van động mạch nhân tạo các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "139",
+"ma": "N06.01.040",
+"ten": "Vòng van tim nhân tạo",
+"dvt": "Cái",
+"tt": "",
+"trang": 28
+},
+{
+"stt": "140",
+"ma": "N06.01.050",
+"ten": "Van tim nhân tạo kèm giá đỡ sinh học các loại, các cỡ",
+"dvt": "Cái",
+"tt": "- Đối với phẫu thuật thay van động mạch chủ: thanh toán trong trường hợp có tổn thương hẹp hoặc hở do vôi hóa van động mạch chủ. - Đối với phẫu thuật thay van động mạch phổi: thanh toán trong trường hợp có tổn thương gây hở hoặc hẹp van động mạch phổi.",
+"trang": 28
+},
+{
+"stt": "141",
+"ma": "N06.01.060",
+"ten": "Ống van động mạch chủ cơ học hoặc sinh học các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Thanh toán trong phẫu thuật các bệnh lý hở hoặc hẹp van động mạch chủ có kèm phồng gốc động mạch chủ hoặc lóc gốc động mạch chủ hoặc nhiễm trùng gốc động mạch chủ.",
+"trang": 28
+},
+{
+"stt": "142",
+"ma": "N06.01.070",
+"ten": "Ống van động mạch phổi sinh học các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Thanh toán trong phẫu thuật thay thế van hoặc thân động mạch phổi do các bệnh lý van động mạch phổi sau: - Hẹp hoặc hở hoặc teo van động mạch phổi (ví dụ: trong các bệnh tứ chứng Fallot); - Thiểu sản van động mạch phổi có liền vách liên thất hoặc hở vách liên thất; - Viêm nội tâm mạc nhiễm trùng gây tổn thương van động mạch phổi; - Thất phải hai đường ra; - Chuyển vị đại động mạch có hẹp van động mạch phổi... - Các bệnh lý khác mà không thể tạo hình van hoặc động mạch phổi bằng vật liệu khác.",
+"trang": 29
+},
+{
+"stt": "",
+"ma": "N06.02.000",
+"ten": "6.2 Giá đỡ (stent)",
+"dvt": "",
+"tt": "",
+"trang": 29
+},
+{
+"stt": "143",
+"ma": "N06.02.010",
+"ten": "Stent động mạch vành loại thường (không phủ thuốc) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 20.000.000 đồng/1 stent.",
+"trang": 29
+},
+{
+"stt": "144",
+"ma": "N06.02.020",
+"ten": "Stent động mạch vành phủ thuốc các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 36.000.000 đồng/1 stent.",
+"trang": 29
+},
+{
+"stt": "145",
+"ma": "N06.02.030",
+"ten": "Stent động mạch thận các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 20.000.000 đồng/1 stent.",
+"trang": 29
+},
+{
+"stt": "146",
+"ma": "N06.02.040",
+"ten": "Stent động mạch chi các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 20.000.000 đồng/1 stent.",
+"trang": 30
+},
+{
+"stt": "147",
+"ma": "N06.02.050",
+"ten": "Stent động mạch cảnh các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 30.000.000 đồng/1 stent.",
+"trang": 30
+},
+{
+"stt": "148",
+"ma": "N06.02.060",
+"ten": "Stent graft động mạch chủ ngực các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 260.000.000 đồng/1 stent.",
+"trang": 30
+},
+{
+"stt": "149",
+"ma": "N06.02.070",
+"ten": "Stent graft động mạch chủ bụng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 280.000.000 đồng/1 stent.",
+"trang": 30
+},
+{
+"stt": "150",
+"ma": "N06.02.080",
+"ten": "Stent nội mạch làm thay đổi hướng dòng chảy các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 220.000.000 đồng/1 stent Thanh toán trong trường hợp: - Phình động mạch não chưa vỡ có cổ rộng hoặc kích thước phình lớn có nguy cơ chèn ép hoặc hướng phình ngược với dòng chảy hoặc có tái thông sau nút mạch hoặc không thể điều trị bằng vòng xoắn kim loại; - Phình động mạch đã vỡ trong giai đoạn ổn định; - Phình động mạch đã vỡ chưa đến giai đoạn ổn định nhưng không thể sử dụng nút vòng xoắn kim loại đơn thuần.",
+"trang": 30
+},
+{
+"stt": "151",
+"ma": "N06.02.090",
+"ten": "Khung giá đỡ (stent có màng bọc, cover stent) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 70.000.000 đồng/1 stent.",
+"trang": 30
+},
+{
+"stt": "152",
+"ma": "N06.02.100",
+"ten": "Giá đỡ (stent) các loại, các cỡ khác",
+"dvt": "Cái",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "",
+"ma": "N06.03.000",
+"ten": "6.3 Thủy tinh thể nhân tạo",
+"dvt": "",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "15322",
+"ma": "N06.03.010",
+"ten": "Thủy tinh thể nhân tạo các loại, các cỡ",
+"dvt": "Cái",
+"tt": "Mức thanh toán 3.000.000 đồng/1 thủy tinh thể.",
+"trang": 31
+},
+{
+"stt": "",
+"ma": "N06.04.000",
+"ten": "6.4 Xương, sụn, khớp, gân nhân tạo",
+"dvt": "",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "154",
+"ma": "N06.04.010",
+"ten": "Bộ chỏm xương nhân tạo các loại, các cỡ (chỏm xương và các bộ phận kèm theo chỏm xương)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "155",
+"ma": "N06.04.020",
+"ten": "Đốt sống nhân tạo, miếng ghép cột sống, đĩa đệm trong phẫu thuật cột sống các loại, các cỡ",
+"dvt": "Cái, miếng, hộp",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "156",
+"ma": "N06.04.030",
+"ten": "Gân nhân tạo các loại, các cỡ",
+"dvt": "Đoạn",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "157",
+"ma": "N06.04.040",
+"ten": "Gốm sinh học dùng thay thế xương các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "158",
+"ma": "N06.04.050",
+"ten": "Khớp, ổ khớp (toàn phần hoặc bán phần) nhân tạo các loại, các cỡ (bao gồm cả chuôi khớp)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 31
+},
+{
+"stt": "",
+"ma": "N06.04.051",
+"ten": "Khớp háng toàn phần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 45.000.000 đồng/1bộ.",
+"trang": 31
+},
+{
+"stt": "",
+"ma": "N06.04.052",
+"ten": "Khớp háng bán phần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 35.000.000 đồng/1bộ.",
+"trang": 31
+},
+{
+"stt": "",
+"ma": "N06.04.053",
+"ten": "Khớp gối các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 45.000.000 đồng/1bộ.",
+"trang": 31
+},
+{
+"stt": "",
+"ma": "N06.04.054",
+"ten": "Khớp vai các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 35.000.000 đồng/1bộ.",
+"trang": 31
+},
+{
+"stt": "159",
+"ma": "N06.04.060",
+"ten": "Sụn nhân tạo các loại, các cỡ",
+"dvt": "Đoạn, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "160",
+"ma": "N06.04.070",
+"ten": "Xương bảo quản, sản phẩm sinh học thay thế xương các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "161",
+"ma": "N06.04.080",
+"ten": "Xương con (dùng trong phẫu thuật tái tạo hệ thống truyền âm) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "162",
+"ma": "N06.04.090",
+"ten": "Xương nhân tạo các loại, các cỡ",
+"dvt": "Đoạn, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "",
+"ma": "N06.05.000",
+"ten": "6.5 Miếng vá, mảnh ghép",
+"dvt": "",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "163",
+"ma": "N06.05.010",
+"ten": "Màng vá sinh học các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "164",
+"ma": "N06.05.020",
+"ten": "Mảnh ghép thoát vị bẹn, thành bụng các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "165",
+"ma": "N06.05.030",
+"ten": "Miếng vá khuyết sọ các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "166",
+"ma": "N06.05.040",
+"ten": "Miếng vá tim, vá mạch máu các loại, các cỡ",
+"dvt": "Miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "",
+"ma": "N06.06.000",
+"ten": "6.6 Vật liệu thay thế, vật liệu cấy ghép nhân tạo khác",
+"dvt": "",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "167",
+"ma": "N06.06.010",
+"ten": "Da dùng trong cấy ghép các loại, các cỡ",
+"dvt": "Tấm, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "168",
+"ma": "N06.06.020",
+"ten": "Màng sinh học khác dùng trong điều trị các loại, các cỡ",
+"dvt": "Tấm, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "169",
+"ma": "N06.06.030",
+"ten": "Keo sinh học sử dụng trong điều trị các loại",
+"dvt": "Lọ, tuýp",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "170",
+"ma": "N06.06.040",
+"ten": "Màng ối các loại, các cỡ",
+"dvt": "Tấm, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "171",
+"ma": "N06.06.050",
+"ten": "Màng tái tạo mô nhân tạo các loại, các cỡ",
+"dvt": "Cái, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "172",
+"ma": "N06.06.060",
+"ten": "Tế bào sừng, tế bào sợi nuôi cấy dùng trong điều trị bỏng hay các tổn",
+"dvt": "Tấm, miếng",
+"tt": "",
+"trang": 32
+},
+{
+"stt": "173",
+"ma": "N06.06.070",
+"ten": "Màng não nhân tạo, miếng vá nhân tạo các loại, các cỡ",
+"dvt": "Cái, miếng",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "174",
+"ma": "N06.06.080",
+"ten": "Màng nuôi, màng nuôi cấy, sản phẩm nuôi cấy các loại, các cỡ",
+"dvt": "Cái, miếng",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "174a23",
+"ma": "N06.06.090",
+"ten": "Hệ thống điện cực (Máy) kích thích não sâu, bao gồm: - Máy phát kích thích não sâu - Bộ điện cực kích thích não sâu - Dây nối dài điện cực",
+"dvt": "Hệ thống",
+"tt": "Thanh toán khi thực hiện dịch vụ kỹ thuật Phẫu thuật đặt điện cực sâu điều trị bệnh Parkinson theo quy định của Bộ Y tế. Mức thanh toán 240.000.000 đồng",
+"trang": 33
+},
+{
+"stt": "",
+"ma": "N07.00.000",
+"ten": "Nhóm 7. Thiết bị y tế24 sử dụng trong một số chuyên khoa",
+"dvt": "",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "",
+"ma": "N07.01.000",
+"ten": "7.1 Tim mạch và X- quang can thiệp",
+"dvt": "",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "175",
+"ma": "N07.01.010",
+"ten": "Bộ dụng cụ siêu âm trong lòng mạch các loại, các cỡ (bao gồm: đầu dò siêu âm và hệ thống máng trượt)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "176",
+"ma": "N07.01.020",
+"ten": "Bộ dây truyền dung dịch liệt tim các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "177",
+"ma": "N07.01.030",
+"ten": "Bộ điều trị nội mạch các loại, các cỡ (bao gồm: kim chọc, dây dẫn, catheter để luồn cáp quang, dây đốt)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "178",
+"ma": "N07.01.040",
+"ten": "Bộ dụng cụ bít thông liên nhĩ, thông liên thất, bít ống động mạch, bít tiểu nhĩ trái, bít các đường rò",
+"dvt": "Bộ",
+"tt": "",
+"trang": 33
+},
+{
+"stt": "179",
+"ma": "N07.01.050",
+"ten": "Bộ dụng cụ đặt stent graft các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "180",
+"ma": "N07.01.060",
+"ten": "Bộ dụng cụ điều trị rối loạn nhịp tim bằng RF các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "181",
+"ma": "N07.01.070",
+"ten": "Bộ dụng cụ điều trị rung nhĩ qua đường ống thông các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "182",
+"ma": "N07.01.080",
+"ten": "Bộ dụng cụ đo dự trữ lưu lượng động mạch vành và dụng cụ để đưa vào lòng mạch (FFR) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "18325",
+"ma": "N07.01.090",
+"ten": "Bộ dụng cụ dùng trong khoan phá động mạch vành các loại, các cỡ, bao gồm: - Dây dẫn cho đầu mũi khoan; - Dung dịch bôi trơn; - Đầu mũi khoan; - Thiết bị đẩy và hệ thống khí nén.",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "184",
+"ma": "N07.01.100",
+"ten": "Bộ dụng cụ lấy huyết khối trong lòng mạch máu các loại, các cỡ (bao gồm: ống hút, vi ống thông, khoan huyết khối, giá đỡ kéo huyết khối...)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "185",
+"ma": "N07.01.110",
+"ten": "Bộ dụng cụ mở đường vào mạch máu các loại, các cỡ (bao gồm: kim chọc, dây dẫn, ống có van tạo đường vào lòng mạch - introducer sheath)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "186",
+"ma": "N07.01.120",
+"ten": "Bộ dụng cụ nong van tim các loại, các cỡ (bao",
+"dvt": "Bộ",
+"tt": "",
+"trang": 34
+},
+{
+"stt": "187",
+"ma": "N07.01.130",
+"ten": "Bộ dụng cụ nút mạch các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "188",
+"ma": "N07.01.140",
+"ten": "Bộ dụng cụ thả coil các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "189",
+"ma": "N07.01.150",
+"ten": "Bộ dụng cụ thăm dò điện sinh lý tim (máy, điện cực, ...) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "190",
+"ma": "N07.01.160",
+"ten": "Bộ dụng cụ thay van tim qua đường ống thông, sửa van tim qua đường ống thông các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "191",
+"ma": "N07.01.170",
+"ten": "Bộ dụng cụ thông tim thăm dò huyết động và chụp động mạch (ống thông để chụp động mạch vành, các động mạch khác, buồng tim) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "192",
+"ma": "N07.01.180",
+"ten": "Bộ dụng cụ thông tim thăm dò huyết động và chụp buồng tim các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "193",
+"ma": "N07.01.190",
+"ten": "Bộ thả dù các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "194",
+"ma": "N07.01.200",
+"ten": "Bộ thắt tĩnh mạch thực quản dùng một lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "19526",
+"ma": "N07.01.210",
+"ten": "Bộ tim phổi nhân tạo các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "",
+"ma": "N07.01.211",
+"ten": "Bộ tim phổi nhân tạo trong phẫu thuật tim (bao gồm: - Phổi nhân tạo (bao gồm: bình chứa máu (reservoir), bộ phận trộn khí, bộ phận trao đổi nhiệt);",
+"dvt": "Bộ",
+"tt": "",
+"trang": 35
+},
+{
+"stt": "",
+"ma": "N07.01.212",
+"ten": "Bộ tim phổi nhân tạo ECMO trong hồi sức cấp cứu (bao gồm: - Phổi nhân tạo (bộ phận trộn khí, bộ phận trao đổi nhiệt); - Dây dẫn (Circuit); - Canuyn động mạch, canuyn tĩnh mạch; - Bộ phận kết nối canuyn vào mạch máu (động mạch, tĩnh mạch); - Bình chứa máu kín (reservoir); - Hệ thống bơm ly tâm; - Bộ phận lọc máu, quả lọc máu (filter); - Hệ thống cảm biến dòng)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 36
+},
+{
+"stt": "196",
+"ma": "N07.01.220",
+"ten": "Bơm áp lực các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 36
+},
+{
+"stt": "197",
+"ma": "N07.01.230",
+"ten": "Bơm áp lực cao trong chụp buồng tim mạch các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 36
+},
+{
+"stt": "198",
+"ma": "N07.01.240",
+"ten": "Bóng nong (balloon), bóng bơm ngược dòng động mạch chủ, bóng",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 36
+},
+{
+"stt": "199",
+"ma": "N07.01.250",
+"ten": "Dây bơm áp lực cao, dây bơm cản quang áp lực cao các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "200",
+"ma": "N07.01.260",
+"ten": "Dây dẫn áp lực để đo dự trữ dòng chảy động mạch vành (FFR) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "201",
+"ma": "N07.01.270",
+"ten": "Dây dẫn đường (guide wire) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "202",
+"ma": "N07.01.280",
+"ten": "Dù amplatzer, dù dạng lưới kim loại tự nở các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "203",
+"ma": "N07.01.290",
+"ten": "Dù bảo vệ chống tắc mạch hạ lưu động mạch vành và các động mạch khác để ngăn ngừa biến cố tắc mạch đoạn xa khi can thiệp các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "204",
+"ma": "N07.01.300",
+"ten": "Dụng cụ cố định mạch vành các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "205",
+"ma": "N07.01.310",
+"ten": "Dụng cụ để thả hoặc cắt vòng xoắn kim loại (dây đẩy coils, dụng cụ cắt coils) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "206",
+"ma": "N07.01.320",
+"ten": "Dụng cụ đóng lòng mạch (angioseal; perclose…) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "207",
+"ma": "N07.01.330",
+"ten": "Dụng cụ lấy dị vật (multi-snare) trong tim mạch các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "208",
+"ma": "N07.01.340",
+"ten": "Dụng cụ bào gọt lấy mảng xơ vữa thành mạch các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "209",
+"ma": "N07.01.350",
+"ten": "Dụng cụ thổi CO 2 (blower) có đường bổ sung nước các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "210",
+"ma": "N07.01.360",
+"ten": "Dụng cụ treo mỏm tim các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 37
+},
+{
+"stt": "211",
+"ma": "N07.01.370",
+"ten": "Keo nút mạch các loại (onyx, histoacryl…)",
+"dvt": "Lọ, tuýp",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "212",
+"ma": "N07.01.380",
+"ten": "Kim hút khí gốc động mạch các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "213",
+"ma": "N07.01.390",
+"ten": "Lưới lọc tĩnh mạch các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "214",
+"ma": "N07.01.400",
+"ten": "Máy tạo nhịp các loại, các cỡ (bao gồm: máy và hệ thống dây)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "",
+"ma": "N07.01.401",
+"ten": "Máy tạo nhịp 1 buồng",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 42.000.000 đồng/1 bộ.",
+"trang": 38
+},
+{
+"stt": "",
+"ma": "N07.01.402",
+"ten": "Máy tạo nhịp 2 buồng",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 70.000.000 đồng/1 bộ.",
+"trang": 38
+},
+{
+"stt": "",
+"ma": "N07.01.403",
+"ten": "Máy tạo nhịp 3 buồng tái đồng bộ cơ tim trong điều trị suy tim",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 240.000.000 đồng/1 bộ.",
+"trang": 38
+},
+{
+"stt": "",
+"ma": "N07.01.404",
+"ten": "Máy tạo nhịp có phá rung cấy vào cơ thể",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 260.000.000 đồng/1 bộ.",
+"trang": 38
+},
+{
+"stt": "215",
+"ma": "N07.01.420",
+"ten": "Shunt trong lòng động mạch vành, mạch cảnh, mạch ngoại biên các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "216",
+"ma": "N07.01.430",
+"ten": "Vật liệu nút mạch (hạt nhựa PVA, lipiodol,…) các loại, các cỡ",
+"dvt": "Miếng, thỏi, lọ",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "217",
+"ma": "N07.01.440",
+"ten": "Vật liệu nút mạch điều trị ung thư gan các loại, các cỡ",
+"dvt": "Miếng, thỏi, lọ",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "218",
+"ma": "N07.01.450",
+"ten": "Vật liệu nút mạch tạm thời (spongel) các loại, các cỡ",
+"dvt": "Miếng, thỏi, lọ",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "219",
+"ma": "N07.01.460",
+"ten": "Vi dây dẫn đường (micro guide wire) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "220",
+"ma": "N07.01.470",
+"ten": "Vòng xoắn kim loại (coils, matrix coils) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 38
+},
+{
+"stt": "221",
+"ma": "N07.01.480",
+"ten": "Bộ dụng cụ điều trị rối loạn nhịp tim sử dụng hệ thống lập bản đồ ba chiều giải phẫu - điện học các buồng tim các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "222",
+"ma": "N07.01.490",
+"ten": "Bóng kéo các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "223",
+"ma": "N07.01.500",
+"ten": "Phim X- quang các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "",
+"ma": "N07.02.000",
+"ten": "7.2 Lọc máu, lọc màng bụng",
+"dvt": "",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "224",
+"ma": "N07.02.010",
+"ten": "Bộ lọc màng bụng cấp cứu sử dụng một lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "225",
+"ma": "N07.02.020",
+"ten": "Bộ lọc màng bụng, bộ thẩm phân phúc mạc (bao gồm: catheter chuyên dụng, đầu nối titanium, hệ thống dây nối)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "226",
+"ma": "N07.02.030",
+"ten": "Bộ thay máu sử dụng một lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "227",
+"ma": "N07.02.040",
+"ten": "Quả lọc tách huyết tương và bộ dây dẫn các loại, các cỡ",
+"dvt": "Quả, bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "22827",
+"ma": "N07.02.050",
+"ten": "Quả lọc và hệ thống dây dẫn trong kỹ thuật hấp phụ phân tử liên tục các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "229",
+"ma": "N07.02.060",
+"ten": "Quả lọc, màng lọc máu và hệ thống dây dẫn đi kèm trong siêu lọc máu, lọc máu liên tục các loại, các cỡ",
+"dvt": "Quả, bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "230",
+"ma": "N07.02.070",
+"ten": "Quả lọc, màng lọc máu và hệ thống dây dẫn trong lọc máu (hemodialysis) định kỳ (thận nhân tạo) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 39
+},
+{
+"stt": "231",
+"ma": "N07.02.080",
+"ten": "Quả lọc thận nhân tạo các loại, các cỡ",
+"dvt": "Quả",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "",
+"ma": "N07.03.000",
+"ten": "7.3 Mắt, Tai Mũi Họng, Răng Hàm Mặt",
+"dvt": "",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "232",
+"ma": "N07.03.010",
+"ten": "Bộ cố định ngoài kiểu cọc ép răng sử dụng trong điều trị các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "233",
+"ma": "N07.03.020",
+"ten": "Bộ dao củng mạc dùng một lần dùng trong phẫu thuật cắt dịch kính, võng mạc các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "234",
+"ma": "N07.03.030",
+"ten": "Bộ tiền phòng nhân tạo dùng trong ghép giác mạc các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "235",
+"ma": "N07.03.040",
+"ten": "Chất nhầy, dung dịch hỗ trợ dùng trong phẫu thuật đặt thủy tinh thể nhân tạo Phaco các loại",
+"dvt": "Lọ, ống",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "236",
+"ma": "N07.03.050",
+"ten": "Chất nhuộm màu dùng trong phẫu thuật mắt các loại",
+"dvt": "Lọ, ml",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "237",
+"ma": "N07.03.060",
+"ten": "Đầu cắt, bộ cắt (dịch kính, bao sau, màng đồng tử, thủy tinh thể) dùng một lần, nhiều lần các loại, các cỡ",
+"dvt": "Bộ, cái",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "238",
+"ma": "N07.03.070",
+"ten": "Đầu cắt, nạo amidan nhanh, cắt cuốn mũi nhanh dùng một lần các loại, các cỡ",
+"dvt": "Bộ, cái",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "239",
+"ma": "N07.03.080",
+"ten": "Đầu đốt điện đông nội nhãn dùng trong phẫu thuật cắt dịch kính các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "240",
+"ma": "N07.03.090",
+"ten": "Đầu kim Phaco các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "241",
+"ma": "N07.03.100",
+"ten": "Đầu lạnh đông củng mạc các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "242",
+"ma": "N07.03.110",
+"ten": "Đầu lưỡi cắt sử dụng trong cắt thanh quản, hút nạo mũi xoang, nạo VA",
+"dvt": "Cái",
+"tt": "",
+"trang": 40
+},
+{
+"stt": "243",
+"ma": "N07.03.130",
+"ten": "Dây cáp, dây dẫn sáng; đầu laser, đầu phát quang laser dùng trong phẫu thuật mắt các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "244",
+"ma": "N07.03.140",
+"ten": "Đinh nước củng mạc các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "245",
+"ma": "N07.03.150",
+"ten": "Kéo nội nhãn các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "246",
+"ma": "N07.03.160",
+"ten": "Kẹp bóc màng ngăn trong (dùng trong phẫu thuật cắt dịch kính, võng mạc) dùng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "247",
+"ma": "N07.03.170",
+"ten": "Meroches và các loại xốp mũi, tai, xoang các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "248",
+"ma": "N07.03.180",
+"ten": "Nam châm đặt trong nội nhãn các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "249",
+"ma": "N07.03.190",
+"ten": "Ống dẫn lưu, van dẫn lưu, dụng cụ thông áp lực nội nhãn dùng trong phẫu thuật Glôcôm (shunt, express Glaucoma filtration device) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "250",
+"ma": "N07.03.200",
+"ten": "Ống silicon, dầu silicon, đai silicon, tấm silicon dùng trong phẫu thuật mắt các loại, các cỡ",
+"dvt": "Cái, lọ",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "251",
+"ma": "N07.03.210",
+"ten": "Pince bóc màng dùng một lần hoặc nhiều lần trong phẫu thuật mắt các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "252",
+"ma": "N07.03.220",
+"ten": "Vòng căng bao thủy tinh thể các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 41
+},
+{
+"stt": "253",
+"ma": "N07.03.230",
+"ten": "Dung dịch nhũ tương tích điện dương bảo vệ bề mặt nhãn cầu",
+"dvt": "Ống, lọ",
+"tt": "Thanh toán trong các dịch vụ kỹ thuật là thủ thuật, phẫu thuật có can thiệp bề mặt nhãn cầu.",
+"trang": 41
+},
+{
+"stt": "254",
+"ma": "N07.03.240",
+"ten": "Điện cực của máy dò thần kinh các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "255",
+"ma": "N07.03.250",
+"ten": "Tấm lót hút VAC các loại, các cỡ",
+"dvt": "Tấm, miếng",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "256",
+"ma": "N07.03.260",
+"ten": "Van phát âm, thanh quản điện các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "257",
+"ma": "N07.03.270",
+"ten": "Vật liệu độn dùng trong phẫu thuật múc nội nhãn các loại, các cỡ",
+"dvt": "Cái, miếng",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "",
+"ma": "N07.04.000",
+"ten": "7.4 Tiêu hóa",
+"dvt": "",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "258",
+"ma": "N07.04.010",
+"ten": "Bộ dụng cụ phẫu thuật trĩ bằng dòng điện cao tần các loại, các cỡ (bao gồm: Bộ phẫu thuật trĩ (HCPT), kẹp cầm máu phẫu thuật trĩ, dụng cụ đông ngưng, bộ dây dẫn cao tần)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "259",
+"ma": "N07.04.020",
+"ten": "Bộ mở thông dạ dày qua da các loại, các cỡ (bao gồm: Kim chọc, ống thông để nong, dây gắn miếng cố định)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "260",
+"ma": "N07.04.030",
+"ten": "Bộ van nong hậu môn các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "261",
+"ma": "N07.04.040",
+"ten": "Dụng cụ, máy khâu cắt nối tự động sử dụng trong kỹ thuật Longo các loại, các cỡ (bao gồm cả vòng, băng ghim khâu kèm theo)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "262",
+"ma": "N07.04.050",
+"ten": "Dụng cụ, máy cắt, khâu nối tự động các loại, các cỡ (bao gồm cả ghim khâu máy)28",
+"dvt": "Bộ",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "263",
+"ma": "N07.04.060",
+"ten": "Lọng cắt polyp ống tiêu hóa (thực quản, dạ dày, tá tràng, ruột non, trực tràng, đại tràng) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 42
+},
+{
+"stt": "264",
+"ma": "N07.04.070",
+"ten": "Tấm nâng, màng nâng, lưới dùng trong điều trị và phẫu thuật các loại, các cỡ",
+"dvt": "Miếng, tấm",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "265",
+"ma": "N07.04.090",
+"ten": "Dụng cụ lấy giun, sán, dị vật các loại, các cỡ",
+"dvt": "Bộ, cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "266",
+"ma": "N07.04.100",
+"ten": "Rọ, bóng lấy sỏi, dị vật, polyp, bệnh phẩm các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "",
+"ma": "N07.05.000",
+"ten": "7.5 Tiết niệu",
+"dvt": "",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "267",
+"ma": "N07.05.010",
+"ten": "Băng đạn, ghim và dụng cụ cắt khâu nối trong tiết niệu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "268",
+"ma": "N07.05.020",
+"ten": "Bộ đặt dẫn lưu thận qua da các loại, các cỡ (bao gồm: Kim chọc, ống thông để nong, ống thông (sonde) J-J, ống thông để đặt dẫn lưu ra ngoài)",
+"dvt": "Bộ, cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "269",
+"ma": "N07.05.030",
+"ten": "Bộ dụng cụ dùng trong thẩm phân phúc mạc các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "270",
+"ma": "N07.05.040",
+"ten": "Bộ nong nhựa kèm amplatzer dùng trong tán sỏi thận qua da các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "271",
+"ma": "N07.05.050",
+"ten": "Bộ nong niệu quản bằng nhựa các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "272",
+"ma": "N07.05.060",
+"ten": "Đầu dò tán sỏi niệu quản các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "273",
+"ma": "N07.05.070",
+"ten": "Đầu tán sỏi, điện cực tán sỏi các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "274",
+"ma": "N07.05.080",
+"ten": "Dây cáp, đầu phát quang laser trong điều trị u xơ tuyến tiền liệt các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "275",
+"ma": "N07.05.090",
+"ten": "Điện cực cắt, đốt trong phẫu thuật nội soi cắt u tuyến tiền liệt các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 43
+},
+{
+"stt": "276",
+"ma": "N07.05.100",
+"ten": "Thông giỏ dormia trong nội soi lấy sỏi niệu quản các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "",
+"ma": "N07.06.000",
+"ten": "7.6 Chấn thương, chỉnh hình",
+"dvt": "",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "277",
+"ma": "N07.06.010",
+"ten": "Áo bột, nẹp bột các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "278",
+"ma": "N07.06.020",
+"ten": "Áo chỉnh hình cột sống, giày chỉnh hình các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "27929",
+"ma": "N07.06.030",
+"ten": "Bộ dụng cụ đổ xi măng các loại, các cỡ, bao gồm: - Kim - Xi măng, bộ trộn, dụng cụ đẩy xi măng - Bóng nong, bộ dụng cụ bơm bóng nong",
+"dvt": "Bộ",
+"tt": "Mức thanh toán 40.000.000 đồng",
+"trang": 44
+},
+{
+"stt": "280",
+"ma": "N07.06.040",
+"ten": "Đinh, nẹp, ghim, kim, khóa, ốc, vít, lồng dùng trong phẫu thuật các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "281",
+"ma": "N07.06.050",
+"ten": "Khung, đai, nẹp, thanh luồn dùng trong chấn thương - chỉnh hình và phục hồi chức năng các loại, các cỡ",
+"dvt": "Cái, bộ",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "282",
+"ma": "N07.06.060",
+"ten": "Thanh nâng ngực các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "283",
+"ma": "N07.06.070",
+"ten": "Xi-măng (cement) hóa học (dùng trong tạo hình thân đốt sống, tạo hình vòm sọ, khớp) các loại, các cỡ",
+"dvt": "Gram, lọ",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "284",
+"ma": "N07.06.080",
+"ten": "Bộ dây bơm nước, đầu đốt điện, tay dao đốt điện dùng trong phẫu thuật các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 44
+},
+{
+"stt": "285",
+"ma": "N07.06.090",
+"ten": "Vật liệu tạo hình xương hốc mắt (tấm lót sàn), vật liệu tạo hình hộp sọ các loại, các cỡ",
+"dvt": "Miếng, cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "",
+"ma": "N07.07.000",
+"ten": "7.7 Huyết học, truyền máu",
+"dvt": "",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "286",
+"ma": "N07.07.010",
+"ten": "Bộ kít tách bạch cầu, tách tiểu cầu, tách huyết tương các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "287",
+"ma": "N07.07.020",
+"ten": "Bộ kít tách tế bào gốc các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "288",
+"ma": "N07.07.030",
+"ten": "Bộ kít xác định hòa hợp tổ chức các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "289",
+"ma": "N07.07.040",
+"ten": "Phin lọc bạch cầu các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "",
+"ma": "N08.00.000",
+"ten": "Nhóm 8. Thiết bị y tế30 sử dụng trong chẩn đoán, điều trị khác",
+"dvt": "",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "290",
+"ma": "N08.00.010",
+"ten": "Băng đạn, ghim khâu dùng trong phẫu thuật các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "291",
+"ma": "N08.00.020",
+"ten": "Băng ép tĩnh mạch các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "292",
+"ma": "N08.00.030",
+"ten": "Băng keo thử nhiệt các loại, các cỡ",
+"dvt": "Cuộn",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "293",
+"ma": "N08.00.040",
+"ten": "Bao áp lực truyền dịch nhanh các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "294",
+"ma": "N08.00.050",
+"ten": "Bao bọc camera dùng trong thủ thuật, phẫu thuật các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "295",
+"ma": "N08.00.060",
+"ten": "Bao bọc đầu thiết bị siêu âm các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "296",
+"ma": "N08.00.070",
+"ten": "Bao đo huyết áp sơ sinh, người lớn dùng một lần các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "297",
+"ma": "N08.00.080",
+"ten": "Bộ đặt dẫn lưu ổ dịch hoặc áp xe các loại, các",
+"dvt": "Bộ",
+"tt": "",
+"trang": 45
+},
+{
+"stt": "298",
+"ma": "N08.00.090",
+"ten": "Bộ đặt đường truyền hóa chất các loại, các cỡ (bao gồm: Kim chọc, ống thông, dây dẫn)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "299",
+"ma": "N08.00.100",
+"ten": "Bộ đầu dò dùng một lần, nhiều lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "300",
+"ma": "N08.00.110",
+"ten": "Bộ đo áp lực nội sọ các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "301",
+"ma": "N08.00.120",
+"ten": "Bộ đo dung lượng khí, bộ đo khí động mạch các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "302",
+"ma": "N08.00.130",
+"ten": "Bộ đốt nhiệt điều trị khối u (bao gồm: Kim đốt nhiệt, dây nối, điện cực dán) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "303",
+"ma": "N08.00.140",
+"ten": "Bộ mở khí quản sử dụng một lần các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "30431",
+"ma": "N08.00.150",
+"ten": "Buồng tiêm truyền hóa chất, kim tiêm truyền hóa chất",
+"dvt": "Bộ, Cái",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "305",
+"ma": "N08.00.160",
+"ten": "Đầu đo SpO (sensor) 2 dùng một lần các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "306",
+"ma": "N08.00.170",
+"ten": "Dây dẫn ánh sáng lạnh dùng trong thủ thuật, phẫu thuật các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "307",
+"ma": "N08.00.180",
+"ten": "Đầu camera trong thủ thuật, phẫu thuật các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "308",
+"ma": "N08.00.190",
+"ten": "Đầu côn các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "309",
+"ma": "N08.00.200",
+"ten": "Đầu dây tán sỏi đường mật nội soi các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "310",
+"ma": "N08.00.210",
+"ten": "Đầu đốt, dao hàn mạch các loại dùng trong thủ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 46
+},
+{
+"stt": "311",
+"ma": "N08.00.220",
+"ten": "Đầu kim rửa hút dùng một lần sử dụng trong phẫu thuật chuyên khoa các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "312",
+"ma": "N08.00.230",
+"ten": "Dây cáp, đầu đo huyết áp xâm nhập (dome) các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "313",
+"ma": "N08.00.240",
+"ten": "Đè lưỡi (gỗ, inox, sắt) các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "314",
+"ma": "N08.00.250",
+"ten": "",
+"dvt": "Miếng dán điện cực, điện",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "315",
+"ma": "N08.00.260",
+"ten": "Kìm, khóa, kẹp (clip, clamp) các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "316",
+"ma": "N08.00.300",
+"ten": "Máng đặt ống thông",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "317",
+"ma": "N08.00.310",
+"ten": "Mặt nạ (mask) các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "318",
+"ma": "N08.00.330",
+"ten": "Mũi khoan dùng trong thủ thuật, phẫu thuật các loại, các cỡ (bao gồm cả tay cắt)",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "319",
+"ma": "N08.00.340",
+"ten": "Phin lọc khí các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "320",
+"ma": "N08.00.350",
+"ten": "Phin lọc vi khuẩn các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "321",
+"ma": "N08.00.360",
+"ten": "Stapler dùng một lần trong phẫu thuật các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "322",
+"ma": "N08.00.370",
+"ten": "Tấm giữ nhiệt các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "323",
+"ma": "N08.00.380",
+"ten": "Bộ gây tê ngoài màng cứng các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "324",
+"ma": "N08.00.400",
+"ten": "Dây dẫn tín hiệu dùng trong đốt sóng cao tần các loại, các cỡ",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "325",
+"ma": "N08.00.410",
+"ten": "Dịch lọc máu liên tục các loại",
+"dvt": "",
+"tt": "",
+"trang": 47
+},
+{
+"stt": "326",
+"ma": "N08.00.420",
+"ten": "Dung dịch bảo quản mô, tạng, giác mạc; dung dịch liệt tim các loại",
+"dvt": "Ml, lít",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "327",
+"ma": "N08.00.430",
+"ten": "Dụng cụ cấy hạt phóng xạ các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "328",
+"ma": "N08.00.440",
+"ten": "Dụng cụ dẫn đường dùng trong phẫu thuật vi phẫu u não thất và quang động học (PTD) trong điều trị u não ác tính các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "329",
+"ma": "N08.00.450",
+"ten": "Dụng cụ dùng trong xạ trị áp sát (dụng cụ cấy, kim cấy cho cổ tử cung, tử cung, âm đạo, trực tràng, vú, các xoang, phần mềm, da, vòm mũi họng, thực quản, khí quản, phế quản, phổi, hạch …) các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "33032",
+"ma": "N08.00.460",
+"ten": "Hạt vi cầu gắn đồng vị phóng xạ Y-90 (kèm theo hộp bảo vệ phóng xạ, bình chia liều, ống đựng liều chuẩn, dây dẫn, kim- bơm tiêm hạt phóng xạ chuyên dụng)",
+"dvt": "Bộ",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "331",
+"ma": "N08.00.470",
+"ten": "Troca nhựa dùng trong phẫu thuật nội soi các loại, các cỡ",
+"dvt": "Bộ, cái",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "",
+"ma": "N09.00.000",
+"ten": "Nhóm 9. Các loại thiết bị y tế33 thay thế sử dụng trong một số thiết bị chẩn đoán, điều trị",
+"dvt": "",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "332",
+"ma": "N09.00.010",
+"ten": "Bóng đèn hồng ngoại các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 48
+},
+{
+"stt": "333",
+"ma": "N09.00.020",
+"ten": "Bóng đèn tử ngoại các loại, các cỡ",
+"dvt": "Chiếc",
+"tt": "",
+"trang": 49
+},
+{
+"stt": "334",
+"ma": "N09.00.030",
+"ten": "Bóng phát tia máy xạ trị gia tốc các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 49
+},
+{
+"stt": "335",
+"ma": "N09.00.040",
+"ten": "Bút phóng xạ đánh dấu chụp SPECT (pen point marker) các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 49
+},
+{
+"stt": "336",
+"ma": "N09.00.050",
+"ten": "Phantom các loại, các cỡ",
+"dvt": "Bộ",
+"tt": "",
+"trang": 49
+},
+{
+"stt": "337",
+"ma": "N09.00.060",
+"ten": "Tấm cố định phần thân dùng trong xạ trị gia tốc các loại, các cỡ",
+"dvt": "Cái",
+"tt": "",
+"trang": 49
+}
+]
