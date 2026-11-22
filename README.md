@@ -1,6 +1,7 @@
 # MMH Wikipedia · Thủ thuật
 
 App tra cứu **thủ thuật, phẫu thuật nhãn khoa và răng hàm mặt** theo văn bản Bộ Y tế mới nhất, kèm **giá, BHYT, vật tư** và **sản phẩm MMH đáp ứng** từng thủ thuật.
+Hai khu tách riêng: **Nhãn khoa** (`#/mat`) và **Nha khoa · Răng hàm mặt** (`#/rhm`), mỗi khu có danh sách, tìm kiếm, sản phẩm MMH, BHYT & vật tư, văn bản riêng.
 Trang tĩnh (GitHub Pages, không cần máy chủ): `index.html` + `app.js` + `app.css` + dữ liệu `data/*.js`.
 
 ## Nội dung

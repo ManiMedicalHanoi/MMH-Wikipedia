@@ -122,12 +122,12 @@ MAT_TOOL_PROF = [('trocar', r'cat dich kinh|pars plana|dau silicon|boc mang|di v
                  ('kvp', r'boc mang|lo hoang diem|di vat noi nhan|di vat trong buong dich kinh|ilm', r'^(do|soi|chup)\b'),
                  ('moc', r'mo (goc tien phong|vung be)|mo be tu phia trong|trabeculotom', None)]
 DIA_PROF = [
-    ('xoang', r'(han|tram).*(rang|composite|amalgam|glass|gic)|phuc hoi.*(sau|than rang)|sau rang', r'su |nhua lam san|chup|rang sua|co rang|ho ranh|tai khoang'),
+    ('xoang', r'\b(han|tram)\b.*(rang|composite|amalgam|glass|gic)|phuc hoi than rang|sau rang', r'\bsu\b|nhua lam san|\bchup\b|rang sua|co rang|ho ranh|tai khoang|ong tuy|loi cau|xuong'),
     ('ho-ranh', r'ho ranh|tram bit', None),
     ('co-rang', r'co rang|loai v|mon co|ton thuong co', None),
     ('rang-sua', r'rang sua', r'nho rang|chup (thep|nhua|su)'),
-    ('mo-tuy', r'tuy|noi nha|ong tuy', r'xuong|tuy song|chup x|sinh thiet'),
-    ('mai-cui', r'chup|cau rang|mao|phuc hinh co dinh|rang su|rang kim loai', r'chup x|chup cat lop|lam san|thao chup|hang lam san|chup phim|chup anh'),
+    ('mo-tuy', r'\btuy\b|noi nha|ong tuy|buong tuy', r'xuong|tuy song|chup x|sinh thiet|tuy xuong'),
+    ('mai-cui', r'\bchup (su|kim loai|thep|hop kim|zirconia|toan su|titan)|cau rang|\bmao\b|phuc hinh co dinh|rang su(?! dung)|rang kim loai', r'chup x|chup cat lop|lam san|thao chup|hang lam san|chup phim|chup anh'),
     ('veneer', r'veneer|mat dan', None),
     ('inlay', r'inlay|onlay', None),
     ('ipr', r'mai ke|ipr|giam kich thuoc', None),
@@ -176,23 +176,27 @@ MAT_SEC = [
     ('kx', 'Khúc xạ · laser', r'khuc xa|lasik|smile|prk|laser|can thi|loan thi'),
     ('cd', 'Khám · đo · chẩn đoán', r'^(do|kham|thu|soi|chup|sieu am|xet nghiem|test|ghi|dien|nghiem phap|danh gia|lam|xac dinh|nuoi cay|nhuom|dinh luong)\b'),
 ]
-RHM_SEC = [
-    ('cd', 'Khám · chẩn đoán hình ảnh', r'^(kham|chup|xet nghiem|lay dau|do|ghi)\b'),
-    ('impl', 'Implant · tái tạo xương', r'implant|nang san xoang|ghep xuong|tai tao xuong|mang sinh hoc'),
-    ('nc', 'Nha chu · mô mềm', r'nha chu|loi|lap|cao rang|nao tui|ghep mo|phanh|dai rang|lung lay|tui quanh rang|che phu chan rang|tien dinh|quanh rang'),
-    ('nn', 'Nội nha', r'tuy|ong tuy|noi nha|cuong rang|chop rang'),
-    ('cr', 'Chữa răng · phục hồi', r'han|tram|phuc hoi|ho ranh|co rang|tai khoang|tay trang|sau rang|veneer|inlay|onlay|chot|nhay cam nga'),
-    ('ph', 'Phục hình', r'phuc hinh|ham gia|rang gia|chup|cau rang|\bcau\b|cui duc|mao|ham khung|ham thao lap|dan su|rang su|onlay|attachment'),
-    ('cn', 'Chỉnh nha · khớp cắn', r'chinh nha|chinh hinh rang|mac cai|khi cu|khop can|mang chinh|minivis|nong ham|duy tri|mai chinh'),
-    ('nr', 'Nhổ răng · tiểu phẫu', r'nho rang|rang khon|rang ngam|rang moc lech|chan rang|tieu phau|cat nang|u loi|lay cao|cay chuyen|cay lai rang'),
+RHM_SEC = [  # thứ tự hiển thị (thứ tự xét: SEC_PRI)
+    ('cr', 'Chữa răng · phục hồi', r'\bhan\b|\btram\b|phuc hoi than rang|phuc hoi men|khoang hoa|ho ranh|co rang|tai khoang|tay trang|sau rang|nhay cam nga|\bchot\b'),
+    ('nn', 'Nội nha', r'\btuy\b|ong tuy|noi nha|cuong rang|chop rang|buong tuy|cat chop|han nguoc'),
+    ('ph', 'Phục hình', r'phuc hinh|ham gia|rang gia|\bchup (su|kim loai|thep|nhua|zirconia|toan su|hop kim|titan)|cau rang|\bcau (nhua|hop kim|kim loai|su|titan)|cui duc|\bmao\b|ham khung|ham thao lap|dan su|rang su(?! dung)|onlay|attachment|\binlay\b|veneer'),
+    ('nc', 'Nha chu · mô mềm', r'nha chu|\bloi\b|\blap\b|cao rang|nao tui|ghep mo|\bphanh\b|dai rang|lung lay|quanh rang|quanh than rang|dai than rang|che phu chan rang|tien dinh|nep rang'),
+    ('impl', 'Implant · tái tạo xương', r'implant|nang san xoang|nang xoang|ghep xuong|tai tao xuong|mang sinh hoc|tach xuong'),
+    ('cn', 'Chỉnh nha · khớp cắn', r'chinh nha|chinh hinh rang|nan chinh rang|mac cai|khi cu|khop can|mang chinh|minivis|miniplate|nong ham|duy tri|mai chinh|nghien rang|\bipr\b'),
+    ('nr', 'Nhổ răng · tiểu phẫu', r'nho rang|rang khon|rang ngam|moc lech|chan rang|tieu phau|cay chuyen|cay lai rang|mo xuong cho rang|u loi'),
     ('te', 'Răng trẻ em', r'rang sua|tre em'),
-    ('hm', 'Phẫu thuật hàm mặt', r'ham|xuong|go ma|le fort|khe ho|moi|vom|luoi|tuyen nuoc bot|tuyen mang tai|san mieng|mat|co|da|vet thuong|cam|niem mac mieng|cung tiep'),
+    ('hm', 'Phẫu thuật hàm mặt', r'xuong ham|loi cau|go ma|le ?fort|cung tiep|tuyen nuoc bot|tuyen mang tai|khe ho|vom mieng|san mieng|\bluoi\b|\bmoi\b|ham mat|dau co|mieng hong|o mat|chinh mui|khop thai duong|\bcam\b|niem mac|vet thuong|than kinh|co nhai|\bham\b|xuong|\bmat\b|\bu\b|\bnang\b'),
+    ('cd', 'Khám · chẩn đoán hình ảnh', r'^(kham|chup|xet nghiem|lay dau|do|ghi)\b'),
 ]
 SEC_PRI = {'mat': ['cd', 'ttt', 'glc', 'vm', 'lac', 'kx', 'le', 'mi', 'hm', 'km', 'gm', 'cm', 'mm'],
-           'rhm': ['cd', 'impl', 'te', 'nn', 'cn', 'ph', 'cr', 'nc', 'nr', 'hm']}
+           'rhm': ['cd', 'hmS', 'impl', 'te', 'nn', 'cn', 'ph', 'cr', 'nc', 'nr', 'hm']}
+HM_STRONG = r'xuong ham|loi cau|go ma|le ?fort|cung tiep|tuyen nuoc bot|tuyen mang tai|khe ho moi|vom mieng|san mieng|ham mat|dau co|mieng hong|o mat|chinh mui|khop thai duong'
 def section(name, ck):
     a = ascii_(name); secs = {sid: pat for sid, lab, pat in (MAT_SEC if ck == 'mat' else RHM_SEC)}
     for sid in SEC_PRI[ck]:
+        if sid == 'hmS':
+            if re.search(HM_STRONG, a) and not re.search(r'\bimplant\b|nho rang|rang khon|\brang\b', a): return 'hm'
+            continue
         if re.search(secs[sid], a): return sid
     return 'khac'
 def kind_of(name):
@@ -267,7 +271,10 @@ def products_for(ck, name, qrec, sec=None, own=None):
             p = PF_DIA[pid]
             tgt = 'ipr' if pid == 'ipr' else 'dia'
             add(tgt, 'm', steps=[[s['t'], '', ', '.join(s['codes']), s['d']] for s in p['steps']])
-        q, s = best3207(name)
+        q, s = best3207(own)
+        MAT_RE = r'\b(gic|glass ionomer|composite|amalgam|su|kim loai|nhua|hop kim|zirconia|titan|gutta)\b'
+        if q and s >= 0.5 and q['sp'] and set(re.findall(MAT_RE, ascii_(own))) and not (set(re.findall(MAT_RE, ascii_(own))) & set(re.findall(MAT_RE, ascii_(q['ten'])))):
+            q = None  # khác vật liệu (vd. GIC ≠ composite) ⇒ không lấy đối chiếu
         if q and s >= 0.5 and q['sp']:
             for gid in sp_split(q['sp']): add(gid, 'm', sug='Đối chiếu QĐ 3207 (MMH): ' + q['sp'])
     # Chỉ ghi chung "dao phẫu thuật / dao mổ" ở phẫu thuật mi, lệ, hốc mắt… = dao mổ thường, không phải dao vi phẫu nhãn khoa
@@ -370,8 +377,17 @@ for ck in ('mat', 'rhm'):
 
 # ---------- Meta ----------
 SEC_LAB = {'mat': [[s, l] for s, l, _ in MAT_SEC] + [['khac', 'Khác']], 'rhm': [[s, l] for s, l, _ in RHM_SEC] + [['khac', 'Khác']]}
-vt_need = sorted({m for g in SP['groups'] for m in g['vtyt']} | {m for m in VT if m.startswith(('N05', 'N06.03', 'N07.03'))} | {'N08.00.330', 'N08.00.360', 'N08.00.260'})
-vtyt = [[VT[m]['stt'], m, VT[m]['ten'], VT[m]['dvt'], VT[m]['tt'], VT[m]['trang']] for m in vt_need if m in VT]
+vt_need = sorted({m for g in SP['groups'] for m in g['vtyt']} | {m for m in VT if m.startswith(('N05', 'N06.03', 'N07.03'))} | {m for _, m in EX_VT if m})
+def vt_tag(code, name):
+    refs = {g['ck'] for g in SP['groups'] if code in g['vtyt']}
+    if len(refs) == 2: return 'both'
+    if refs: return refs.pop()
+    n = vn(name)
+    if re.search(r'mắt|nhãn|giác mạc|củng mạc|dịch kính|võng mạc|thủy tinh|tiền phòng|glôcôm|phaco|đồng tử|bao sau', n): return 'mat'
+    if re.search(r'răng|nha khoa|hàm|xương|thần kinh', n): return 'rhm'
+    if code == 'N07.06.040': return 'both'
+    return 'x'
+vtyt = [[VT[m]['stt'], m, VT[m]['ten'], VT[m]['dvt'], VT[m]['tt'], VT[m]['trang'], vt_tag(m, VT[m]['ten'])] for m in vt_need if m in VT]
 groups = [dict({k: g[k] for k in ('id', 'ck', 'name', 'short', 'page', 'desc', 'vtyt')}, kw=[k for k, _ in g['kw']]) for g in SP['groups']]
 meta = {'built': datetime.date.today().isoformat(), 'wiki': SP['wiki'], 'groups': groups, 'sec': SEC_LAB, 'qtdoc': QTDOC,
         'gia': {k: {kk: v[kk] for kk in ('ten', 'vb', 'pdf')} for k, v in GIA_SRC.items()}, 'vtyt': vtyt,

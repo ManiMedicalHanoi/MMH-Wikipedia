@@ -1,6 +1,6 @@
 /* MMH Wikipedia — service worker: mạng trước, mất mạng thì dùng bản đã lưu. Gỡ khẩn cấp: thay file này bằng
    self.addEventListener('install',()=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.registration.unregister())); */
-const V = 'mmhw-1.0';
+const V = 'mmhw-1.1';
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

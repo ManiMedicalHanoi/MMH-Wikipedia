@@ -2,10 +2,11 @@
    Dữ liệu: data/*.js do tools/build.py sinh từ văn bản Bộ Y tế (nguon/raw) + sản phẩm MMH (nguon/mmh). */
 (function () {
   'use strict';
-  var VER = '1.0';
+  var VER = '1.1';
   var M = window.MW_META;
   var CK = { mat: { name: 'Nhãn khoa', full: 'Nhãn khoa (Mắt)', ch1: '14. MẮT', ch2: '9. Mắt' },
-             rhm: { name: 'Răng hàm mặt', full: 'Răng hàm mặt', ch1: '16. RĂNG HÀM MẶT', ch2: '11. Mũi họng miệng' } };
+             rhm: { name: 'Nha khoa', full: 'Nha khoa · Răng hàm mặt', ch1: '16. RĂNG HÀM MẶT', ch2: '11. Mũi họng miệng' } };
+  var OTHER = { mat: 'rhm', rhm: 'mat' };
   var KIND = { PT: 'Phẫu thuật', TT: 'Thủ thuật', LS: 'Laser · lạnh đông', CD: 'Khám · chẩn đoán' };
   var LOAI = { bhyt: 'BHYT thanh toán', ngoai: 'Ngoài danh mục BHYT', gayte: 'Gây tê, chưa gồm thuốc & oxy' };
   var FLAG = {
@@ -85,24 +86,38 @@
     if (it.pt.length > (max || 6)) h += '<span class="chip">+' + (it.pt.length - (max || 6)) + '</span>';
     return h;
   }
-  function setNav(k) { document.querySelectorAll('#nav a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-k') === k); }); }
+  /* Hai khu riêng: Nhãn khoa (#/mat…) và Nha khoa (#/rhm…). Khu đang mở quyết định danh sách, tìm kiếm, sản phẩm, BHYT, văn bản. */
+  var CUR = null;
+  try { CUR = localStorage.getItem('mmhw_ck'); } catch (e) {}
+  if (!CK[CUR]) CUR = null;
+  function space(ck) {
+    if (ck) { CUR = ck; try { localStorage.setItem('mmhw_ck', ck); } catch (e) {} }
+    document.body.setAttribute('data-ck', ck || '');
+    document.querySelectorAll('#sw a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-ck') === ck); });
+    var b = '#/' + (ck || CUR || 'mat'), L = { tt: b, sp: b + '/sp', bhyt: b + '/bhyt', vb: b + '/vb' };
+    document.querySelectorAll('#nav a').forEach(function (a) { a.setAttribute('href', L[a.getAttribute('data-k')]); });
+    $('#qsIn').placeholder = ck ? 'Tìm thủ thuật ' + CK[ck].name.toLowerCase() + ', mã kỹ thuật…' : 'Tìm thủ thuật, mã kỹ thuật…';
+  }
+  function setNav(k) {
+    var nav = $('#nav'), on = null;
+    document.querySelectorAll('#nav a').forEach(function (a) { var x = a.getAttribute('data-k') === k; a.classList.toggle('on', x); if (x) on = a; });
+    if (nav.scrollWidth > nav.clientWidth) nav.scrollLeft = on ? Math.max(0, on.offsetLeft - nav.offsetLeft - 16) : 0;
+  }
+  function ckBadge(ck) { return '<span class="ckb">' + esc(CK[ck].full) + '</span>'; }
   function title(t) { document.title = (t ? t + ' · ' : '') + 'MMH Wikipedia'; }
 
-  /* ---------- Trang chủ ---------- */
+  /* ---------- Trang chủ: chọn khu ---------- */
   function home() {
-    setNav('home'); title('');
-    var c = M.count;
+    space(null); setNav(''); title('');
     app.innerHTML =
-      '<section class="hero"><div>' +
       '<div class="lbl">MMH Wikipedia · Thủ thuật</div>' +
-      '<h1 class="h1" style="margin-top:6px">Thủ thuật nhãn khoa &amp; răng hàm mặt</h1>' +
-      '<div class="sub">Theo danh mục kỹ thuật Bộ Y tế, quy trình kỹ thuật 2025, giá và BHYT — kèm sản phẩm MMH đáp ứng từng thủ thuật</div>' +
-      '<form class="big-search" id="hs"><input id="hsIn" type="search" placeholder="Ví dụ: phaco, cắt bè, cắt dịch kính, điều trị tủy, nhổ răng khôn…" autocomplete="off"><button class="chip q" style="padding:0 18px;font-size:15px">Tìm</button></form>' +
-      '<div id="hsRes"></div></div>' +
-      '<div class="note"><b>Cập nhật pháp lý</b> · Danh mục kỹ thuật theo <b>TT 23/2024/TT-BYT</b>: Phụ lục 01 áp dụng đến hết 31/12/2027, Phụ lục 02 (xếp theo hệ cơ quan) từ 01/01/2028 (sửa đổi bởi TT 25/2026/TT-BYT). Quy trình kỹ thuật mới: Mắt <b>QĐ 3517/QĐ-BYT</b>, Răng Hàm Mặt <b>QĐ 3634/QĐ-BYT</b> (11/2025). Vật tư BHYT: <b>TT 04/2017 + TT 24/2025</b>. <a href="#/vb">Xem văn bản</a></div>' +
-      '</section>' +
-      '<div class="grid g2" style="margin-top:18px">' + specCard('mat', c.mat) + specCard('rhm', c.rhm) + '</div>' +
-      '<h2 class="h2">Sản phẩm MMH theo thủ thuật</h2><div class="grid g4" id="hp"><div class="loading">Đang tính…</div></div>' +
+      '<h1 class="h1" style="margin-top:6px">Chọn chuyên khoa</h1>' +
+      '<div class="sub">Hai khu tách riêng — danh sách, tìm kiếm, sản phẩm MMH, BHYT và văn bản của khu nào chỉ hiện nội dung khu đó</div>' +
+      '<div class="grid g2" style="margin-top:18px">' + spaceCard('mat') + spaceCard('rhm') + '</div>' +
+      '<h2 class="h2">Tìm trong cả hai khu</h2>' +
+      '<form class="big-search" id="hs" style="margin-top:0"><input id="hsIn" type="search" placeholder="Ví dụ: phaco, cắt bè, cắt dịch kính, điều trị tủy, nhổ răng khôn…" autocomplete="off"><button class="chip q" style="padding:0 18px;font-size:15px">Tìm</button></form>' +
+      '<div id="hsRes"></div>' +
+      '<div class="note" style="margin-top:22px"><b>Cập nhật pháp lý</b> · Danh mục kỹ thuật theo <b>TT 23/2024/TT-BYT</b>: Phụ lục 01 áp dụng đến hết 31/12/2027, Phụ lục 02 (xếp theo hệ cơ quan) từ 01/01/2028 (sửa đổi bởi TT 25/2026/TT-BYT). Quy trình kỹ thuật mới: Mắt <b>QĐ 3517/QĐ-BYT</b>, Răng Hàm Mặt <b>QĐ 3634/QĐ-BYT</b> (11/2025). Vật tư BHYT: <b>TT 04/2017 + TT 24/2025</b>.</div>' +
       '<h2 class="h2">Cách đọc một thủ thuật</h2>' +
       '<div class="grid g3">' +
       '<div class="card"><div class="lbl">1 · Danh mục &amp; quy trình</div><div style="margin-top:6px">Tên kỹ thuật theo Phụ lục 02 TT 23/2024, mã đang dùng (Phụ lục 01) và quy trình kỹ thuật 2025: chỉ định, thiết bị y tế, các bước.</div></div>' +
@@ -111,32 +126,30 @@
       '</div>';
     $('#hs').onsubmit = function (e) { e.preventDefault(); doHomeSearch(); };
     $('#hsIn').oninput = debounce(doHomeSearch, 180);
-    ensureAll().then(function () { renderHomeProducts(); });
+    ensureAll().then(function () { ['mat', 'rhm'].forEach(fillSpaceCard); });
   }
-  function specCard(ck, n) {
-    return '<a class="spec" href="#/tt/' + ck + '"><div class="lbl">' + (ck === 'mat' ? 'Chương 14 · Phụ lục 02 chương 9' : 'Chương 16 · Phụ lục 02 chương 11') + '</div>' +
-      '<div class="t">' + CK[ck].full + '</div><div class="kpis" id="k-' + ck + '"><div><b>' + n + '</b>kỹ thuật</div></div></a>';
+  function spaceCard(ck) {
+    var gs = M.groups.filter(function (g) { return g.ck === ck; });
+    return '<a class="spec sc-' + ck + '" href="#/' + ck + '"><div class="lbl">' + (ck === 'mat' ? 'Chương 14 Mắt · Phụ lục 02 chương 9 · QĐ 3517' : 'Chương 16 Răng Hàm Mặt · Phụ lục 02 chương 11 · QĐ 3634') + '</div>' +
+      '<div class="t" style="font-size:20px">' + CK[ck].full + '</div><div class="kpis" id="k-' + ck + '"><div><b>' + M.count[ck] + '</b>kỹ thuật</div></div>' +
+      '<div class="chips" style="margin-top:12px">' + gs.map(function (g) { return '<span class="chip">' + esc(g.short) + '</span>'; }).join('') + '</div>' +
+      '<div class="go">Vào khu ' + CK[ck].name + ' ›</div></a>';
+  }
+  function fillSpaceCard(ck) {
+    var a = DATA[ck], k = $('#k-' + ck); if (!k) return;
+    var q = a.filter(function (i) { return i.q; }).length, p = a.filter(function (i) { return i.pt.length; }).length, pr = a.filter(function (i) { return i.pr.length; }).length;
+    k.innerHTML = '<div><b>' + a.length + '</b>kỹ thuật</div><div><b>' + q + '</b>có quy trình 2025</div><div><b>' + pr + '</b>có giá tham chiếu</div><div><b>' + p + '</b>có sản phẩm MMH</div>';
   }
   function doHomeSearch() {
     var q = $('#hsIn').value, box = $('#hsRes');
     if (!q.trim()) { box.innerHTML = ''; return; }
     ensureAll().then(function () {
-      var r = search(q, DATA.mat.concat(DATA.rhm), 12);
-      box.innerHTML = r.length ? '<div class="rows" style="margin-top:10px">' + r.map(rowHtml).join('') + '</div>' : '<div class="empty">Không thấy kỹ thuật phù hợp.</div>';
+      box.innerHTML = ['mat', 'rhm'].map(function (ck) {
+        var r = search(q, DATA[ck]);
+        return '<div class="lbl" style="margin:16px 0 6px">' + CK[ck].full + ' · ' + r.length + ' kết quả' + (r.length > 8 ? ' · <a href="#/' + ck + '?q=' + encodeURIComponent(q) + '">xem tất cả</a>' : '') + '</div>' +
+          (r.length ? '<div class="rows">' + r.slice(0, 8).map(rowHtml).join('') + '</div>' : '<div class="small mute">Không có.</div>');
+      }).join('');
     });
-  }
-  function renderHomeProducts() {
-    ['mat', 'rhm'].forEach(function (ck) {
-      var a = DATA[ck], k = $('#k-' + ck); if (!k) return;
-      var q = a.filter(function (i) { return i.q; }).length, p = a.filter(function (i) { return i.pt.length; }).length, pr = a.filter(function (i) { return i.pr.length; }).length;
-      k.innerHTML = '<div><b>' + a.length + '</b>kỹ thuật</div><div><b>' + q + '</b>có quy trình 2025</div><div><b>' + pr + '</b>có giá tham chiếu</div><div><b>' + p + '</b>có sản phẩm MMH</div>';
-    });
-    var cnt = productCounts();
-    var h = M.groups.map(function (g) {
-      var c = cnt[g.id] || { n: 0, q: 0 };
-      return '<a class="prod" href="#/sp/' + g.id + '"><div class="lbl">' + CK[g.ck].name + '</div><div class="t">' + esc(g.short) + '</div><div class="c">' + c.n + ' thủ thuật · ' + c.q + ' theo QTKT</div></a>';
-    }).join('');
-    var hp = $('#hp'); if (hp) hp.innerHTML = h;
   }
   function productCounts() {
     var cnt = {};
@@ -148,14 +161,16 @@
   /* ---------- Danh sách ---------- */
   var LS = {};
   function listPage(ck, qs) {
-    setNav(ck); title(CK[ck].name);
+    space(ck); setNav('tt'); title(CK[ck].name);
     var st = LS[ck] = LS[ck] || { sec: '', kind: '', prod: '', only: '', q: '', sort: 'pl', n: 60 };
     if (qs && qs.p) st.prod = qs.p;
-    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › ' + CK[ck].name + '</div>' +
-      '<h1 class="h1">' + CK[ck].full + '</h1><div class="sub">Danh mục kỹ thuật TT 23/2024/TT-BYT · quy trình ' + M.qtdoc[ck].qd + ' · giá 2025 · sản phẩm MMH</div>' +
+    if (qs && qs.s) st.sec = qs.s;
+    if (qs && qs.q != null) st.q = qs.q;
+    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › ' + CK[ck].name + '</div>' + ckBadge(ck) +
+      '<h1 class="h1" style="margin-top:8px">Thủ thuật ' + CK[ck].name.toLowerCase() + '</h1><div class="sub">Danh mục kỹ thuật TT 23/2024/TT-BYT · quy trình ' + M.qtdoc[ck].qd + ' · giá 2025 · sản phẩm MMH</div>' +
       '<div class="listing" style="margin-top:18px"><aside class="side" id="side"></aside><section><div class="tools">' +
       '<input id="lq" type="search" placeholder="Lọc theo tên, mã kỹ thuật…" value="' + esc(st.q) + '">' +
-      '<select id="ls"><option value="pl">Thứ tự danh mục</option><option value="ten">Tên A–Z</option><option value="gia">Giá cao → thấp</option><option value="mmh">Nhiều sản phẩm MMH</option></select>' +
+      '<select id="ls"><option value="pl">' + (ck === 'rhm' ? 'Theo nhóm' : 'Thứ tự danh mục') + '</option><option value="ten">Tên A–Z</option><option value="gia">Giá cao → thấp</option><option value="mmh">Nhiều sản phẩm MMH</option></select>' +
       '<button class="chip fbtn" id="fb" style="height:40px">Bộ lọc</button></div><div class="count" id="lc"></div><div id="lr"><div class="loading">Đang tải danh mục…</div></div></section></div>';
     $('#ls').value = st.sort;
     ensure(ck).then(function (a) {
@@ -207,6 +222,7 @@
       if (st.sort === 'ten') r = r.slice().sort(function (x, y) { return x.t.localeCompare(y.t, 'vi'); });
       else if (st.sort === 'gia') r = r.slice().sort(function (x, y) { return mx(y) - mx(x); });
       else if (st.sort === 'mmh') r = r.slice().sort(function (x, y) { return sc(y) - sc(x); });
+      else if (ck === 'rhm') { var od = {}; M.sec.rhm.forEach(function (s, i) { od[s[0]] = i; }); r = r.map(function (x, i) { return [x, i]; }).sort(function (x, y) { return od[x[0].sec] - od[y[0].sec] || x[1] - y[1]; }).map(function (x) { return x[0]; }); }
     }
     $('#lc').textContent = r.length + ' kỹ thuật' + (st.prod ? ' dùng ' + G[st.prod].short : '');
     $('#lr').innerHTML = r.length ? '<div class="rows">' + r.slice(0, st.n).map(rowHtml).join('') + '</div>' + (r.length > st.n ? '<button class="more" data-f="more">Xem thêm (' + (r.length - st.n) + ')</button>' : '') : '<div class="empty">Không có kỹ thuật phù hợp bộ lọc.</div>';
@@ -228,10 +244,10 @@
     app.innerHTML = '<div class="loading">Đang tải…</div>';
     byId(id).then(function (it) {
       if (!it) { app.innerHTML = '<div class="empty">Không tìm thấy kỹ thuật.</div>'; return; }
-      var ck = it.ck; setNav(ck); title(it.t);
+      var ck = it.ck; space(ck); setNav('tt'); title(it.t);
       tab = tab || 'mmh';
-      var hd = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/tt/' + ck + '">' + CK[ck].name + '</a> › ' + esc(SEC[ck][it.sec] || '') + '</div>' +
-        '<div class="dhead"><div class="lbl">' + KIND[it.k] + ' · ' + esc(SEC[ck][it.sec] || '') + '</div><h1 class="h1" style="text-transform:none;letter-spacing:0;margin-top:4px">' + esc(it.t) + '</h1>' +
+      var hd = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/' + ck + '">' + CK[ck].name + '</a> › ' + esc(SEC[ck][it.sec] || '') + '</div>' +
+        '<div class="dhead">' + ckBadge(ck) + '<div class="lbl" style="margin-top:8px">' + KIND[it.k] + ' · ' + esc(SEC[ck][it.sec] || '') + '</div><h1 class="h1" style="text-transform:none;letter-spacing:0;margin-top:4px">' + esc(it.t) + '</h1>' +
         '<div class="chips">' + (it.s2 != null && !it.only1 ? '<span class="chip">Phụ lục 02 · ' + esc(it.c2 || CK[ck].ch2) + ' · STT ' + it.s2 + '</span>' : '') +
         it.l.map(function (l) { return '<span class="chip" title="' + esc(l[2] + ' — ' + l[3]) + '">Mã <b>' + esc(l[1]) + '</b></span>'; }).join('') +
         (it.q ? '<span class="chip ok">Quy trình ' + M.qtdoc[ck].qd + ' · số ' + it.q.n + '</span>' : '<span class="chip">Chưa có quy trình 2025 tập 1</span>') +
@@ -261,7 +277,7 @@
     return '<div class="pay">' + s + (v ? '<div class="small mute" style="margin-top:6px">Nhóm thiết bị y tế BHYT (TT 04/2017 + TT 24/2025): ' + v + '</div>' : '') + '</div>';
   }
   function tabMMH(it) {
-    if (!it.pt.length) return '<div class="card"><b>Chưa thấy sản phẩm MMH dùng trong kỹ thuật này.</b><div class="mute small" style="margin-top:6px">Quy trình kỹ thuật không ghi dụng cụ / vật tư MMH đang phân phối và chưa có trong tài liệu sản phẩm MMH. <a href="#/sp">Xem danh mục sản phẩm MMH</a></div></div>';
+    if (!it.pt.length) return '<div class="card"><b>Chưa thấy sản phẩm MMH dùng trong kỹ thuật này.</b><div class="mute small" style="margin-top:6px">Quy trình kỹ thuật không ghi dụng cụ / vật tư MMH đang phân phối và chưa có trong tài liệu sản phẩm MMH. <a href="#/' + it.ck + '/sp">Xem danh mục sản phẩm MMH</a></div></div>';
     var kw = kwsOf(it.ck);
     return '<p class="mute small" style="margin-top:0">Căn cứ: <span class="chip q">Theo QTKT</span> quy trình ' + M.qtdoc[it.ck].qd + ' ghi rõ (trích nguyên văn) · <span class="chip k">QTKT ghi chung</span> quy trình chỉ ghi "dao / chỉ / mũi khoan các loại" · <span class="chip m">Gợi ý MMH</span> theo tài liệu sản phẩm, đào tạo của MMH.</p>' +
       it.pt.map(function (p) {
@@ -296,7 +312,7 @@
       '<li>Tổng chi phí thiết bị y tế cho 1 lần dùng dịch vụ kỹ thuật không quá 45 tháng lương cơ sở (trừ thiết bị có tỷ lệ riêng).</li>' +
       (it.ck === 'mat' ? '<li>Chuyên khoa Mắt: giá phẫu thuật chưa gồm gây mê; nếu gây mê thì thanh toán riêng theo giá "gây mê trong phẫu thuật mắt".</li>' : '') +
       '<li>Nhiều can thiệp trong 1 lần mổ: trả giá phẫu thuật cao nhất + 50% (cùng kíp) hoặc 80% (khác kíp) giá phẫu thuật phát sinh; thủ thuật phát sinh 80%.</li></ul>' +
-      '<p class="small"><a href="#/bhyt">Xem đầy đủ quy định BHYT &amp; danh mục thiết bị y tế</a></p>';
+      '<p class="small"><a href="#/' + it.ck + '/bhyt">Xem đầy đủ quy định BHYT &amp; danh mục thiết bị y tế</a></p>';
     return h;
   }
   function tabQT(it) {
@@ -326,18 +342,15 @@
   }
 
   /* ---------- Sản phẩm ---------- */
-  function prodPage() {
-    setNav('sp'); title('Sản phẩm MMH');
-    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › Sản phẩm MMH</div><h1 class="h1">Sản phẩm MMH theo thủ thuật</h1><div class="sub">Mỗi nhóm sản phẩm được dùng ở những thủ thuật nào, theo quy trình Bộ Y tế và tài liệu MMH</div><div id="pg"><div class="loading">Đang tính…</div></div>';
-    ensureAll().then(function () {
-      var cnt = productCounts(), h = '';
-      ['mat', 'rhm'].forEach(function (ck) {
-        h += '<h2 class="h2">' + CK[ck].full + '</h2><div class="grid g3">' + M.groups.filter(function (g) { return g.ck === ck; }).map(function (g) {
-          var c = cnt[g.id] || { n: 0, q: 0 };
-          return '<a class="prod" href="#/sp/' + g.id + '"><div class="t">' + esc(g.name) + '</div><div class="c" style="margin:4px 0 8px">' + esc(g.desc) + '</div><div class="chips"><span class="chip q">' + c.q + ' theo QTKT</span><span class="chip">' + c.n + ' thủ thuật</span></div></a>';
-        }).join('') + '</div>' + matrix(ck);
-      });
-      $('#pg').innerHTML = h;
+  function prodPage(ck) {
+    space(ck); setNav('sp'); title('Sản phẩm MMH · ' + CK[ck].name);
+    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/' + ck + '">' + CK[ck].name + '</a> › Sản phẩm MMH</div>' + ckBadge(ck) + '<h1 class="h1" style="margin-top:8px">Sản phẩm MMH cho ' + CK[ck].name.toLowerCase() + '</h1><div class="sub">Mỗi nhóm sản phẩm được dùng ở những thủ thuật nào, theo quy trình Bộ Y tế và tài liệu MMH</div><div id="pg"><div class="loading">Đang tính…</div></div>';
+    ensure(ck).then(function () {
+      var cnt = productCounts();
+      $('#pg').innerHTML = '<div class="grid g3" style="margin-top:18px">' + M.groups.filter(function (g) { return g.ck === ck; }).map(function (g) {
+        var c = cnt[g.id] || { n: 0, q: 0 };
+        return '<a class="prod" href="#/' + ck + '/sp/' + g.id + '"><div class="t">' + esc(g.name) + '</div><div class="c" style="margin:4px 0 8px">' + esc(g.desc) + '</div><div class="chips"><span class="chip q">' + c.q + ' theo QTKT</span><span class="chip">' + c.n + ' thủ thuật</span></div></a>';
+      }).join('') + '</div>' + matrix(ck);
     });
   }
   function matrix(ck) {
@@ -346,12 +359,12 @@
     var mx = 0, rows = secs.map(function (s) { var r = gs.map(function (g) { var n = cell(s[0], g.id); mx = Math.max(mx, n); return n; }); return [s, r]; });
     var lev = function (n) { return n === 0 ? 0 : n <= mx * 0.15 ? 1 : n <= mx * 0.4 ? 2 : n <= mx * 0.7 ? 3 : 4; };
     return '<div class="lbl" style="margin-top:18px">Ma trận nhóm thủ thuật × sản phẩm (số kỹ thuật)</div><div class="tbl matrix" style="margin-top:8px"><table><thead><tr><th>Nhóm</th>' + gs.map(function (g) { return '<th>' + esc(g.short) + '</th>'; }).join('') + '</tr></thead><tbody>' +
-      rows.map(function (r) { return '<tr><td>' + esc(r[0][1]) + '</td>' + r[1].map(function (n, j) { return '<td>' + (n ? '<a class="mx l' + lev(n) + '" href="#/tt/' + ck + '?p=' + gs[j].id + '&s=' + r[0][0] + '">' + n + '</a>' : '<span class="mx l0">·</span>') + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div>';
+      rows.map(function (r) { return '<tr><td>' + esc(r[0][1]) + '</td>' + r[1].map(function (n, j) { return '<td>' + (n ? '<a class="mx l' + lev(n) + '" href="#/' + ck + '?p=' + gs[j].id + '&s=' + r[0][0] + '">' + n + '</a>' : '<span class="mx l0">·</span>') + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div>';
   }
   function prodOne(gid) {
-    var g = G[gid]; if (!g) { prodPage(); return; }
-    setNav('sp'); title(g.name);
-    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/sp">Sản phẩm MMH</a> › ' + esc(g.short) + '</div><div class="dhead"><div class="lbl">' + CK[g.ck].full + '</div><h1 class="h1">' + esc(g.name) + '</h1><div class="sub">' + esc(g.desc) + '</div>' +
+    var g = G[gid]; if (!g) { prodPage(CUR || 'mat'); return; }
+    space(g.ck); setNav('sp'); title(g.name);
+    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/' + g.ck + '">' + CK[g.ck].name + '</a> › <a href="#/' + g.ck + '/sp">Sản phẩm MMH</a> › ' + esc(g.short) + '</div><div class="dhead">' + ckBadge(g.ck) + '<h1 class="h1" style="margin-top:8px">' + esc(g.name) + '</h1><div class="sub">' + esc(g.desc) + '</div>' +
       '<div class="chips"><a class="chip" href="' + wiki(gid) + '" target="_blank" rel="noopener">Thông tin sản phẩm trên MMH Wiki ↗</a>' + (g.vtyt || []).map(function (c) { return VT[c] ? '<span class="chip" title="' + esc(VT[c][2]) + '">BHYT ' + c + '</span>' : ''; }).join('') + '</div></div><div id="po"><div class="loading">Đang tải…</div></div>';
     ensure(g.ck).then(function (a) {
       var r = a.filter(function (i) { return i.pt.some(function (p) { return p.g === gid; }); });
@@ -374,20 +387,28 @@
     });
   }
 
-  /* ---------- BHYT ---------- */
-  function bhytPage() {
-    setNav('bhyt'); title('BHYT & vật tư');
-    var used = {}; M.groups.forEach(function (g) { (g.vtyt || []).forEach(function (c) { (used[c] = used[c] || []).push(g.short); }); });
-    var vt = M.vtyt.map(function (v) { return '<tr><td><span class="code">' + v[1] + '</span></td><td>' + esc(v[2]) + '</td><td>' + esc(v[3]) + '</td><td class="small">' + esc(v[4]) + '</td><td>' + (used[v[1]] ? used[v[1]].map(function (s) { return '<span class="chip q">' + esc(s) + '</span>'; }).join(' ') : '') + '</td></tr>'; }).join('');
-    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › BHYT &amp; vật tư</div><h1 class="h1">Bảo hiểm y tế, giá &amp; vật tư</h1><div class="sub">Thủ thuật được thanh toán thế nào, vật tư nào được trả riêng, sản phẩm MMH nằm ở đâu</div>' +
+  /* ---------- BHYT (theo khu) ---------- */
+  function bhytPage(ck) {
+    space(ck); setNav('bhyt'); title('BHYT & vật tư · ' + CK[ck].name);
+    var mat = ck === 'mat';
+    var used = {}; M.groups.forEach(function (g) { if (g.ck === ck) (g.vtyt || []).forEach(function (c) { (used[c] = used[c] || []).push(g.short); }); });
+    var vt = M.vtyt.filter(function (v) { return v[6] === ck || v[6] === 'both'; }).map(function (v) { return '<tr><td><span class="code">' + v[1] + '</span></td><td>' + esc(v[2]) + '</td><td>' + esc(v[3]) + '</td><td class="small">' + esc(v[4]) + '</td><td>' + (used[v[1]] ? used[v[1]].map(function (s) { return '<span class="chip q">' + esc(s) + '</span>'; }).join(' ') : '') + '</td></tr>'; }).join('');
+    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/' + ck + '">' + CK[ck].name + '</a> › BHYT &amp; vật tư</div>' + ckBadge(ck) + '<h1 class="h1" style="margin-top:8px">Bảo hiểm y tế, giá &amp; vật tư</h1><div class="sub">' + (mat ? 'Thủ thuật nhãn khoa' : 'Thủ thuật nha khoa, răng hàm mặt') + ' được thanh toán thế nào, vật tư nào được trả riêng, sản phẩm MMH nằm ở đâu</div>' +
       '<h2 class="h2">Nguyên tắc</h2><div class="grid g2">' +
       '<div class="card"><div class="lbl">Phạm vi &amp; mức hưởng</div><ul class="ul"><li>Dịch vụ kỹ thuật trong danh mục kỹ thuật được Bộ Y tế cho phép thuộc phạm vi BHYT, trừ trường hợp ở Điều 23 Luật BHYT (TT 35/2016, Điều 1).</li><li>Quỹ trả: giá được duyệt × mức hưởng 100% / 95% / 80% theo đối tượng (Luật BHYT, Điều 22, sửa đổi bởi Luật 51/2024/QH15, hiệu lực 01/7/2025).</li><li>Điều kiện: cơ sở được phê duyệt thực hiện, làm theo quy trình chuyên môn, có giá được phê duyệt (TT 35/2016, Điều 3).</li></ul></div>' +
-      '<div class="card"><div class="lbl">Không được BHYT thanh toán (Điều 23)</div><ul class="ul"><li>Dịch vụ thẩm mỹ (khoản 6).</li><li>Điều trị lác và tật khúc xạ của mắt cho người từ đủ 18 tuổi (khoản 7).</li><li>Thiết bị y tế thay thế: mắt giả, răng giả, kính mắt, máy trợ thính… (khoản 8).</li><li>Khám sức khỏe (trừ định kỳ, sàng lọc), giám định, thử nghiệm lâm sàng…</li></ul></div>' +
+      '<div class="card"><div class="lbl">Không được BHYT thanh toán (Điều 23)</div><ul class="ul">' +
+      (mat ? '<li>Điều trị lác và tật khúc xạ của mắt cho người từ đủ 18 tuổi (khoản 7).</li><li>Thiết bị y tế thay thế: mắt giả, kính mắt (khoản 8).</li><li>Dịch vụ thẩm mỹ, ví dụ tạo hình mi vì mục đích thẩm mỹ (khoản 6).</li>'
+           : '<li>Thiết bị y tế thay thế: răng giả — phục hình, hàm giả (khoản 8).</li><li>Dịch vụ thẩm mỹ, ví dụ tẩy trắng, veneer vì mục đích thẩm mỹ (khoản 6).</li>') +
+      '<li>Khám sức khỏe (trừ định kỳ, sàng lọc), giám định, thử nghiệm lâm sàng…</li></ul></div>' +
       '<div class="card"><div class="lbl">Giá dịch vụ từ 2025</div><ul class="ul"><li>TT 21/2024/TT-BYT quy định phương pháp định giá; giá thống nhất theo hạng bệnh viện (TT 22/2023) không còn áp dụng.</li><li>Bộ Y tế quyết định giá cho bệnh viện thuộc thẩm quyền (ví dụ QĐ 311/QĐ-BYT cho BV Trường ĐH Y Dược Huế, QĐ 441/QĐ-BYT cho BV ĐH Y Dược – ĐHQG Hà Nội); cơ sở của địa phương theo quyết định của tỉnh.</li><li>Ghi chú "Chưa bao gồm …" trong bảng giá = vật tư được thanh toán riêng.</li></ul></div>' +
-      '<div class="card"><div class="lbl">Thiết bị y tế (vật tư)</div><ul class="ul"><li>Đã tính vào giá dịch vụ ⇒ không thanh toán riêng (TT 04/2017, Điều 3).</li><li>Chưa tính ⇒ trả theo giá mua vào qua đấu thầu, không vượt mức cột 5; tổng 1 lần dịch vụ ≤ 45 tháng lương cơ sở.</li><li>Thủy tinh thể nhân tạo: mức thanh toán 3.000.000 đ / 1 thủy tinh thể (theo TT 24/2025).</li><li>TT 24/2025/TT-BYT (hiệu lực 01/9/2025) đổi "vật tư y tế" thành "thiết bị y tế".</li></ul></div></div>' +
-      '<h2 class="h2">Ý nghĩa với sản phẩm MMH</h2><div class="note">Dao phẫu thuật nhãn khoa, chỉ khâu, trocar, kìm vi phẫu, mũi khoan, trâm, composite… thường <b>đã tính trong giá dịch vụ kỹ thuật</b> (bảng giá không ghi "chưa bao gồm"). Bệnh viện tự chi từ nguồn thu dịch vụ, mua qua đấu thầu theo nhóm thiết bị y tế ở bảng dưới — nên giá dịch vụ, số ca và yêu cầu kỹ thuật trong hồ sơ mời thầu là căn cứ chính. Các nhóm vẫn được liệt kê để làm hồ sơ thầu và thanh toán khi cơ sở được phép thu riêng.</div>' +
-      '<h2 class="h2">Danh mục thiết bị y tế BHYT liên quan (VBHN 14/VBHN-BYT, 19/8/2025)</h2><div class="tbl"><table><thead><tr><th>Mã nhóm</th><th>Tên nhóm</th><th>ĐVT</th><th>Điều kiện, mức thanh toán</th><th>Sản phẩm MMH</th></tr></thead><tbody>' + vt + '</tbody></table></div>' +
-      '<h2 class="h2">Một số quy tắc thanh toán dịch vụ kỹ thuật</h2><ul class="ul"><li>Nhiều can thiệp trong 1 lần phẫu thuật: giá phẫu thuật phức tạp nhất + 50% giá phẫu thuật phát sinh (cùng kíp) hoặc 80% (khác kíp); thủ thuật phát sinh 80%.</li><li>Giá phẫu thuật đã gồm gây mê/gây tê, trừ chuyên khoa Mắt: phẫu thuật, thủ thuật mắt có gây mê thì thanh toán riêng theo giá gây mê trong phẫu thuật/thủ thuật mắt.</li><li>Ngày giường sau phẫu thuật phaco: áp dụng giá ngày giường ngoại khoa loại 3.</li><li>Kỹ thuật thực hiện ở nhiều chuyên khoa áp dụng giá theo chuyên khoa thực hiện.</li></ul><p class="small mute">Nguồn: Luật BHYT (VBHN 2026), TT 35/2016/TT-BYT (VBHN 17/VBHN-BYT 31/12/2024), TT 04/2017/TT-BYT (VBHN 14/VBHN-BYT 19/8/2025). <a href="#/vb">Danh sách văn bản</a></p>';
+      '<div class="card"><div class="lbl">Thiết bị y tế (vật tư)</div><ul class="ul"><li>Đã tính vào giá dịch vụ ⇒ không thanh toán riêng (TT 04/2017, Điều 3).</li><li>Chưa tính ⇒ trả theo giá mua vào qua đấu thầu, không vượt mức cột 5; tổng 1 lần dịch vụ ≤ 45 tháng lương cơ sở.</li>' +
+      (mat ? '<li>Thủy tinh thể nhân tạo: mức thanh toán 3.000.000 đ / 1 thủy tinh thể (theo TT 24/2025).</li>' : '<li>Xương nhân tạo, màng tái tạo mô, nẹp vít: bảng giá phẫu thuật thường ghi "chưa bao gồm" ⇒ thanh toán riêng.</li>') +
+      '<li>TT 24/2025/TT-BYT (hiệu lực 01/9/2025) đổi "vật tư y tế" thành "thiết bị y tế".</li></ul></div></div>' +
+      '<h2 class="h2">Ý nghĩa với sản phẩm MMH</h2><div class="note">' + (mat ? 'Dao phẫu thuật nhãn khoa, chỉ khâu, trocar, kìm vi phẫu, móc mở vùng bè' : 'Mũi khoan DIA-BURS / Carbide, trâm, JIZAI, chỉ khâu nha khoa, composite, keo dán, tẩy trắng') + ' thường <b>đã tính trong giá dịch vụ kỹ thuật</b> (bảng giá không ghi "chưa bao gồm"). Bệnh viện tự chi từ nguồn thu dịch vụ, mua qua đấu thầu theo nhóm thiết bị y tế ở bảng dưới — nên giá dịch vụ, số ca và yêu cầu kỹ thuật trong hồ sơ mời thầu là căn cứ chính.</div>' +
+      '<h2 class="h2">Thiết bị y tế BHYT liên quan (VBHN 14/VBHN-BYT, 19/8/2025)</h2><div class="tbl"><table><thead><tr><th>Mã nhóm</th><th>Tên nhóm</th><th>ĐVT</th><th>Điều kiện, mức thanh toán</th><th>Sản phẩm MMH</th></tr></thead><tbody>' + vt + '</tbody></table></div>' +
+      '<h2 class="h2">Một số quy tắc thanh toán dịch vụ kỹ thuật</h2><ul class="ul"><li>Nhiều can thiệp trong 1 lần phẫu thuật: giá phẫu thuật phức tạp nhất + 50% giá phẫu thuật phát sinh (cùng kíp) hoặc 80% (khác kíp); thủ thuật phát sinh 80%.</li>' +
+      (mat ? '<li>Giá phẫu thuật đã gồm gây mê/gây tê, trừ chuyên khoa Mắt: phẫu thuật, thủ thuật mắt có gây mê thì thanh toán riêng theo giá gây mê trong phẫu thuật/thủ thuật mắt.</li><li>Ngày giường sau phẫu thuật phaco: áp dụng giá ngày giường ngoại khoa loại 3.</li>' : '<li>Giá phẫu thuật đã gồm chi phí gây mê hoặc gây tê; giá thủ thuật đã gồm thuốc tê, chưa gồm gây mê.</li>') +
+      '<li>Kỹ thuật thực hiện ở nhiều chuyên khoa áp dụng giá theo chuyên khoa thực hiện.</li></ul><p class="small mute">Nguồn: Luật BHYT (VBHN 2026), TT 35/2016/TT-BYT (VBHN 17/VBHN-BYT 31/12/2024), TT 04/2017/TT-BYT (VBHN 14/VBHN-BYT 19/8/2025). <a href="#/' + ck + '/vb">Danh sách văn bản</a></p>';
   }
 
   /* ---------- Văn bản ---------- */
@@ -397,12 +418,12 @@
       ['TT 25/2026/TT-BYT', '30/6/2026', 'Sửa đổi TT 32/2023, TT 23/2024 và một số thông tư', 'Lùi lộ trình: Phụ lục 01 đến 31/12/2027, Phụ lục 02 từ 01/01/2028. Mã kỹ thuật cột 2 Phụ lục 01 = số thứ tự kỹ thuật của TT 43/2013, TT 21/2017 (trừ mã BS_); phân loại phẫu thuật, thủ thuật TT 50/2014 tiếp tục áp dụng qua mã này. Điều 2, 3 hiệu lực 01/7/2026.', 'nguon/raw/tt25-2026.pdf', 'Đang áp dụng'],
       ['TT 50/2014/TT-BYT', '26/12/2014', 'Phân loại phẫu thuật, thủ thuật và định mức nhân lực', 'Phân loại phẫu thuật đặc biệt, loại I–III; thủ thuật đặc biệt, loại I–III. Áp dụng qua mã kỹ thuật Phụ lục 01.', '', 'Đang áp dụng']]],
     ['Quy trình kỹ thuật', [
-      ['QĐ 3517/QĐ-BYT', '12/11/2025', 'Hướng dẫn quy trình kỹ thuật về Mắt – Tập 1', '342 quy trình, xếp theo Phụ lục 02 TT 23/2024 (có bảng mã liên kết). Mỗi quy trình: đại cương, chỉ định, chống chỉ định, chuẩn bị (thuốc, thiết bị y tế), các bước, tai biến.', 'nguon/raw/qtkt-mat-tap1.pdf', 'Đang áp dụng'],
-      ['QĐ 3518/QĐ-BYT', '12/11/2025', 'Hướng dẫn quy trình kỹ thuật về Mắt – Tập 2', 'Áp dụng từ 01/01/2028 (sửa bởi QĐ 1986/QĐ-BYT ngày 01/7/2026). Chưa đưa vào app.', 'nguon/raw/kcb-98755.pdf', 'Áp dụng từ 2028'],
-      ['QĐ 3634/QĐ-BYT', '24/11/2025', 'Hướng dẫn quy trình kỹ thuật về Răng Hàm Mặt – Tập 1', '320 quy trình (hàm mặt, implant, nha chu, nội nha, chữa răng, phục hình, chỉnh nha, răng trẻ em…), có bảng mã liên kết với Phụ lục 01, 02.', 'nguon/raw/qtkt-rhm-tap1.pdf', 'Đang áp dụng'],
-      ['QĐ 3635/QĐ-BYT', '24/11/2025', 'Hướng dẫn quy trình kỹ thuật về Răng Hàm Mặt – Tập 2', '40 quy trình. Chưa đưa vào app.', '', ''],
-      ['QĐ 3207/QĐ-BYT', '29/8/2013', 'Hướng dẫn quy trình kỹ thuật chuyên ngành Răng Hàm Mặt (cũ)', '347 quy trình; MMH đã đối chiếu sản phẩm từng quy trình (dùng làm gợi ý MMH cho Răng Hàm Mặt).', 'nguon/raw/qd3207-rhm-2013.pdf', 'Tham khảo'],
-      ['QĐ 3906/QĐ-BYT', '12/10/2012', 'Quy trình kỹ thuật chuyên ngành Nhãn khoa (cũ)', 'Được thay thế dần bởi bộ quy trình về Mắt 2025.', '', 'Tham khảo']]],
+      ['QĐ 3517/QĐ-BYT', '12/11/2025', 'Hướng dẫn quy trình kỹ thuật về Mắt – Tập 1', '342 quy trình, xếp theo Phụ lục 02 TT 23/2024 (có bảng mã liên kết). Mỗi quy trình: đại cương, chỉ định, chống chỉ định, chuẩn bị (thuốc, thiết bị y tế), các bước, tai biến.', 'nguon/raw/qtkt-mat-tap1.pdf', 'Đang áp dụng', 'mat'],
+      ['QĐ 3518/QĐ-BYT', '12/11/2025', 'Hướng dẫn quy trình kỹ thuật về Mắt – Tập 2', 'Áp dụng từ 01/01/2028 (sửa bởi QĐ 1986/QĐ-BYT ngày 01/7/2026). Chưa đưa vào app.', 'nguon/raw/kcb-98755.pdf', 'Áp dụng từ 2028', 'mat'],
+      ['QĐ 3634/QĐ-BYT', '24/11/2025', 'Hướng dẫn quy trình kỹ thuật về Răng Hàm Mặt – Tập 1', '320 quy trình (hàm mặt, implant, nha chu, nội nha, chữa răng, phục hình, chỉnh nha, răng trẻ em…), có bảng mã liên kết với Phụ lục 01, 02.', 'nguon/raw/qtkt-rhm-tap1.pdf', 'Đang áp dụng', 'rhm'],
+      ['QĐ 3635/QĐ-BYT', '24/11/2025', 'Hướng dẫn quy trình kỹ thuật về Răng Hàm Mặt – Tập 2', '40 quy trình. Chưa đưa vào app.', '', '', 'rhm'],
+      ['QĐ 3207/QĐ-BYT', '29/8/2013', 'Hướng dẫn quy trình kỹ thuật chuyên ngành Răng Hàm Mặt (cũ)', '347 quy trình; MMH đã đối chiếu sản phẩm từng quy trình (dùng làm gợi ý MMH cho Răng Hàm Mặt).', 'nguon/raw/qd3207-rhm-2013.pdf', 'Tham khảo', 'rhm'],
+      ['QĐ 3906/QĐ-BYT', '12/10/2012', 'Quy trình kỹ thuật chuyên ngành Nhãn khoa (cũ)', 'Được thay thế dần bởi bộ quy trình về Mắt 2025.', '', 'Tham khảo', 'mat']]],
     ['Bảo hiểm y tế', [
       ['Luật BHYT (VBHN 2026)', '2008 · sửa 2024', 'Luật Bảo hiểm y tế 25/2008/QH12, sửa đổi bởi Luật 51/2024/QH15 (hiệu lực 01/7/2025)', 'Điều 21 phạm vi hưởng, Điều 22 mức hưởng, Điều 23 các trường hợp không được hưởng (thẩm mỹ; lác, tật khúc xạ từ đủ 18 tuổi; răng giả, kính mắt, mắt giả…).', 'nguon/raw/luat-bhyt-vbhn-2026.docx', 'Đang áp dụng'],
       ['TT 35/2016/TT-BYT · 17/VBHN-BYT', '31/12/2024', 'Danh mục và tỷ lệ, điều kiện thanh toán dịch vụ kỹ thuật y tế BHYT (hợp nhất)', 'Hợp nhất TT 35/2016, TT 50/2017, TT 13/2020, TT 39/2024 (hiệu lực 01/01/2025): nguyên tắc thanh toán, nhiều can thiệp trong 1 lần mổ, gây mê chuyên khoa Mắt, danh mục 1–3.', 'nguon/raw/vbhn17-2024-dvkt.pdf', 'Đang áp dụng'],
@@ -414,11 +435,12 @@
       ['QĐ 441/QĐ-BYT', '07/02/2025', 'Giá dịch vụ khám bệnh, chữa bệnh tại BV Đại học Y Dược – ĐHQG Hà Nội', 'Bản đăng trên Thư viện Pháp luật. Dùng làm giá tham chiếu thứ hai.', 'nguon/raw/gia-tvpl-642258.pdf', 'Tham chiếu'],
       ['TT 22/2023/TT-BYT', '17/11/2023', 'Giá dịch vụ BHYT thống nhất giữa bệnh viện cùng hạng (cũ)', 'Không còn áp dụng với cơ sở đã có quyết định giá mới.', 'nguon/raw/tt22-2023-pl.pdf', 'Hết áp dụng']]]
   ];
-  function docsPage() {
-    setNav('vb'); title('Văn bản');
-    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › Văn bản</div><h1 class="h1">Văn bản pháp quy</h1><div class="sub">Văn bản mới nhất dùng trong app · bản gốc lưu trong kho để đối chiếu</div>' +
+  function docsPage(ck) {
+    space(ck); setNav('vb'); title('Văn bản · ' + CK[ck].name);
+    app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/' + ck + '">' + CK[ck].name + '</a> › Văn bản</div>' + ckBadge(ck) + '<h1 class="h1" style="margin-top:8px">Văn bản pháp quy</h1><div class="sub">Văn bản mới nhất dùng cho ' + CK[ck].name.toLowerCase() + ' · bản gốc lưu trong kho để đối chiếu</div>' +
       DOCS.map(function (g) {
-        return '<h2 class="h2">' + g[0] + '</h2><div class="grid g2">' + g[1].map(function (d) {
+        var L = g[1].filter(function (d) { return !d[6] || d[6] === ck; });
+        return '<h2 class="h2">' + g[0] + '</h2><div class="grid g2">' + L.map(function (d) {
           var st = d[5] === 'Đang áp dụng' ? 'ok' : d[5] === 'Hết áp dụng' ? 'bad' : d[5] ? 'warn' : '';
           return '<div class="card"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start"><div><div class="lbl">' + esc(d[0]) + ' · ' + esc(d[1]) + '</div><div style="font-weight:700;color:var(--navy);margin-top:4px">' + esc(d[2]) + '</div></div>' + (d[5] ? '<span class="chip ' + st + '">' + esc(d[5]) + '</span>' : '') + '</div><div class="small" style="margin-top:8px">' + esc(d[3]) + '</div>' + (d[4] ? '<div style="margin-top:8px"><a class="small" href="' + d[4] + '" target="_blank" rel="noopener">Mở bản lưu ↗</a></div>' : '') + '</div>';
         }).join('') + '</div>';
@@ -432,9 +454,16 @@
     var run = debounce(function () {
       var q = inp.value; if (!q.trim()) { box.classList.remove('on'); return; }
       ensureAll().then(function () {
-        var r = search(q, DATA.mat.concat(DATA.rhm), 10); sel = -1;
-        box.innerHTML = r.length ? r.map(function (it) { return '<a href="#/k/' + it.id + '">' + esc(it.t) + '<br><small>' + CK[it.ck].name + ' · ' + esc(SEC[it.ck][it.sec] || '') + (it.pt.length ? ' · ' + it.pt.map(function (p) { return G[p.g].short; }).slice(0, 3).join(', ') : '') + '</small></a>'; }).join('') : '<a href="javascript:void 0"><small>Không thấy kỹ thuật phù hợp</small></a>';
-        box.classList.add('on');
+        var ln = function (it) { return '<a href="#/k/' + it.id + '">' + esc(it.t) + '<br><small>' + esc(SEC[it.ck][it.sec] || '') + (it.pt.length ? ' · ' + it.pt.map(function (p) { return G[p.g].short; }).slice(0, 3).join(', ') : '') + '</small></a>'; };
+        var ck = document.body.getAttribute('data-ck'), h = '';
+        if (CK[ck]) {
+          var r = search(q, DATA[ck], 10), o = search(q, DATA[OTHER[ck]]).length;
+          h = '<div class="qh">' + CK[ck].full + '</div>' + (r.length ? r.map(ln).join('') : '<a href="javascript:void 0"><small>Không thấy trong khu ' + CK[ck].name + '</small></a>') +
+            (o ? '<a class="qo" href="#/' + OTHER[ck] + '?q=' + encodeURIComponent(q) + '"><small>Có ' + o + ' kết quả ở khu ' + CK[OTHER[ck]].name + ' ›</small></a>' : '');
+        } else {
+          h = ['mat', 'rhm'].map(function (c) { var r = search(q, DATA[c], 5); return r.length ? '<div class="qh">' + CK[c].full + '</div>' + r.map(ln).join('') : ''; }).join('') || '<a href="javascript:void 0"><small>Không thấy kỹ thuật phù hợp</small></a>';
+        }
+        sel = -1; box.innerHTML = h; box.classList.add('on');
       });
     }, 150);
     inp.addEventListener('input', run);
@@ -456,11 +485,19 @@
     if (qi >= 0) { h.slice(qi + 1).split('&').forEach(function (kv) { var p = kv.split('='); qs[p[0]] = decodeURIComponent(p[1] || ''); }); h = h.slice(0, qi); }
     var p = h.split('/');
     window.scrollTo(0, 0);
-    if (p[0] === 'tt' && CK[p[1]]) { if (qs.s) { LS[p[1]] = LS[p[1]] || { sec: '', kind: '', prod: '', only: '', q: '', sort: 'pl', n: 60 }; LS[p[1]].sec = qs.s; } listPage(p[1], qs); }
-    else if (p[0] === 'k' && p[1]) detail(p[1], p[2]);
-    else if (p[0] === 'sp') p[1] ? prodOne(p[1]) : prodPage();
-    else if (p[0] === 'bhyt') bhytPage();
-    else if (p[0] === 'vb') docsPage();
+    if (p[0] === 'k' && p[1]) detail(p[1], p[2]);
+    else if (CK[p[0]]) {
+      var ck = p[0];
+      if (p[1] === 'sp') { if (p[2] && G[p[2]]) prodOne(p[2]); else prodPage(ck); }
+      else if (p[1] === 'bhyt') bhytPage(ck);
+      else if (p[1] === 'vb') docsPage(ck);
+      else listPage(ck, qs);
+    }
+    /* đường dẫn cũ (v1.0) */
+    else if (p[0] === 'tt' && CK[p[1]]) listPage(p[1], qs);
+    else if (p[0] === 'sp') { if (p[1] && G[p[1]]) prodOne(p[1]); else prodPage(CUR || 'mat'); }
+    else if (p[0] === 'bhyt') bhytPage(CUR || 'mat');
+    else if (p[0] === 'vb') docsPage(CUR || 'mat');
     else home();
   }
   $('#foot').innerHTML = 'MMH Wikipedia · Thủ thuật v' + VER + ' · dữ liệu dựng ngày ' + M.built.split('-').reverse().join('/') + ' từ văn bản Bộ Y tế và tài liệu sản phẩm MMH. Thông tin để tra cứu nội bộ; khi dùng chính thức đối chiếu văn bản gốc. <a href="#/vb">Nguồn</a>';

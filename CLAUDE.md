@@ -5,6 +5,10 @@ App tĩnh: `index.html` + `app.js` + `app.css`, dữ liệu `data/*.js` do `tool
 
 - Phần **Thủ thuật** (v1.0, 22/11/2026): Mắt + Răng Hàm Mặt theo TT 23/2024/TT-BYT (PL01 + PL02, sửa bởi TT 25/2026), QTKT 2025 (QĐ 3517, QĐ 3634),
   giá 2025 (QĐ 311/QĐ-BYT Huế, QĐ 441/QĐ-BYT ĐHYD Hà Nội), BHYT (Luật BHYT VBHN 2026, 17/VBHN-BYT, 14/VBHN-BYT), sản phẩm MMH.
+- **Hai khu tách riêng (v1.1, 22/11/2026, người dùng yêu cầu "đỡ bị lẫn")**: Nhãn khoa `#/mat…` và Nha khoa `#/rhm…` (`#/<khu>`, `/sp`, `/sp/<nhóm>`, `/bhyt`, `/vb`;
+  chi tiết `#/k/<id>` tự theo khu của kỹ thuật). Nút chuyển khu `#sw` ở đầu trang, màu nhấn theo khu (`body[data-ck]`, `--acc`); tìm kiếm, sản phẩm, BHYT (cột khu `v[6]` của
+  `meta.vtyt`), văn bản (cột 7 của `DOCS`) chỉ hiện nội dung khu đang mở; tìm không thấy ⇒ gợi ý "Có n kết quả ở khu kia". Trang chủ `#/` = chọn khu + tìm cả hai khu (kết quả chia 2 nhóm).
+  Tính năng mới phải theo khu, không trộn 2 chuyên khoa trên cùng một danh sách.
 - Máy Claude bị chặn trang luật / Bộ Y tế ⇒ tải văn bản bằng workflow **Tải văn bản gốc** (thêm dòng vào `nguon/fetch/urls.tsv`, push).
 - Đối chiếu sản phẩm: sửa `nguon/mmh/san-pham.json` (cụm từ `kw`, cụm chung trong `GENERIC` của build.py) rồi `python3 tools/build.py`.
   Không suy luận ngoài tài liệu: chữ "Theo QTKT" phải trích nguyên văn quy trình; "Gợi ý MMH" lấy từ MMH Library (`tools/import_mmh.py`).
