@@ -1,0 +1,141 @@
+{
+ "tt23-2024": {
+  "tries": [
+   {
+    "url": "https://vbpl.moj.gov.vn/TW/Lists/vbpq/Attachments/170581/23_2024_TT-BYT_618548.doc",
+    "err": "<urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "url": "https://vbpl.vn/TW/Lists/vbpq/Attachments/170581/23_2024_TT-BYT_618548.doc",
+    "err": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "ok": false
+ },
+ "tt23-2024-pdf": {
+  "tries": [],
+  "ok": true,
+  "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/4797/Nam2024/T10/TT%2023-%202024%20BYT%20danh%20muc%20ky%20thuat%20trong%20KCB.pdf",
+  "ext": "pdf",
+  "bytes": 5470081,
+  "sha1": "b06ac964899daed4cea3b9ffd97ba8dc6192732f",
+  "at": "2026-11-22 05:17",
+  "pages": 1649
+ },
+ "tt25-2026": {
+  "tries": [],
+  "ok": true,
+  "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/25-byt.signed.pdf",
+  "ext": "pdf",
+  "bytes": 851444,
+  "sha1": "cb553fd9f1f471e26b607cd2dc83c0535f63ed89",
+  "at": "2026-11-22 05:17",
+  "pages": 6
+ },
+ "tt39-2024": {
+  "tries": [
+   {
+    "url": "https://vbpl.vn/FileData/TW/Lists/vbpq/Attachments/171885/VanBanGoc_631518.pdf",
+    "err": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "ok": false
+ },
+ "tt39-2024-b": {
+  "tries": [],
+  "ok": true,
+  "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/39-byt.pdf",
+  "ext": "pdf",
+  "bytes": 769827,
+  "sha1": "427cfd3cd64079b3ce46b5fd6bb083c4f321be5e",
+  "at": "2026-11-22 05:17",
+  "pages": 12
+ },
+ "vbhn17-2024-dvkt": {
+  "tries": [],
+  "ok": true,
+  "url": "https://hiephoibenhvientu.com.vn/wp-content/uploads/2025/01/Thong-tu-17-vbhn-byt.pdf",
+  "ext": "pdf",
+  "bytes": 19264555,
+  "sha1": "a27274608439ee5b2964b752cbb8a4f4171c6d28",
+  "at": "2026-11-22 05:18",
+  "pages": 52
+ },
+ "vbhn14-2025-vtyt": {
+  "tries": [],
+  "ok": true,
+  "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/8/14-vbhn-byt.pdf",
+  "ext": "pdf",
+  "bytes": 1637428,
+  "sha1": "3c9b8b7dda449efea9e9b96378e2623497ce5112",
+  "at": "2026-11-22 05:18",
+  "pages": 53
+ },
+ "tt24-2025-vtyt": {
+  "tries": [],
+  "ok": true,
+  "url": "https://svhttdl.laichau.gov.vn/upload/105045/20250708/TT_24-2025_cua_BYT_a33d4.pdf",
+  "ext": "pdf",
+  "bytes": 843791,
+  "sha1": "1d0211b492834cc5395f6f5f8fd8999b28cc0099",
+  "at": "2026-11-22 05:18",
+  "pages": 10
+ },
+ "tt04-2017-vtyt": {
+  "tries": [
+   {
+    "url": "https://khanhhoa.baohiemxahoi.gov.vn:4545/File_Server_BHXH/documents//Content/FileManager/files/TT%2004.doc",
+    "err": "<urlopen error [Errno 104] Connection reset by peer>"
+   }
+  ],
+  "ok": false
+ },
+ "tt22-2023-pl": {
+  "tries": [
+   {
+    "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/documents/PL%20Thong%20tu%20BHYT%20T11.2023.pdf",
+    "err": "<urlopen error [Errno 104] Connection reset by peer>"
+   }
+  ],
+  "ok": false
+ },
+ "qtkt-mat-tap1": {
+  "tries": [],
+  "ok": true,
+  "url": "https://benhviendhnct.com.vn/benhviendhnct/wp-content/uploads/2026/05/Quy-trinh-ky-thuat-ve-mat-tap-1.pdf",
+  "ext": "pdf",
+  "bytes": 10345344,
+  "sha1": "14f983861c2ecb06aed58a41392d9ee4efc8aa41",
+  "at": "2026-11-22 05:18",
+  "pages": 1322
+ },
+ "kcb-98755": {
+  "tries": [],
+  "ok": true,
+  "url": "https://kcb.vn/upload/2005611/20260702/uploadiframe_openFile_do_98755.pdf",
+  "ext": "pdf",
+  "bytes": 575121,
+  "sha1": "160af4f32ead31fcbdb458253a5c6747d6a638b5",
+  "at": "2026-11-22 05:18",
+  "pages": 4
+ },
+ "qtkt-mat-sm": {
+  "tries": [
+   {
+    "url": "https://benhviendakhoasongma.gov.vn/Uploads/Attachments/20260115-143633-quytrnhkthutchuynkhoamtnm2025.pdf",
+    "err": "HTTP Error 503: Service Unavailable"
+   }
+  ],
+  "ok": false
+ },
+ "gia-vietduc-2024": {
+  "tries": [],
+  "ok": true,
+  "url": "https://benhvienvietduc.org/wp-content/uploads/2024/11/Bang-gia-BV-Viet-Duc-VB-suasigned_241101_102323.pdf",
+  "ext": "pdf",
+  "bytes": 17711856,
+  "sha1": "2d8336ad5cb4a0cd8cadbcc1f7394f830348fd9b",
+  "at": "2026-11-22 05:18",
+  "pages": 792
+ }
+}
