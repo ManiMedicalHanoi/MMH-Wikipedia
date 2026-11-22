@@ -86,6 +86,10 @@
    {
     "url": "https://khanhhoa.baohiemxahoi.gov.vn:4545/File_Server_BHXH/documents//Content/FileManager/files/TT%2004.doc",
     "err": "<urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://bqllang.gov.vn/van-ban/vbpq-do-nha-nuoc-ban-hanh/6249-thong-tu-so-04-2017-tt-byt-ngay-14-4-2017-cua-bo-y-te-ban-hanh-danh-muc-va-ty-le-dieu-kien-thanh-toan-doi-voi-vat-tu-y-te-thuoc-pham-vi-duoc-huong-cua-nguoi-tham-gia-bao-hiem-y-te.html",
+    "err": "<urlopen error [Errno 110] Connection timed out>"
    }
   ],
   "ok": false
@@ -97,7 +101,13 @@
     "err": "<urlopen error [Errno 104] Connection reset by peer>"
    }
   ],
-  "ok": false
+  "ok": true,
+  "url": "https://yte.daklak.gov.vn/images_upload/imgND/BHKN/files/tt22.PDF",
+  "ext": "pdf",
+  "bytes": 710408,
+  "sha1": "fa6908044f2694b4a93e1f8ee314bd4ca47c594d",
+  "at": "2026-11-22 05:24",
+  "pages": 45
  },
  "qtkt-mat-tap1": {
   "tries": [],
@@ -137,5 +147,98 @@
   "sha1": "2d8336ad5cb4a0cd8cadbcc1f7394f830348fd9b",
   "at": "2026-11-22 05:18",
   "pages": 792
+ },
+ "tt50-2014": {
+  "tries": [
+   {
+    "url": "https://bvbdien.thuathienhue.gov.vn/UploadFiles/TinTuc/2016/1/27/50.2014.tt.bytphau_thuat_thu_thuat(1).doc",
+    "err": "<urlopen error [Errno -2] Name or service not known>"
+   }
+  ],
+  "ok": false
+ },
+ "luat-bhyt-vbhn-2026": {
+  "tries": [],
+  "ok": true,
+  "url": "https://vov4.vov.vn/sites/default/files/documents/document224/2026%20-%20LUAT%20BHYT%20-%20VBHN.docx",
+  "ext": "docx",
+  "bytes": 45146,
+  "sha1": "2f0c94ecba4ab27227eb96882493f6b8a39a5852",
+  "at": "2026-11-22 05:24",
+  "tables": 2,
+  "rows": 3
+ },
+ "gia-tvpl-642258": {
+  "tries": [],
+  "ok": true,
+  "url": "https://cdn.thuvienphapluat.vn/uploads/DanLuat-BanAn/2025/2/642258.pdf",
+  "ext": "pdf",
+  "bytes": 2716920,
+  "sha1": "81ede85ce35d9f10a0d9b80e558afaac94799619",
+  "at": "2026-11-22 05:24",
+  "pages": 543
+ },
+ "gia-hue-311-2025": {
+  "tries": [],
+  "ok": true,
+  "url": "https://static.luatvietnam.vn/xem-noi-dung-file-quyet-dinh-311-qd-byt-2025-gia-kham-chua-benh-ap-dung-tai-benh-vien-truong-dai-hoc-y-duoc-hue-387244-d1/uploaded/vietlawfile/2025/2/311_qd_byt_030225171841.pdf.aspx",
+  "ext": "pdf",
+  "bytes": 19212427,
+  "sha1": "5e8385e134a74fac1606814dc2dff4d824cea873",
+  "at": "2026-11-22 05:24",
+  "pages": 955
+ },
+ "gia-ninhhoa-2025": {
+  "tries": [],
+  "ok": true,
+  "url": "https://benhvienninhhoa.khanhhoa.gov.vn/TMBAOGIA/PL3%20BV%20%C4%90KKV%20Ninh%20H%C3%B2a%20gi%C3%A1%20DVKT%20theo%20NQ157%20%C3%A1p%20d%E1%BB%A5ng%2001.01.2025.pdf",
+  "ext": "pdf",
+  "bytes": 4450508,
+  "sha1": "9a087c770c11c848c52bebd6aa8252769e5053dc",
+  "at": "2026-11-22 05:24",
+  "pages": 378
+ },
+ "gia-hatinh-2025": {
+  "tries": [
+   {
+    "url": "https://honglinh.hatinh.gov.vn/portal/DinhKemTinBai/2024-12/217.PhuLuc3.NQ.GiaDichVu.KhamChuaBenh.BanHanh.xlsx(24.12.2024_08h13p39)_signed_N6zz0LgOIk6ImRzm.pdf",
+    "err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)>"
+   }
+  ],
+  "ok": false
+ },
+ "qtkt-rhm-tap1": {
+  "tries": [
+   {
+    "url": "https://www.quangtrihospital.vn/vi/download/Tai-lieu-tham-khao/Huong-dan-quy-trinh-ky-thuat-ve-Rang-Ham-Mat-Tap-1.html",
+    "err": "không phải file văn bản (html, 90346 byte)"
+   }
+  ],
+  "ok": true,
+  "url": "https://benhviendhnct.com.vn/benhviendhnct/wp-content/uploads/2026/05/Quy-trinh-ky-thuat-ve-rang-ham-mat-tap-1.pdf",
+  "ext": "pdf",
+  "bytes": 23075449,
+  "sha1": "9c941ed38c4a6a97df9bd6969e27579f6e42dbb0",
+  "at": "2026-11-22 05:24",
+  "pages": 1119
+ },
+ "qd3207-rhm-2013": {
+  "tries": [],
+  "ok": true,
+  "url": "https://kcb.vn/upload/2005611/20210723/R%C4%83ng-H%C3%A0m-M%E1%BA%B7t.pdf",
+  "ext": "pdf",
+  "bytes": 4286735,
+  "sha1": "30e55d283e08feec41de559f672c209fe91feb0c",
+  "at": "2026-11-22 05:24",
+  "pages": 920
+ },
+ "qtkt-mat-tap1-page": {
+  "tries": [
+   {
+    "url": "https://benhviendhnct.com.vn/benhviendhnct/quy-trinh-ky-thuat/quy-trinh-ky-thuat-ve-mat",
+    "err": "HTTP Error 404: Not Found"
+   }
+  ],
+  "ok": false
  }
 }
