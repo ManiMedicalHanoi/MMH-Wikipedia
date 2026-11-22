@@ -1,0 +1,3392 @@
+{
+ "dao": [
+  {
+   "id": "phaco",
+   "vi": "Phẫu thuật đục thủy tinh thể (Phaco)",
+   "steps": [
+    {
+     "t": "Cổng bên khoảng 1 mm",
+     "f": [
+      "Dao tạo cổng bên",
+      "Dao thẳng",
+      "Dao MVR và dao tạo cổng"
+     ],
+     "codes": "MSP10, MSP10L; MST15, MST22, MST15MK, MST22MK; MVR",
+     "why": "MSP cho đường rạch chính xác 1,0 mm, đầu dao ngắn 3,5 mm; MST-MK có vạch 1,0 và 1,2 mm."
+    },
+    {
+     "t": "Đường rạch chính giác mạc trong",
+     "f": [
+      "Dao rạch"
+     ],
+     "codes": "MSL20 đến MSL30 (phổ biến MSL22, MSL24); MSL-SK",
+     "why": "Đường hầm trong nhu mô giúp vết rạch tự đóng; bề rộng theo cỡ đầu Phaco và súng bơm IOL."
+    },
+    {
+     "t": "Mắt sâu hoặc khe mi hẹp",
+     "f": [
+      "Dao rạch"
+     ],
+     "codes": "MSL20SH đến MSL30SH",
+     "why": "Đầu ngắn hơn 2 mm, vạch 1,5 và 2,0 mm định hướng độ sâu."
+    },
+    {
+     "t": "Đường rạch chính khi dùng súng bơm IOL",
+     "f": [
+      "Dao rạch"
+     ],
+     "codes": "MSL18AB đến MSL34AB",
+     "why": "Vết rạch vòm tự đóng tốt; chọn theo W, không mở rộng sau khi rạch."
+    },
+    {
+     "t": "Biến thể đường hầm củng mạc: rạch rãnh",
+     "f": [
+      "Dao thẳng",
+      "Dao tạo rãnh"
+     ],
+     "codes": "MST00 đến MST45; MDP30, MDP35",
+     "why": "MDP cho độ sâu rãnh nhất quán 300 hoặc 350 µm."
+    },
+    {
+     "t": "Biến thể đường hầm củng mạc: tạo đường hầm",
+     "f": [
+      "Dao lưỡi liềm"
+     ],
+     "codes": "MCU20, MCU26, MCD26, MCS26, MCU20SH, MCU26SH",
+     "why": "Góc gập 60°, tiến lưỡi vào giác mạc trong và lắc nhẹ qua lại."
+    },
+    {
+     "t": "Mở rộng vết mổ đặt IOL",
+     "f": [
+      "Dao rạch R (cấy ghép)"
+     ],
+     "codes": "MRS26 đến MRS55",
+     "why": "Mở rộng tới bề rộng cần cho thủy tinh thể nhân tạo."
+    }
+   ]
+  },
+  {
+   "id": "lri",
+   "vi": "Rạch thư giãn vùng rìa giác mạc (LRI)",
+   "steps": [
+    {
+     "t": "Rạch hình cung ở rìa giác mạc theo trục loạn thị",
+     "f": [
+      "Dao LRI"
+     ],
+     "codes": "MLR50, MLR55, MLR60, MLR65",
+     "why": "Chiều dài lưỡi lộ ra cố định 500 đến 650 µm; chọn theo độ dày giác mạc và nomogram."
+    }
+   ]
+  },
+  {
+   "id": "glaucoma",
+   "vi": "Phẫu thuật glôcôm: cắt bè củng giác mạc",
+   "steps": [
+    {
+     "t": "Rạch củng mạc, tạo vạt",
+     "f": [
+      "Dao thẳng"
+     ],
+     "codes": "MST00 đến MST45",
+     "why": "Đa dụng, chi phí hợp lý."
+    },
+    {
+     "t": "Rạch đúng độ sâu",
+     "f": [
+      "Dao tạo rãnh"
+     ],
+     "codes": "MDP30, MDP35",
+     "why": "Độ sâu rạch củng mạc nhất quán."
+    },
+    {
+     "t": "Tạo vạt củng mạc",
+     "f": [
+      "Dao lưỡi liềm"
+     ],
+     "codes": "MCU20, MCU26; MCB10, MCB12",
+     "why": "Cạnh sắc, nhiều lựa chọn cỡ và kiểu vát."
+    },
+    {
+     "t": "Bóc tách vạt",
+     "f": [
+      "Dao golf / dao cắt mộng"
+     ],
+     "codes": "MGL24",
+     "why": "Mặt dẫn hướng giữ lưỡi không ăn sâu; lưỡi dày 0,3 mm."
+    },
+    {
+     "t": "Chọc tiền phòng",
+     "f": [
+      "Dao tạo cổng bên",
+      "Dao thẳng",
+      "Dao MVR và dao tạo cổng"
+     ],
+     "codes": "MSP10, MST15, MVR",
+     "why": "Như cổng bên trong Phaco."
+    }
+   ]
+  },
+  {
+   "id": "pterygium",
+   "vi": "Cắt mộng thịt",
+   "steps": [
+    {
+     "t": "Bóc tách đầu mộng",
+     "f": [
+      "Dao golf / dao cắt mộng"
+     ],
+     "codes": "MGL24 (phần đầu tròn)",
+     "why": "Đầu tròn bóc tách mô, mặt dẫn hướng giúp không ăn sâu."
+    },
+    {
+     "t": "Cạo bề mặt giác mạc",
+     "f": [
+      "Dao golf / dao cắt mộng"
+     ],
+     "codes": "MGL24 (phần cạnh)",
+     "why": "Loại bỏ mô còn sót trên bề mặt giác mạc."
+    },
+    {
+     "t": "Lựa chọn khác",
+     "f": [
+      "Dao thẳng",
+      "Dao lưỡi liềm"
+     ],
+     "codes": "MST, MCU",
+     "why": "Mô mộng có thể được lấy đi bằng dao thẳng hoặc dao lưỡi liềm."
+    }
+   ]
+  },
+  {
+   "id": "vitrectomy",
+   "vi": "Cắt dịch kính qua pars plana",
+   "steps": [
+    {
+     "t": "Đường rạch củng mạc ban đầu (kỹ thuật 2 bước)",
+     "f": [
+      "Dao MVR và dao tạo cổng"
+     ],
+     "codes": "MVR19, MVR20, MVR23, MVR24 và bản góc A",
+     "why": "Kỹ thuật trocar 2 bước, ngày nay ít phổ biến."
+    },
+    {
+     "t": "Đường cắt củng mạc 25G",
+     "f": [
+      "Dao MVR và dao tạo cổng"
+     ],
+     "codes": "MVR25 (0,55 mm)",
+     "why": "Tương thích ống dẫn 23G."
+    },
+    {
+     "t": "Qua ống dẫn 25G, 27G",
+     "f": [
+      "Dao MVR và dao tạo cổng"
+     ],
+     "codes": "MPK25 (0,45 mm), MPK27 (0,40 mm)",
+     "why": "Dùng đầu lưỡi để bóc tách màng và các thủ thuật khác."
+    }
+   ]
+  }
+ ],
+ "chi": [
+  {
+   "id": "cataract",
+   "vi": "Đục thủy tinh thể",
+   "lede": "Phần lớn đường rạch nhỏ tự đóng kín nên ít phải khâu. Vẫn cần chỉ 10-0 khi thủng sớm hoặc rò thủy dịch; ca trẻ em thường phải khâu vì mô mềm, khó tự đóng.",
+   "points": [
+    "Phẫu thuật viên đục thủy tinh thể thường để sẵn nylon 10-0 cho trường hợp đường rạch không kín",
+    "10-0 Nylon khâu củng mạc, giác mạc (1406, 2002)",
+    "9-0, 8-0 lụa nguyên bản khâu kết mạc (1413, 2024)",
+    "4-0 lụa đen, kim tròn 13 mm cho mũi khâu kiểm soát (3801)"
+   ],
+   "codes": [
+    [
+     "1406",
+     "Khâu củng mạc, giác mạc"
+    ],
+    [
+     "2002",
+     "Khâu củng mạc, giác mạc"
+    ],
+    [
+     "1413",
+     "Khâu kết mạc"
+    ],
+    [
+     "2024",
+     "Khâu kết mạc"
+    ],
+    [
+     "3801",
+     "Mũi khâu kiểm soát"
+    ]
+   ]
+  },
+  {
+   "id": "iol-fix",
+   "vi": "Cố định IOL",
+   "lede": "Cần khâu khi bao thể thủy tinh rách hoặc lệch, không còn chỗ đỡ kính nội nhãn. Chỉ polypropylene bền, khó thoái hoá sau khi cấy.",
+   "points": [
+    "Cặp chỉ 2 đầu kim: kim thẳng + kim 7/16 vòng (1455P 10-0, 1465P 9-0)",
+    "Chỉ có vòng gắn sẵn vào kim (2451L 10-0, 2452L 9-0)",
+    "Chọn loại nào tùy kinh nghiệm và kỹ thuật của phẫu thuật viên",
+    "Kỹ thuật cố định càng IOL trong củng mạc (Yamane) thường không cần chỉ"
+   ],
+   "codes": [
+    [
+     "1455P",
+     "Đặt IOL thứ phát"
+    ],
+    [
+     "1465P",
+     "Đặt IOL thứ phát"
+    ],
+    [
+     "2451L",
+     "Đặt IOL thứ phát"
+    ],
+    [
+     "2452L",
+     "Đặt IOL thứ phát"
+    ]
+   ]
+  },
+  {
+   "id": "scleral-iol",
+   "vi": "Treo IOL củng mạc",
+   "lede": "Khâu củng mạc và kết mạc tại vị trí treo kính nội nhãn vào củng mạc.",
+   "points": [
+    "8-0 Nylon khâu củng mạc (1421, 2056)",
+    "8-0 PGA tự tiêu khâu kết mạc (1490, 2090)"
+   ],
+   "codes": [
+    [
+     "1421",
+     "Khâu củng mạc"
+    ],
+    [
+     "2056",
+     "Khâu củng mạc"
+    ],
+    [
+     "1490",
+     "Khâu kết mạc"
+    ],
+    [
+     "2090",
+     "Khâu kết mạc"
+    ]
+   ]
+  },
+  {
+   "id": "keratoplasty",
+   "vi": "Ghép giác mạc",
+   "lede": "Ba bước khâu: cố định vòng Flieringa, cố định tạm mảnh ghép 4 điểm, rồi khâu vắt giác mạc ghép bằng nylon 10-0.",
+   "points": [
+    "Vòng Flieringa khâu vào củng mạc qua kết mạc ở 4 điểm bằng lụa 7-0, giữ nhãn cầu không xẹp",
+    "Cố định tạm mảnh ghép ở 12, 3, 6, 9 giờ bằng lụa 8-0 hoặc 7-0; lụa nguyên bản màu xanh dễ phân biệt với nylon đen",
+    "Khâu vắt nylon 10-0 khoảng 24 mũi bằng một kim: cần chỉ chắc và kim giữ sắc suốt đường khâu",
+    "Kim 7/16 vòng (158°) cho khoảng cách điểm vào, điểm ra vừa đủ nên hay dùng 1404"
+   ],
+   "codes": [
+    [
+     "1404",
+     "Khâu giác mạc"
+    ],
+    [
+     "1406",
+     "Khâu giác mạc"
+    ]
+   ]
+  },
+  {
+   "id": "pterygium",
+   "vi": "Mộng thịt & hội chứng giãn kết mạc",
+   "lede": "Sau khi cắt bỏ mô mộng, khâu mảnh ghép kết mạc vào vị trí.",
+   "points": [
+    "Lụa được ưu tiên hơn nylon: đầu chỉ ít gây cộm, chi phí thấp",
+    "8-0 lụa nguyên bản hay dùng (2024); 8-0 PGA cũng dùng được nhưng có thể gây viêm khi tự tiêu",
+    "Kết mạc đôi khi khâu vào củng mạc nên dùng kim hình thang, không dùng kim tròn"
+   ],
+   "codes": [
+    [
+     "2024",
+     "Khâu kết mạc"
+    ],
+    [
+     "2056",
+     "Khâu cố định mi mắt"
+    ]
+   ]
+  },
+  {
+   "id": "chalazion",
+   "vi": "Lẹo & chắp mí",
+   "lede": "Khâu cố định bờ mi và khâu kết mạc sau khi xử lý lẹo, chắp.",
+   "points": [
+    "7-0 Nylon kim chích 8 mm khâu cố định bờ mi (3361)",
+    "8-0 Nylon hoặc lụa nguyên bản, kim hình thang (2056, 2024)",
+    "8-0 PGA khâu kết mạc (2090)"
+   ],
+   "codes": [
+    [
+     "3361",
+     "Khâu cố định bờ mi"
+    ],
+    [
+     "2056",
+     "Khâu cố định bờ mi"
+    ],
+    [
+     "2024",
+     "Khâu cố định bờ mi"
+    ],
+    [
+     "2090",
+     "Khâu kết mạc"
+    ]
+   ]
+  },
+  {
+   "id": "iris",
+   "vi": "Tái tạo mống mắt",
+   "lede": "Khâu khép khuyết mống mắt hoặc treo cố định IOL bằng chỉ polypropylene 10-0, kim hình thang cạnh cắt (kim thẳng hoặc 1/4 vòng).",
+   "points": [
+    "1470: kim thẳng 16 mm xuyên qua tiền phòng",
+    "2450: kim 1/4 vòng 13 mm",
+    "Polypropylene bền trong tiền phòng, không thoái hoá"
+   ],
+   "codes": [
+    [
+     "1470",
+     "Tái tạo mống mắt / treo IOL"
+    ],
+    [
+     "2450",
+     "Tái tạo mống mắt / treo IOL"
+    ]
+   ]
+  },
+  {
+   "id": "vitrectomy",
+   "vi": "Cắt dịch kính",
+   "lede": "Khâu đóng cổng củng mạc (MVR), khâu kết mạc tại cổng, giữ canuyn truyền dịch và mấu chặn thấu kính phẫu thuật.",
+   "points": [
+    "5-0 Polyester trắng, kim lục giác 1/4 vòng: giữ canuyn truyền dịch, mấu chặn thấu kính phẫu thuật (3370)",
+    "8-0, 7-0 Nylon khâu đóng cổng MVR (1421, 2058)",
+    "8-0 PGA khâu đóng kết mạc tại cổng MVR (2090)",
+    "7-0 lụa đen giữ mấu chặn thấu kính phẫu thuật (2008)"
+   ],
+   "codes": [
+    [
+     "3370",
+     "Giữ canuyn truyền dịch / mấu chặn thấu kính phẫu thuật"
+    ],
+    [
+     "1421",
+     "Khâu đóng cổng MVR"
+    ],
+    [
+     "2058",
+     "Khâu đóng cổng MVR"
+    ],
+    [
+     "2090",
+     "Khâu đóng kết mạc tại cổng MVR"
+    ],
+    [
+     "2008",
+     "Giữ mấu chặn thấu kính phẫu thuật"
+    ],
+    [
+     "2024",
+     "Khâu kết mạc"
+    ],
+    [
+     "1490",
+     "Khâu kết mạc"
+    ]
+   ]
+  },
+  {
+   "id": "retina",
+   "vi": "Bong võng mạc",
+   "lede": "Hai chỗ dùng chỉ khi độn củng mạc: mũi khâu kiểm soát ở cơ trực và khâu cố định vật liệu độn.",
+   "points": [
+    "Lụa 4-0 làm mũi khâu kiểm soát ở cơ trực ngoài, nơi đặt vật liệu độn (3801)",
+    "Cố định vật liệu độn bằng polyester bện không phủ: chắc, không thoái hoá sau khi cấy; nút thắt khó lỏng hơn chỉ sợi đơn, sợi cứng không giãn sau khi thắt (3370)",
+    "Củng mạc chỉ dày khoảng 1 mm nên khâu kiểu xúc nông với kim cong nhẹ 1/4 vòng (90°)",
+    "Mô dày, dai, nhiều lớp cần kim cắt tốt: kim lục giác (cạnh cắt giữa thân, dễ xúc đều) hoặc kim hình thang (cạnh cắt ở đáy, cần chú ý hướng kim)"
+   ],
+   "codes": [
+    [
+     "3801",
+     "Mũi khâu kiểm soát"
+    ],
+    [
+     "3370",
+     "Khâu cố định đai củng mạc"
+    ],
+    [
+     "2008",
+     "Khâu cơ vận nhãn"
+    ],
+    [
+     "2090",
+     "Khâu kết mạc / củng mạc"
+    ]
+   ]
+  },
+  {
+   "id": "glaucoma",
+   "vi": "Phẫu thuật glôcôm",
+   "lede": "Cắt bè củng giác mạc có ba chỗ dùng chỉ: mũi khâu kiểm soát quanh rìa giác mạc, khâu vạt củng mạc và khâu kết mạc.",
+   "points": [
+    "Mũi khâu kiểm soát lụa 6-0, 7-0 xuyên qua rìa giác mạc, kéo để bộc lộ củng mạc khi tạo vạt; chỉ bện không giãn khi kéo (2801)",
+    "Khâu vạt củng mạc bằng nylon 10-0 (1404, 1406), điều chỉnh dòng thủy dịch",
+    "Khâu kết mạc bằng kim tròn để hạn chế rò thủy dịch (1459, 1475)",
+    "Kim tròn thân chữ nhật (1430) chịu uốn gấp 1,6 lần kim tròn thường nên khâu được cả kết mạc và củng mạc cùng lúc"
+   ],
+   "codes": [
+    [
+     "1404",
+     "Khâu sau khi tạo vạt củng mạc"
+    ],
+    [
+     "1406",
+     "Khâu sau khi tạo vạt củng mạc"
+    ],
+    [
+     "1475",
+     "Khâu kết mạc"
+    ],
+    [
+     "1459",
+     "Khâu kết mạc"
+    ],
+    [
+     "1430",
+     "Khâu kết mạc"
+    ],
+    [
+     "2801",
+     "Mũi khâu kiểm soát"
+    ]
+   ]
+  },
+  {
+   "id": "strabismus",
+   "vi": "Phẫu thuật lác",
+   "lede": "Khâu cơ vận nhãn vào củng mạc ở vị trí mới.",
+   "points": [
+    "Chỉ tự tiêu được ưu tiên: mô dính và liền, không cần giữ lực căng lâu dài, không phải cắt chỉ, nên dùng PGA 5-0, 6-0",
+    "Vùng khâu là củng mạc dày khoảng 1 mm: kim hình thang hoặc kim lục giác, độ cong rất nhẹ 1/4 vòng (90°)",
+    "Lụa 4-0 cho mũi khâu kiểm soát (4359S, 3801)"
+   ],
+   "codes": [
+    [
+     "2890",
+     "Khâu kết mạc / củng mạc"
+    ],
+    [
+     "3391",
+     "Khâu kết mạc / củng mạc"
+    ],
+    [
+     "2056",
+     "Khâu kết mạc / củng mạc"
+    ],
+    [
+     "4359S",
+     "Mũi khâu kiểm soát"
+    ],
+    [
+     "3801",
+     "Mũi khâu kiểm soát"
+    ],
+    [
+     "2090",
+     "Khâu kết mạc"
+    ]
+   ]
+  },
+  {
+   "id": "eyelid",
+   "vi": "Tạo mí đôi & quặm mi",
+   "lede": "Định hình nếp mí bằng mũi khâu chữ U từ mặt sau mi.",
+   "points": [
+    "Kim dài 15 mm để khâu chữ U từ mặt sau mi, tránh chạm nhãn cầu",
+    "Nylon mềm, dễ thao tác; polypropylene xanh bền và dễ phân biệt với lông mi",
+    "Da chắc ở người trẻ có thể làm chỉ 7-0 bị kéo đứt, khi đó dùng 6-0"
+   ],
+   "codes": [
+    [
+     "3365",
+     "Định hình nếp mí"
+    ],
+    [
+     "3388",
+     "Định hình nếp mí"
+    ],
+    [
+     "3386",
+     "Định hình nếp mí"
+    ],
+    [
+     "3309",
+     "Định hình nếp mí"
+    ],
+    [
+     "3312",
+     "Định hình nếp mí"
+    ]
+   ]
+  },
+  {
+   "id": "ptosis",
+   "vi": "Sụp mi",
+   "lede": "Khâu cân cơ nâng mi vào sụn mi và khâu da.",
+   "points": [
+    "Dùng nylon hoặc polypropylene: chỉ tự tiêu có thể làm cân cơ nâng mi bong khỏi sụn mi khi tiêu, gây sụp mi tái phát",
+    "Sụn mi là mô dai nên dùng kim chích hoặc kim tròn đầu cắt",
+    "Khi vùi chỉ, nylon đen dễ thấy; polypropylene xanh ít lộ hơn và chắc hơn"
+   ],
+   "codes": [
+    [
+     "3361",
+     "Khâu da"
+    ],
+    [
+     "3364",
+     "Khâu da"
+    ],
+    [
+     "3382",
+     "Khâu da"
+    ],
+    [
+     "3314",
+     "Khâu da"
+    ],
+    [
+     "3317",
+     "Khâu da"
+    ]
+   ]
+  }
+ ],
+ "dia": [
+  {
+   "id": "xoang",
+   "vi": "Sửa soạn xoang trám",
+   "part": "Chữa răng, phục hồi",
+   "lede": "Lấy hết mô bệnh, giữ lại nhiều nhất mô lành: mũi kim cương cho men răng, mũi thép cắt chọn lọc cho ngà sâu.",
+   "steps": [
+    {
+     "t": "Mở đường vào xoang",
+     "d": "Tay khoan nhanh, mũi kim cương đầu cầu hoặc hình trụ mở rộng bờ men để thấy rõ xoang; luôn phun nước, lực nhẹ.",
+     "codes": [
+      "BR-45",
+      "BR-46",
+      "SF-12",
+      "SR-11"
+     ]
+    },
+    {
+     "t": "Xoang nhỏ",
+     "d": "Mũi đầu nhỏ mở đường vào tổn thương nhỏ, ít mất mô lành.",
+     "codes": [
+      "MI-S45",
+      "MI-45F",
+      "MI-53F",
+      "MI-61F",
+      "BC-42"
+     ]
+    },
+    {
+     "t": "Ngà sâu",
+     "d": "Ngà nhiễm khuẩn còn mềm được lấy bằng mũi thép cắt chọn lọc (MI Stainless Burs), không dùng mũi kim cương.",
+     "codes": []
+    }
+   ]
+  },
+  {
+   "id": "luu-giu",
+   "vi": "Tạo lưu giữ cho xoang trám",
+   "part": "Chữa răng, phục hồi",
+   "lede": "Mũi nón ngược tạo phần lẹm nhỏ ở đáy xoang để giữ chặt vật liệu trám.",
+   "steps": [
+    {
+     "t": "Tạo lẹm ở đáy xoang",
+     "d": "Đáy nón ngược rộng hơn cổ mũi: đặt sát đáy xoang rồi đi dọc theo thành xoang.",
+     "codes": [
+      "SI-45",
+      "SI-47",
+      "DI-41",
+      "DI-42"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ho-ranh",
+   "vi": "Trám bít hố rãnh",
+   "part": "Chữa răng, phục hồi",
+   "lede": "Khi rãnh sâu, khó làm sạch, mở rộng nhẹ bằng mũi rất nhỏ trước khi trám bít.",
+   "steps": [
+    {
+     "t": "Mở rộng rãnh",
+     "d": "Mũi đầu cầu rất nhỏ hoặc đầu nhọn nhỏ mở rộng rãnh, ít mất mô lành.",
+     "codes": [
+      "BR-48F",
+      "BR-49",
+      "MI-53F"
+     ]
+    },
+    {
+     "t": "Hoàn thiện",
+     "d": "Hạt mịn cho bề mặt nhẵn, ít bám mảng bám.",
+     "codes": [
+      "FO-20EF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "co-rang",
+   "vi": "Phục hồi cổ răng (xoang loại V)",
+   "part": "Chữa răng, phục hồi",
+   "lede": "Đặt chỉ co lợi, mở bờ men bằng mũi hình trụ, tạo lưu giữ bằng mũi nón ngược.",
+   "steps": [
+    {
+     "t": "Mở bờ men vùng cổ răng",
+     "d": "Mũi kim cương hình trụ mở bờ men gọn, rõ.",
+     "codes": [
+      "SF-21",
+      "SR-11"
+     ]
+    },
+    {
+     "t": "Tạo lưu giữ",
+     "d": "Mũi nón ngược hoặc nón ngược hai đầu tạo lưu giữ cho vật liệu trám.",
+     "codes": [
+      "SI-44",
+      "SI-45",
+      "DI-41"
+     ]
+    },
+    {
+     "t": "Hoàn thiện",
+     "d": "Hạt Fine, Extra Fine cho bề mặt nhẵn.",
+     "codes": [
+      "MI-45F"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rang-sua",
+   "vi": "Sửa soạn xoang răng sữa",
+   "part": "Chữa răng, phục hồi",
+   "lede": "Dòng CD có mũi ngắn, đầu nhỏ, hạt Fine, vừa khoang miệng trẻ em.",
+   "steps": [
+    {
+     "t": "Mở và sửa soạn xoang",
+     "d": "Chọn đầu cầu, trụ hoặc thuôn nhỏ theo kích thước tổn thương.",
+     "codes": [
+      "CD-50F",
+      "CD-51F",
+      "CD-58F",
+      "CD-59F"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mo-tuy",
+   "vi": "Mở tủy",
+   "part": "Nội nha",
+   "lede": "Mài mặt nhai, mở hết trần buồng tủy, làm thành buồng tủy, rồi tới miệng ống tủy.",
+   "steps": [
+    {
+     "t": "Mài mặt nhai",
+     "d": "Mũi thuôn đầu tròn hạt Coarse tạo đường vào trên mặt nhai.",
+     "codes": [
+      "TR-62C"
+     ]
+    },
+    {
+     "t": "Mở trần buồng tủy",
+     "d": "Mở hết trần buồng tủy và làm thành buồng tủy; EA-L10 dài hơn, dùng cho răng sau.",
+     "codes": [
+      "EA-10",
+      "EA-L10"
+     ]
+    },
+    {
+     "t": "Tạo hình đường vào",
+     "d": "Làm thành trục phía trong để có đường vào thẳng tới ống tủy.",
+     "codes": [
+      "FO-54C",
+      "EA-13"
+     ]
+    },
+    {
+     "t": "Miệng ống tủy",
+     "d": "Đầu cầu nhỏ trên thân dài làm vùng miệng ống tủy.",
+     "codes": [
+      "EA-40"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mai-cui",
+   "vi": "Sửa soạn cùi răng làm mão",
+   "part": "Phục hình cố định",
+   "lede": "Cùi răng đạt yêu cầu khi đủ chỗ cho vật liệu mão, thuôn đều để giữ mão, đường hoàn tất rõ và liền.",
+   "steps": [
+    {
+     "t": "Tạo rãnh định hướng độ sâu",
+     "d": "Mũi đánh dấu độ sâu tạo các rãnh sâu bằng nhau, làm mốc để mài đều.",
+     "codes": [
+      "DM-303",
+      "DM-305"
+     ]
+    },
+    {
+     "t": "Mài mặt nhai và các mặt xung quanh",
+     "d": "Mũi thuôn đầu tròn hoặc đầu phẳng, hạt Standard hoặc Coarse.",
+     "codes": [
+      "TR-13",
+      "TR-21",
+      "TF-12",
+      "SO-21"
+     ]
+    },
+    {
+     "t": "Tách điểm tiếp xúc",
+     "d": "Mũi mảnh, đầu nhọn đi qua điểm tiếp xúc mà ít chạm răng bên cạnh.",
+     "codes": [
+      "TC-26",
+      "TC-72",
+      "FO-21"
+     ]
+    },
+    {
+     "t": "Tạo đường hoàn tất",
+     "d": "Đầu tròn tạo chamfer; đầu phẳng tạo bờ vai; mũi RS tạo bờ vai có góc trong tròn cho mão toàn sứ.",
+     "codes": [
+      "TR-12",
+      "TF-11",
+      "RS-21",
+      "RS-31"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hoan-tat",
+   "vi": "Hoàn thiện cùi răng",
+   "part": "Phục hình cố định",
+   "lede": "Giữ nguyên hình dạng mũi, chuyển dần sang hạt mịn hơn: Standard, rồi Fine (vòng đỏ), rồi Extra Fine (vòng vàng).",
+   "steps": [
+    {
+     "t": "Làm nhẵn đường hoàn tất",
+     "d": "Đi lại đường hoàn tất bằng mũi cùng hình dạng, hạt mịn.",
+     "codes": [
+      "TR-11F",
+      "TR-11EF",
+      "TF-12F",
+      "TF-12EF"
+     ]
+    },
+    {
+     "t": "Hoàn thiện bờ vai tròn",
+     "d": "Hạt Extra Fine cho bờ vai của mão toàn sứ.",
+     "codes": [
+      "RS-21EF",
+      "RS-31EF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "veneer",
+   "vi": "Sửa soạn răng làm veneer",
+   "part": "Phục hình cố định",
+   "lede": "Lượng mài nhỏ, đều và nằm trong lớp men: tạo rãnh độ sâu trước, mài phần men giữa các rãnh sau.",
+   "steps": [
+    {
+     "t": "Tạo rãnh độ sâu",
+     "d": "Mũi đánh dấu độ sâu tạo các rãnh sâu bằng nhau trên mặt ngoài.",
+     "codes": [
+      "DM-103",
+      "DM-105"
+     ]
+    },
+    {
+     "t": "Mài mặt ngoài, rìa cắn, vát bờ men",
+     "d": "Đầu tròn, đầu nhọn hoặc ngọn lửa hợp với mặt cong của răng trước.",
+     "codes": [
+      "TR-20",
+      "TR-21",
+      "TC-21",
+      "FO-21"
+     ]
+    },
+    {
+     "t": "Hoàn thiện",
+     "d": "Hạt mịn cho bờ nhẵn.",
+     "codes": [
+      "TR-11EF",
+      "FO-20EF",
+      "FO-21EF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inlay",
+   "vi": "Sửa soạn xoang inlay, onlay",
+   "part": "Phục hình cố định",
+   "lede": "Xoang có thành mở ra ngoài, không lẹm, đáy phẳng, bờ vai không vát.",
+   "steps": [
+    {
+     "t": "Thành mở ra ngoài, đáy phẳng",
+     "d": "Mũi thuôn đầu phẳng hoặc trụ đầu phẳng.",
+     "codes": [
+      "TF-20",
+      "TF-21",
+      "TF-31",
+      "SF-11",
+      "SF-21"
+     ]
+    },
+    {
+     "t": "Inlay composite",
+     "d": "Dòng CR cho mặt nhai và mặt bên.",
+     "codes": [
+      "CR-11F",
+      "CR-12F",
+      "CR-21F",
+      "CR-22F"
+     ]
+    },
+    {
+     "t": "Hoàn thiện",
+     "d": "Hạt mịn cho bờ nhẵn.",
+     "codes": [
+      "TF-12EF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "toan-su",
+   "vi": "Mão toàn sứ, phục hình CAD/CAM",
+   "part": "Phục hình cố định",
+   "lede": "Dòng Pro dùng cho mão toàn sứ, zirconia; dòng CE dùng cho sửa soạn phục hình CAD/CAM.",
+   "steps": [
+    {
+     "t": "Sửa soạn cùi răng",
+     "d": "Đường hoàn tất dạng bờ vai rõ, góc trong tròn.",
+     "codes": [
+      "Pro-1",
+      "Pro-2",
+      "RS-21",
+      "CE-12"
+     ]
+    },
+    {
+     "t": "Hoàn thiện",
+     "d": "Cùng hình dạng, chuyển sang hạt mịn.",
+     "codes": [
+      "Pro-1EF",
+      "CE-12EF",
+      "CE-16EF"
+     ]
+    },
+    {
+     "t": "Mài, cắt zirconia",
+     "d": "Có thể phát tia lửa: lực nhẹ, phun nước, đeo kính bảo hộ.",
+     "codes": [
+      "Pro-5f"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ipr",
+   "vi": "Mài kẽ răng (IPR)",
+   "part": "Chỉnh nha và khớp cắn",
+   "lede": "Mài một lớp men rất mỏng ở mặt bên răng để có thêm khoảng sắp đều răng mà không phải nhổ răng.",
+   "steps": [
+    {
+     "t": "Đặt mũi",
+     "d": "Đặt đầu mũi từ phía cổ răng, đưa lên rìa cắn, đi từ phía má hoặc phía lưỡi.",
+     "codes": [
+      "IPR-01EF"
+     ]
+    },
+    {
+     "t": "Mài nhẹ",
+     "d": "Lực tối thiểu; tay khoan contra-angle tăng tốc 1:5, dưới 160.000 vòng/phút; dùng đê cao su.",
+     "codes": [
+      "IPR-01EF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "khop-can",
+   "vi": "Điều chỉnh khớp cắn",
+   "part": "Chỉnh nha và khớp cắn",
+   "lede": "Đánh dấu điểm chạm sớm bằng giấy cắn, mài từng ít bằng hạt mịn, kiểm tra lại sau mỗi lần mài.",
+   "steps": [
+    {
+     "t": "Mài điểm chạm sớm",
+     "d": "Hạt Fine (vòng đỏ), Extra Fine (vòng vàng) để bề mặt nhẵn sau khi mài.",
+     "codes": [
+      "TR-11EF",
+      "FO-20EF",
+      "FO-21EF",
+      "BR-48F"
+     ]
+    }
+   ]
+  }
+ ],
+ "qd3207": [
+  {
+   "stt": 1,
+   "ten": "Phẫu thuật dịch chuyển dây thần kinh răng dưới để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 2,
+   "ten": "Phẫu thuật ghép xương tự thân để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 3,
+   "ten": "Phẫu thuật ghép xương nhân tạo để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 4,
+   "ten": "Phẫu thuật ghép xương hỗn hợp để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 5,
+   "ten": "Phẫu thuật đặt xương nhân tạo và màng sinh học quanh Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 6,
+   "ten": "Phẫu thuật cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 7,
+   "ten": "Phẫu thuật nâng sàn xoang hàm sử dụng vật liệu tự thân để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 8,
+   "ten": "Phẫu thuật nâng sàn xoang hàm sử dụng vật liệu nhân tạo để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 9,
+   "ten": "Phẫu thuật nâng sàn xoang hàm sử dụng vật liệu hỗn hợp để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 10,
+   "ten": "Phẫu thuật tách xương để cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 11,
+   "ten": "Cấy ghép Implant tức thì sau nhổ răng",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 12,
+   "ten": "Phẫu thuật tăng lợi sừng hóa quanh Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 13,
+   "ten": "Phẫu thuật đặt lưới Titanium tái tạo xương có hướng dẫn",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 14,
+   "ten": "Máng hướng dẫn phẫu thuật cấy ghép Implant",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 15,
+   "ten": "Phẫu thuật tái tạo xương ổ răng bằng ghép xương tự thân lấy trong miệng",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 16,
+   "ten": "Phẫu thuật tái tạo xương ổ răng bằng ghép xương tự thân lấy ngoài miệng",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 17,
+   "ten": "Phẫu thuật tái tạo xương ổ răng bằng màng sinh học",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 18,
+   "ten": "Phẫu thuật tái tạo xương ổ răng bằng ghép xương đông khô",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 19,
+   "ten": "Phẫu thuật tái tạo xương ổ răng bằng ghép vật liệu thay thế xương",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 20,
+   "ten": "Phẫu thuật tái tạo xương sống hàm bằng ghép xương tự thân lấy trong miệng",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 21,
+   "ten": "Phẫu thuật tái tạo xương sống hàm bằng ghép xương tự thân lấy ngoài vòm miệng",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 22,
+   "ten": "Phẫu thuật tái tạo xương sống hàm bằng ghép xương đông khô và đặt màng sinh học",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 23,
+   "ten": "Phẫu thuật điều trị khuyết hổng chẽ chân răng bằng ghép xương nhân tạo và đặt màng sinh học",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 24,
+   "ten": "Phẫu thuật điều trị khuyết hổng chẽ chân răng bằng đặt màng sinh học",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 25,
+   "ten": "Phẫu thuật tái tạo xương sống hàm bằng ghép xương nhân tạo và đặt màng sinh học",
+   "sec": "A. Cấy ghép Implant & tái tạo xương (quy trình 1 đến 25)",
+   "ep": "EP17",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 26,
+   "ten": "Phẫu thuật che phủ chân răng bằng vạt trượt đẩy sang bên có ghép niêm mạc",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 27,
+   "ten": "Phẫu thuật che phủ chân răng bằng vạt niêm mạc toàn phần",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 28,
+   "ten": "Phẫu thuật che phủ chân răng bằng ghép mô liên kết dưới biểu mô",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 29,
+   "ten": "Phẫu thuật che phủ chân răng bằng vạt trượt sang hai bên",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 30,
+   "ten": "Phẫu thuật che phủ chân răng bằng đặt mạng sinh học",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 31,
+   "ten": "Phẫu thuật vạt niêm mạc làm tăng chiều cao lợi dính",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 32,
+   "ten": "Phẫu thuật ghép biểu mô và mô liên kết làm tăng chiều cao lợi dính",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 33,
+   "ten": "Phẫu thuật cắt lợi điều trị túi quang răng",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 34,
+   "ten": "Phẫu thuật vạt điều trị túi quang răng",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 35,
+   "ten": "Nạo túi lợi",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 36,
+   "ten": "Phẫu thuật tạo hình nhú lợi",
+   "sec": "B. Phẫu thuật nha chu (quy trình 26 đến 36)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI (gồm chỉ vi phẫu 6-0, 7-0)"
+  },
+  {
+   "stt": 37,
+   "ten": "Liên kết cố định răng lung lay bằng nẹp kim loại",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "EP15",
+   "sp": "DIA-BURS / Carbide (tạo rãnh), Composite MANIFill, MANIBond"
+  },
+  {
+   "stt": 38,
+   "ten": "Liên kết cố định răng lung lay bằng dây cung kim loại và composite",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "EP15",
+   "sp": "Composite MANIFill (EG, Micro, Nano, Flo-V), MANIBond, DIA-BURS"
+  },
+  {
+   "stt": 39,
+   "ten": "Điều trị áp- xe quanh răng cấp",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 40,
+   "ten": "Điều trị áp- xe quanh răng mãn",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 41,
+   "ten": "Điều trị viêm quanh răng",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 42,
+   "ten": "Chích áp- xe lợi",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 43,
+   "ten": "Kỹ thuật lấy cao răng",
+   "sec": "C. Điều trị nha chu (quy trình 37 đến 43)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 44,
+   "ten": "Điều trị tủy răng có sử dụng siêu âm và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nguội",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 45,
+   "ten": "Điều trị tủy răng có sử dụng siêu âm và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nóng chảy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 46,
+   "ten": "Điều trị tủy răng có sử dụng laser và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nguội",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 47,
+   "ten": "Điều trị tủy răng có sử dụng laser và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nóng chảy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 48,
+   "ten": "Điều trị tủy răng có sử dụng kính hiển vi và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nguội",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 49,
+   "ten": "Điều trị tủy răng có sử dụng kính hiển vi và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nóng chảy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 50,
+   "ten": "Điều trị tủy răng và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nguội",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 51,
+   "ten": "Điều trị tủy răng và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nóng chảy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 52,
+   "ten": "Điều trị tủy răng và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nguội có sử dụng trâm xoay máy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 53,
+   "ten": "Điều trị tủy răng và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nóng chảy có sử dụng trâm xoay máy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 54,
+   "ten": "Điều trị tủy răng và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nguội có sử dụng trâm xoay cầm tay",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 55,
+   "ten": "Điều trị tủy răng và hàn kín hệ thống ống tủy bằng GUTTA PERCHA nóng chảy có sử dụng trâm xoay cầm tay",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07–EP09",
+   "sp": "DIA-BURS EA, Carbide M15EZ, trâm gai, D Finders, Glide Finders, trâm K/H/Reamer/RT, JIZAI, U-Files, Paste Carriers, Spreaders, Pluggers"
+  },
+  {
+   "stt": 56,
+   "ten": "Chụp tủy bằng MTA",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP11",
+   "sp": "MI Stainless Burs, DIA-BURS BR, MANIBond + Composite (phục hồi sau che tủy)"
+  },
+  {
+   "stt": 57,
+   "ten": "Chụp tủy bằng HYDROXIT CANXI",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP11",
+   "sp": "MI Stainless Burs, DIA-BURS BR, MANIBond + Composite (phục hồi sau che tủy)"
+  },
+  {
+   "stt": 58,
+   "ten": "Lấy tủy buồng răng vĩnh viễn",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP07",
+   "sp": "DIA-BURS BR/EA, Carbide round, trâm gai"
+  },
+  {
+   "stt": 59,
+   "ten": "Điều trị tủy răng thủng sâu bằng MTA",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP10",
+   "sp": "Surgical Burs, DIA-BURS, D Finders"
+  },
+  {
+   "stt": 60,
+   "ten": "Điều trị tủy răng ngoài miệng ( răng bị bật, nhổ)",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP11",
+   "sp": "Trâm tay MANI, Paste Carriers"
+  },
+  {
+   "stt": 61,
+   "ten": "Điều trị tủy lại",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP10",
+   "sp": "Carbide 330P/1557/1958, Surgical Burs 25/28 mm, trâm H, Glide Finders, JIZAI 020/04, RT Files"
+  },
+  {
+   "stt": 62,
+   "ten": "Phẫu thuật nội nha có cắt bỏ chân răng và một phần thân răng",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP16",
+   "sp": "DIA-BURS, Carbide, chỉ khâu nha khoa"
+  },
+  {
+   "stt": 63,
+   "ten": "Phẫu thuật nội nha hàn ngược ống tủy",
+   "sec": "D. Nội nha (quy trình 44 đến 63)",
+   "ep": "EP16",
+   "sp": "Surgical/Carbide Burs, DIA-BURS, chỉ khâu vi phẫu"
+  },
+  {
+   "stt": 64,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng AMALGAM có sử dụng laser",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03",
+   "sp": "DIA-BURS, Carbide 330/245, MI Stainless Burs (không có vật liệu amalgam MMH)"
+  },
+  {
+   "stt": 65,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng COMPOSITE có sử dụng laser",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03–EP04",
+   "sp": "DIA-BURS, Carbide, MI Stainless, MANIBond, Composite MANIFill"
+  },
+  {
+   "stt": 66,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng Glass Ionomer Cement (GIC) có sử dụng laser",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03",
+   "sp": "DIA-BURS, Carbide, MI Stainless Burs (GIC: không thuộc danh mục MMH)"
+  },
+  {
+   "stt": 67,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng Glass Ionomer Cement kết hợp Composite",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03",
+   "sp": "DIA-BURS, Carbide, MI Stainless Burs (GIC: không thuộc danh mục MMH)"
+  },
+  {
+   "stt": 68,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng COMPOSITE",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03–EP04",
+   "sp": "DIA-BURS, Carbide, MI Stainless, MANIBond, Composite MANIFill"
+  },
+  {
+   "stt": 69,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng AMALGAM",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03",
+   "sp": "DIA-BURS, Carbide 330/245, MI Stainless Burs (không có vật liệu amalgam MMH)"
+  },
+  {
+   "stt": 70,
+   "ten": "Điều trị sâu ngà răng phục hồi bằng GLASSIONOMER CEMENT",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP03",
+   "sp": "DIA-BURS, Carbide, MI Stainless Burs (GIC: không thuộc danh mục MMH)"
+  },
+  {
+   "stt": 71,
+   "ten": "Phục hồi cổ răng bằng GLASS IONOMER CEMENT",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP05",
+   "sp": "DIA-BURS (mũi khoan; GIC không thuộc danh mục MMH)"
+  },
+  {
+   "stt": 72,
+   "ten": "Phục hồi cổ răng bằng COMPOSITE",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP05",
+   "sp": "DIA-BURS SI/DI, MANIBond, Flo-V, Flo, Micro, Nano"
+  },
+  {
+   "stt": 73,
+   "ten": "Phục hồi thân răng có sử dụng PIN ngà",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP09",
+   "sp": "DIA-BURS, Carbide, Composite Nano/EG, MANIBond"
+  },
+  {
+   "stt": 74,
+   "ten": "Phục hồi cổ răng bằng GLASS IONOMER CEMENT (GIC) có sử dụng laser",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP05",
+   "sp": "DIA-BURS (mũi khoan; GIC không thuộc danh mục MMH)"
+  },
+  {
+   "stt": 75,
+   "ten": "Phục hồi cổ răng bằng COMPOSITE có sử dụng laser",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP05",
+   "sp": "DIA-BURS SI/DI, MANIBond, Flo-V, Flo, Micro, Nano"
+  },
+  {
+   "stt": 76,
+   "ten": "Phục hồi thân răng bằng INLAY/ONLAY",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP13",
+   "sp": "DIA-BURS, Composite EG (inlay/onlay gián tiếp), MANIBond"
+  },
+  {
+   "stt": 77,
+   "ten": "Phục hồi thân răng có sử dụng chốt chân răng bằng các vật liệu khác nhau",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP09",
+   "sp": "Peeso Reamers, Gates Drills, Composite Nano/EG tái tạo cùi (MANIBond không dùng gắn chốt)"
+  },
+  {
+   "stt": 78,
+   "ten": "VENEER COMPOSITE trực tiếp",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP13",
+   "sp": "DIA-BURS DM/TR/FO, MANIBond, Composite Micro/Nano/EG"
+  },
+  {
+   "stt": 79,
+   "ten": "Tẩy trắng răng tủy sống có sử dụng đèn Plasma",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP06",
+   "sp": "MANIShine (Active White 35, Gingiva Guard, Remin Care)"
+  },
+  {
+   "stt": 80,
+   "ten": "Tẩy trắng răng tủy sống có sử dụng đèn Laser",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP06",
+   "sp": "MANIShine (Active White 35, Gingiva Guard, Remin Care)"
+  },
+  {
+   "stt": 81,
+   "ten": "Tẩy trắng răng nội tủy",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP06",
+   "sp": "MANIShine Active White 35 (răng mất tủy), DIA-BURS EA"
+  },
+  {
+   "stt": 82,
+   "ten": "Tẩy trắng răng tủy sống bằng máng thuốc",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "EP06",
+   "sp": "MANIShine (Active White 35, Gingiva Guard, Remin Care)"
+  },
+  {
+   "stt": 83,
+   "ten": "Điều trị nhạy cảm ngà bằng máng với thuốc chống ê buốt",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 84,
+   "ten": "Điều trị nhạy cảm ngà bằng thuốc bôi (các loại)",
+   "sec": "E. Chữa răng & phục hồi (quy trình 64 đến 84)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 85,
+   "ten": "Chụp sứ kim loại thường gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 86,
+   "ten": "Chụp sứ TITANIUM gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 87,
+   "ten": "Chụp sứ kim loại quý gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 88,
+   "ten": "Chụp sứ toàn phần gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 89,
+   "ten": "Phục hình gắn CEMENT chụp sứ kim loại trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 90,
+   "ten": "Phục hình gắn CEMENT chụp sứ TITANIUM trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 91,
+   "ten": "Phục hình gắn CEMENT chụp sứ kim loại quý trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 92,
+   "ten": "Phục hình gắn CEMENT chụp sứ toàn phần trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 93,
+   "ten": "Cầu sứ kim loại gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 94,
+   "ten": "Cầu sứ TITANIUM gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 95,
+   "ten": "Cầu sứ kim loại quý gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 96,
+   "ten": "Cầu sứ CERCON gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 97,
+   "ten": "Cầu sứ toàn phần gắn bằng ốc vít trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 98,
+   "ten": "Cầu sứ kim loại thường gắn bằng CEMENT trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 99,
+   "ten": "Cầu sứ TITANIUM gắn bằng CEMENT trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 100,
+   "ten": "Cầu sứ kim loại quý gắn bằng CEMENT trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 101,
+   "ten": "Cầu sứ toàn phần gắn bằng CEMENT trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 102,
+   "ten": "Hàm giả toàn phần dạng cúc bấm tựa trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 103,
+   "ten": "Phục hình hàm giả toàn phần dạng thanh ngang tựa trên IMPLANT",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 104,
+   "ten": "Chụp nhựa",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 105,
+   "ten": "Chụp thép (KIM LOẠI)",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 106,
+   "ten": "Chụp hợp kim thường cần sứ",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 107,
+   "ten": "Chụp hợp kim thường cần nhựa",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 108,
+   "ten": "Chụp hợp kim TITANIUM cần sứ",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 109,
+   "ten": "Chụp sứ toàn phần",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 110,
+   "ten": "Chụp hợp kim quý cần sứ",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 111,
+   "ten": "Chụp sứ CERCON",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 112,
+   "ten": "Cầu nhựa",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 113,
+   "ten": "Cầu hợp kim thường (cầu thép)",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 114,
+   "ten": "Cầu kim loại cần nhựa",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 115,
+   "ten": "Cầu sứ kim loại thường",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 116,
+   "ten": "Cầu hợp kim TITANIUM cần sứ",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 117,
+   "ten": "Cầu hợp kim quý cần sứ",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 118,
+   "ten": "Cầu sứ toàn phần",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 119,
+   "ten": "Cầu sứ CERCON",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "DIA-BURS (TR, TF, RS, DM, FO, CR, Pro, CE), MANIBond (primer cho zirconia)"
+  },
+  {
+   "stt": 120,
+   "ten": "Phục hình chốt cùi đúc kim loại",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP09",
+   "sp": "Peeso Reamers, Gates Drills, DIA-BURS"
+  },
+  {
+   "stt": 121,
+   "ten": "Phục hình chốt cùi đúc TITANIUM",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP09",
+   "sp": "Peeso Reamers, Gates Drills, DIA-BURS"
+  },
+  {
+   "stt": 122,
+   "ten": "Phục hình chốt cùi đúc kim loại quý",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP09",
+   "sp": "Peeso Reamers, Gates Drills, DIA-BURS"
+  },
+  {
+   "stt": 123,
+   "ten": "Phục hình INLAY-ONLAY kim loại",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP13",
+   "sp": "DIA-BURS, MANIBond, Composite EG"
+  },
+  {
+   "stt": 124,
+   "ten": "Phục hình INLAY-ONLAY hợp kim TITAN",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP13",
+   "sp": "DIA-BURS, MANIBond, Composite EG"
+  },
+  {
+   "stt": 125,
+   "ten": "Phục hình răng bằng INLAY-ONLAY kim loại quí",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP13",
+   "sp": "DIA-BURS, MANIBond, Composite EG"
+  },
+  {
+   "stt": 126,
+   "ten": "Phục hình INLAY-ONLAY sứ toàn phần",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP13",
+   "sp": "DIA-BURS, MANIBond, Composite EG"
+  },
+  {
+   "stt": 127,
+   "ten": "Phục hình VENEER COMPOSITE gián tiếp",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP13",
+   "sp": "DIA-BURS, MANIBond, Composite EG"
+  },
+  {
+   "stt": 128,
+   "ten": "Phục hình VENEER sứ toàn phần",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP13",
+   "sp": "DIA-BURS DM/TC/TR/FO, MANIBond"
+  },
+  {
+   "stt": 129,
+   "ten": "Hàm giả tháo lắp bán phần nền nhựa thường",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 130,
+   "ten": "Hàm giả tháo lắp toàn phần nền nhựa thường",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 131,
+   "ten": "Hàm giả tháo lắp bán phần nền nhựa dẻo",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 132,
+   "ten": "Hàm giả tháo lắp toàn phần nền nhựa dẻo",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 133,
+   "ten": "Hàm khung kim loại",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 134,
+   "ten": "Hàm khung TITANIUM",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 135,
+   "ten": "Máng mở mặt nhai",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 136,
+   "ten": "Điều trị thói quen nghiến răng bằng máng",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 137,
+   "ten": "Tháo cầu răng giả",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "Carbide 330P, 330, 1557 (tháo chụp, cầu)"
+  },
+  {
+   "stt": 138,
+   "ten": "Tháo chụp răng giả",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "EP12",
+   "sp": "Carbide 330P, 330, 1557 (tháo chụp, cầu)"
+  },
+  {
+   "stt": 139,
+   "ten": "Sửa hàm giả gãy",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 140,
+   "ten": "Thêm răng cho hàm giả tháo lắp",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 141,
+   "ten": "Thêm móc cho hàm giả tháo lắp",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 142,
+   "ten": "Đêm hàm nhựa thường",
+   "sec": "F. Phục hình (quy trình 85 đến 142)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 143,
+   "ten": "Sử dung khí cụ cố định điều trị thói quen xấu mút môi",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 144,
+   "ten": "Sử dung khí cụ cố định điều trị thói quen xấu đẩy lưỡi",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 145,
+   "ten": "Sử dung khí cụ cố định điều trị thói quen xấu mút ngón tay",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 146,
+   "ten": "Kỹ thuật lấy lại khoảng bằng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 147,
+   "ten": "Nong rộng hàm bằng khí cụ cố định ốc nong nhanh",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 148,
+   "ten": "Nong rộng hàm bằng khí cụ QUAD HELIX",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 149,
+   "ten": "Nắn chỉnh mất cân xứng hàm chiều trước sau bằng khí cụ chức năng cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 150,
+   "ten": "Nắn chỉnh mất cân xứng hàm chiều trước sau bằng khí cụ chức năng cố định MARA",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 151,
+   "ten": "Nắn chỉnh răng/hàm dùng lực ngoài miệng sử dụng HEADGEAR",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 152,
+   "ten": "Điều trị chỉnh hình răng mặt sử dụng khí cụ FACE MASK và ốc nong nhanh",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 153,
+   "ten": "Nắn chỉnh mất cân xứng hàm chiều trước sau bằng khí cụ chức năng cố định CHIN-CUP",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 154,
+   "ten": "Duy trì kết quả điều trị nắn chỉnh răng bằng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 155,
+   "ten": "Sử dụng khí cụ cố định NANCE làm neo chặn trong điều trị nắn chỉnh răng",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 156,
+   "ten": "Sử dụng cung ngang vòm khẩu cái (TPA) làm neo chặn trong điều trị nắn chỉnh răng",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 157,
+   "ten": "Sử dụng cung lưỡi làm neo chặn trong điều trị nắn chỉnh răng",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 158,
+   "ten": "Nắn chỉnh răng sử dụng neo chặn bằng MICROIMPLANT",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 159,
+   "ten": "Nắn chỉnh răng xoay sử dụng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "EP18",
+   "sp": "IPR-01EF (mài kẽ răng khi cần tạo khoảng)"
+  },
+  {
+   "stt": 160,
+   "ten": "Nắn chỉnh răng mọc ngầm",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 161,
+   "ten": "Nắn chỉnh răng lạc chỗ sử dụng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "EP18",
+   "sp": "IPR-01EF (mài kẽ răng khi cần tạo khoảng)"
+  },
+  {
+   "stt": 162,
+   "ten": "Giữ khoảng răng bằng khí cụ cố định cung ngang khẩu cái (TPA)",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 163,
+   "ten": "Giữ khoảng răng bằng khí cụ cố định L.A",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 164,
+   "ten": "Nắn chỉnh mũi-cung hàm trước phẫu thuật điều trị khe hở môi-vòm miệng giai đoạn sớm",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 165,
+   "ten": "Nắn chỉnh cung hàm trước phẫu thuật điều trị khe hở môi-vòm miệng giai đoạn sớm.",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 166,
+   "ten": "Nắn chỉnh mũi trước phẫu thuật điều trị khe hở môi-vòm miệng giai đoạn sớm",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 167,
+   "ten": "Kỹ thuật làm dài thân răng lâm sàng sử dụng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 168,
+   "ten": "(tên trong danh mục bị cắt dòng; thân văn bản trùng tiêu đề mục 167)",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 169,
+   "ten": "Kỹ thuật dán mắc cài trực tiếp sử dụng chất gắn hóa trùng hợp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 170,
+   "ten": "Kỹ thuật dán mắc cài trực tiếp sử dụng đèn quang trùng hợp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 171,
+   "ten": "Gắn mắc cài mặt lưỡi bằng kỹ thuật gắn gián tiếp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 172,
+   "ten": "Gắn mắc cài mặt ngoài bằng kỹ thuật gắn gián tiếp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 173,
+   "ten": "Sử dụng mắc cài tự buộc trong nắn chỉnh răng",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 174,
+   "ten": "Làm lún răng cửa hàm dưới sử dụng dây cung ngược đường cong SPEE có bẻ LOOP",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 175,
+   "ten": "Làm lún răng cửa hàm dưới sử dụng dây cung tiện ích (UTILITY ARCHWIRE) và cung phụ",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 176,
+   "ten": "Làm trồi răng hàm nhỏ hàm dưới sử dụng khí cụ gắn chặt",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 177,
+   "ten": "Đóng khoảng răng sử dụng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "EP18",
+   "sp": "IPR-01EF (mài kẽ răng khi cần tạo khoảng)"
+  },
+  {
+   "stt": 178,
+   "ten": "Điều chỉnh độ nghiêng răng bằng khí cụ cố định",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "EP18",
+   "sp": "IPR-01EF (mài kẽ răng khi cần tạo khoảng)"
+  },
+  {
+   "stt": 179,
+   "ten": "Nắn chỉnh khối tiền hàm trước phẫu thuật cho trẻ khe hở môi- vòm miệng",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 180,
+   "ten": "Đóng khoảng bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 181,
+   "ten": "Nong rộng hàm bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 182,
+   "ten": "Nắn chỉnh mất cân xứng hàm chiều trước sau bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 183,
+   "ten": "Duy trì kết quả điều trị nắn chỉnh răng bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 184,
+   "ten": "Nắn chỉnh răng xoay sử dụng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 185,
+   "ten": "Giữ khoảng răng bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 186,
+   "ten": "Nắn chỉnh răng bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 187,
+   "ten": "Làm lún răng cửa hàm dưới sử dụng khí cụ tháo lắp tấm cắn (BITE PLATE) hoặc mặt phẳng nghiêng",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 188,
+   "ten": "Đóng khoảng bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 189,
+   "ten": "Sử dụng khí cụ tháo lắp điều trị thói quen xấu mút môi",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 190,
+   "ten": "Sử dụng khí cụ tháo lắp điều trị thói quen xấu đẩy lưỡi",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 191,
+   "ten": "Sử dụng khí cụ tháo lắp điều trị thói quen xấu mút ngón tay",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 192,
+   "ten": "Điều trị thói quen xấu thở miệng bằng khí cụ tháo lắp",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 193,
+   "ten": "Kỹ thuật gắn BAND",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 194,
+   "ten": "Máng điều trị đau khớp thái dương hàm",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 195,
+   "ten": "Máng nâng khớp cắn",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 196,
+   "ten": "Mài chỉnh khớp cắn",
+   "sec": "G. Chỉnh hình răng mặt & khớp cắn (quy trình 143 đến 196)",
+   "ep": "EP18",
+   "sp": "DIA-BURS hạt mịn F/EF (mài chỉnh)"
+  },
+  {
+   "stt": 197,
+   "ten": "Phẫu thuật nhổ răng lạc chỗ",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide 1559L, M15ZB, Surgical/Carbide round; chỉ khâu nha khoa"
+  },
+  {
+   "stt": 198,
+   "ten": "Phẫu thuật nhổ răng ngầm",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide 1559L, M15ZB, Surgical/Carbide round; chỉ khâu nha khoa"
+  },
+  {
+   "stt": 199,
+   "ten": "Phẫu thuật nhổ răng khôn mọc lệch hàm trên",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide 1559L, M15ZB, Surgical/Carbide round; chỉ khâu nha khoa"
+  },
+  {
+   "stt": 200,
+   "ten": "Phẫu thuật nhổ răng hàm dưới mọc lệch",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide 1559L, M15ZB, Surgical/Carbide round; chỉ khâu nha khoa"
+  },
+  {
+   "stt": 201,
+   "ten": "Phẫu thuật nhổ răng khôn mọc lệch có cắt thân",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide 1559L, M15ZB, Surgical/Carbide round; chỉ khâu nha khoa"
+  },
+  {
+   "stt": 202,
+   "ten": "Phẫu thuật nhổ răng mọc lệch có cắt thân, chia chân răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide 1559L, M15ZB, Surgical/Carbide round; chỉ khâu nha khoa"
+  },
+  {
+   "stt": 203,
+   "ten": "Nhổ răng vĩnh viễn",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; Carbide (chia chân răng khi cần)"
+  },
+  {
+   "stt": 204,
+   "ten": "Nhổ răng vĩnh viễn lung lay",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; Carbide (chia chân răng khi cần)"
+  },
+  {
+   "stt": 205,
+   "ten": "Nhổ chân răng vĩnh viễn",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; Carbide (chia chân răng khi cần)"
+  },
+  {
+   "stt": 206,
+   "ten": "Nhổ răng thừa",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; Carbide (chia chân răng khi cần)"
+  },
+  {
+   "stt": 207,
+   "ten": "Nhổ răng có tạo hình xương ổ răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; Carbide (chia chân răng khi cần)"
+  },
+  {
+   "stt": 208,
+   "ten": "Tạo hình xương ổ răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide/DIA-BURS, chỉ khâu nha khoa"
+  },
+  {
+   "stt": 209,
+   "ten": "Mở xương cho răng mọc",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide/DIA-BURS, chỉ khâu nha khoa"
+  },
+  {
+   "stt": 210,
+   "ten": "Nạo quanh cuống răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP16",
+   "sp": "Carbide/Surgical Burs, chỉ khâu nha khoa (5-0, 6-0)"
+  },
+  {
+   "stt": 211,
+   "ten": "Cắt cuống răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP16",
+   "sp": "Carbide/Surgical Burs, chỉ khâu nha khoa (5-0, 6-0)"
+  },
+  {
+   "stt": 212,
+   "ten": "Phẫu thuật cắt, nạo xương ổ răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Carbide/DIA-BURS, chỉ khâu nha khoa"
+  },
+  {
+   "stt": 213,
+   "ten": "Cắt lợi xơ cho răng mọc",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 214,
+   "ten": "Lợi trùm răng khôn hàm dưới",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 215,
+   "ten": "Cắt phanh niêm mạc để làm hàm giả",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 216,
+   "ten": "Phẫu thuật cắt phanh lưỡi",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 217,
+   "ten": "Phẫu thuật cắt phanh môi",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 218,
+   "ten": "Phẫu thuật cắt phanh má",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP15",
+   "sp": "Chỉ khâu nha khoa MANI"
+  },
+  {
+   "stt": 219,
+   "ten": "Cấy chuyển răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; trâm nội nha (điều trị tủy sau cấy)"
+  },
+  {
+   "stt": 220,
+   "ten": "Cấy lại răng bật khỏi ổ răng",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa; trâm nội nha (điều trị tủy sau cấy)"
+  },
+  {
+   "stt": 221,
+   "ten": "Điều trị viêm quanh thân răng cấp",
+   "sec": "H. Phẫu thuật răng & tiểu phẫu (quy trình 197 đến 221)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 222,
+   "ten": "Trám bít hố rãnh bằng GLASS IONOMER CEMENT quang trùng hợp",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP05",
+   "sp": "DIA-BURS (mở rộng hố rãnh); vật liệu GIC/sealant không thuộc danh mục MMH"
+  },
+  {
+   "stt": 223,
+   "ten": "Trám bít hố rãnh bằng COMPOSITE hóa trùng hợp",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP05",
+   "sp": "Flo-V, Flo, DIA-BURS (mở rộng hố rãnh)"
+  },
+  {
+   "stt": 224,
+   "ten": "Trám bít hố rãnh bằng COMPOSITE quang trùng hợp",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP05",
+   "sp": "Flo-V, Flo, DIA-BURS (mở rộng hố rãnh)"
+  },
+  {
+   "stt": 225,
+   "ten": "Trám bít hố rãnh bằng nhựa SEALANT",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP05",
+   "sp": "DIA-BURS (mở rộng hố rãnh); vật liệu GIC/sealant không thuộc danh mục MMH"
+  },
+  {
+   "stt": 226,
+   "ten": "Trám bít hố rãnh bằng GLASS IONOMER CEMENT",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP05",
+   "sp": "DIA-BURS (mở rộng hố rãnh); vật liệu GIC/sealant không thuộc danh mục MMH"
+  },
+  {
+   "stt": 227,
+   "ten": "Hàn răng không sang chấn với GLASS IONOMER CEMENT",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 228,
+   "ten": "Phòng ngừa sâu răng với thuốc bôi bề mặt",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 229,
+   "ten": "Phòng ngừa sâu răng với máng GEL FLUOR",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 230,
+   "ten": "Điều trị răng sữa viêm tủy có hồi phục",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP11",
+   "sp": "DIA-BURS CD/BR, MI Stainless, trâm gai, trâm K/H, Paste Carriers"
+  },
+  {
+   "stt": 231,
+   "ten": "Lấy tủy buồng răng sữa",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP11",
+   "sp": "DIA-BURS CD/BR, MI Stainless, trâm gai, trâm K/H, Paste Carriers"
+  },
+  {
+   "stt": 232,
+   "ten": "Điều trị tủy răng sữa",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP11",
+   "sp": "DIA-BURS CD/BR, MI Stainless, trâm gai, trâm K/H, Paste Carriers"
+  },
+  {
+   "stt": 233,
+   "ten": "Điều trị đóng cuống răng bằng CANXI HYDROXIT",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP11",
+   "sp": "DIA-BURS CD/BR, MI Stainless, trâm gai, trâm K/H, Paste Carriers"
+  },
+  {
+   "stt": 234,
+   "ten": "Điều trị đóng cuống răng bằng MTA",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP11",
+   "sp": "DIA-BURS CD/BR, MI Stainless, trâm gai, trâm K/H, Paste Carriers"
+  },
+  {
+   "stt": 235,
+   "ten": "Điều trị răng sữa sâu ngà hồi phục bằng AMALGAM",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP03",
+   "sp": "DIA-BURS CD, MI Stainless Burs"
+  },
+  {
+   "stt": 236,
+   "ten": "Điều trị răng sữa sâu ngà phục hồi bằng GLASS IONOMER CEMENT",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP03",
+   "sp": "DIA-BURS CD, MI Stainless Burs"
+  },
+  {
+   "stt": 237,
+   "ten": "Phục hồi thân răng sữa bằng chụp thép",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 238,
+   "ten": "Nhổ răng sữa",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa (khi cần)"
+  },
+  {
+   "stt": 239,
+   "ten": "Nhổ chân răng sữa",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "EP14",
+   "sp": "Chỉ khâu nha khoa (khi cần)"
+  },
+  {
+   "stt": 240,
+   "ten": "Chích áp-xe lợi ở trẻ em",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 241,
+   "ten": "Điều trị viêm lợi ở trẻ em (do mảng bám)",
+   "sec": "I. Răng hàm mặt trẻ em (quy trình 222 đến 241)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 242,
+   "ten": "Phẫu thuật điều trị gãy lồi cầu xương hàm dưới bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 243,
+   "ten": "Phẫu thuật điều trị gãy lồi cầu xương hàm dưới bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 244,
+   "ten": "Phẫu thuật điều trị gãy lồi cầu xương hàm dưới bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 245,
+   "ten": "Phẫu thuật điều trị gãy lồi cầu xương hàm dưới bằng vật liệu thay thế",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 246,
+   "ten": "Phẫu thuật điều trị gãy lồi cầu xương hàm dưới bằng ghép xương sụn tự thân",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 247,
+   "ten": "Phẫu thuật gãy LEFORT I bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 248,
+   "ten": "Phẫu thuật gãy LEFORT I bằng nẹp vít nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 249,
+   "ten": "Phẫu thuật gãy LEFORT I bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 250,
+   "ten": "Phẫu thuật điều trị gãy LEFORT II bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 251,
+   "ten": "Phẫu thuật gãy LEFORT II bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 252,
+   "ten": "Phẫu thuật gãy LEFORT II bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 253,
+   "ten": "Phẫu thuật gãy LEFORT III bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 254,
+   "ten": "Phẫu thuật gãy LEFORT III bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 255,
+   "ten": "Phẫu thuật gãy LEFORT III bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 256,
+   "ten": "Phẫu thuật điều trị can sai xương hàm trên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 257,
+   "ten": "Phẫu thuật điều trị can sai xương hàm dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 258,
+   "ten": "Phẫu thuật điều trị can sai xương gò má",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 259,
+   "ten": "Phẫu thuật chỉnh hình xương hàm trên 1 bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 260,
+   "ten": "Phẫu thuật chỉnh hình xương hàm trên 2 bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 261,
+   "ten": "Phẫu thuật chỉnh hình xương hàm dưới 1 bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 262,
+   "ten": "Phẫu thuật chỉnh hình xương dưới trên 2 bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 263,
+   "ten": "Phẫu thuật chỉnh hình xương 2 hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 264,
+   "ten": "Phẫu thuật điều trị dính khớp thái dương hàm một bên bằng ghép xương-sụn tự thân",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 265,
+   "ten": "Phẫu thuật điều trị dính khớp thái dương hàm một bên bằng ghép vật liệu thay thế",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 266,
+   "ten": "Phẫu thuật điều trị dính khớp thái dương hàm hai bên bằng ghép xương-sụn tự thân",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 267,
+   "ten": "Phẫu thuật điều trị dính khớp thái dương hàm một bên bằng ghép vật liệu thay thế",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 268,
+   "ten": "Phẫu thuật gãy hàm dưới bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 269,
+   "ten": "Phẫu thuật gãy hàm dưới bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 270,
+   "ten": "Phẫu thuật gãy hàm dưới bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 271,
+   "ten": "Phẫu thuật gãy gò má bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 272,
+   "ten": "Phẫu thuật gãy gò má bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 273,
+   "ten": "Phẫu thuật gãy gò má bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 274,
+   "ten": "Phẫu thuật gãy cung tiếp bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 275,
+   "ten": "Phẫu thuật gãy cung tiếp bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 276,
+   "ten": "Phẫu thuật gãy cung tiếp bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 277,
+   "ten": "Phẫu thuật gãy gò má cung tiếp bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 278,
+   "ten": "Phẫu thuật gãy gò má cung tiếp bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 279,
+   "ten": "Phẫu thuật gãy gò má cung tiếp bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 280,
+   "ten": "Điều trị gãy gò má, cung tiếp bằng nắn chỉnh có gây mê hoặc gây tê",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 281,
+   "ten": "Phẫu thuật điều trị gãy xương xương chính mũi bằng chỉ thép",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 282,
+   "ten": "Phẫu thuật điều trị gãy xương xương chính mũi bằng nẹp vít",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 283,
+   "ten": "Phẫu thuật xương chính mũi bằng nẹp vít tự tiêu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 284,
+   "ten": "Phẫu thuật điều trị gãy xương xương chính mũi bằng vật liệu thay thế",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 285,
+   "ten": "Điều trị gãy xương hàm dưới bằng máng phẫu thuật",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 286,
+   "ten": "Điều trị gãy xương hàm dưới bằng buộc cung cố định hai hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 287,
+   "ten": "Điều trị gãy xương hàm dưới bằng buộc nút IVY cố định hai hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 288,
+   "ten": "Điều trị gãy xương hàm dưới bằng vít neo chặn cố định hai hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 289,
+   "ten": "Phẫu thuật điều trị gãy lồi cầu xương hàm dưới bằng lấy bỏ lồi cầu",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 290,
+   "ten": "Điều trị bảo tồn gãy lồi cầu xương hàm dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 291,
+   "ten": "Phẫu thuật điều trị đa chấn thương vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 292,
+   "ten": "Phẫu thuật điều trị đa chấn thương vùng hàm mặt có ghép sụn xương tự thân",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 293,
+   "ten": "Phẫu thuật điều trị đa chấn thương vùng hàm mặt có ghép vật liệu thay thế",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 294,
+   "ten": "Phẫu thuật lấy dị vật vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 295,
+   "ten": "Điều trị vết thương phần mềm vùng hàm mặt có thiếu hổng tổ chức",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 296,
+   "ten": "Điều trị vết thương phần mềm vùng hàm mặt không thiếu hổng tổ chức",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 297,
+   "ten": "Phẫu thuật điều trị vết thương vùng hàm mặt do hỏa khí",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 298,
+   "ten": "Cố định tạm thời sơ cứu gãy xương hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 299,
+   "ten": "Dẫn lưu máu tụ vùng miệng- hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 300,
+   "ten": "Sơ cứu gãy xương vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 301,
+   "ten": "Điều trị sơ cứu vết thương phần mềm vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 302,
+   "ten": "Phẫu thuật tái tạo xương hàm dưới bằng ghép xương vi phẫu thuật",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 303,
+   "ten": "Phẫu thuật điều trị khuyết hổng phần mềm vùng hàm mặt bằng vi phẫu thuật",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 304,
+   "ten": "Phẫu thuật cắt đường rò luân nhĩ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 305,
+   "ten": "Phẫu thuật cắt đường rò môi dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 306,
+   "ten": "Phẫu thuật lấy sỏi ống WHARTON tuyến dưới hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 307,
+   "ten": "Phẫu thuật nối ống tuyến điều trị rò tuyến nước bọt mang tai",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 308,
+   "ten": "Phẫu thuật tạo đường dẫn trong miệng điều trị rò tuyến nước bọt mang tai",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 309,
+   "ten": "Điều trị viêm tuyến mang tai bằng bơm rửa thuốc qua lỗ ống tuyến",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 310,
+   "ten": "Phẫu thuật ghép xương tự thân tức thì sau cắt đoạn xương hàm trên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 311,
+   "ten": "Phẫu thuật ghép tức thì bằng vật liệu thay thế sau cắt đoạn xương hàm trên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 312,
+   "ten": "Phẫu thuật ghép xương tự thân tự do tức thì sau cắt đoạn xương hàm dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 313,
+   "ten": "Phẫu thuật cắt đoạn xương hàm dưới không đặt nẹp giữ chỗ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 314,
+   "ten": "Phẫu thuật đặt khung nẹp hợp kim tức thì sau cắt đoạn xương hàm dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 315,
+   "ten": "Phẫu thuật gây tê vùng điều trị cơn đau thần kinh V ngoại biên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 316,
+   "ten": "Phẫu thuật cắt nhánh dưới ổ mắt của dây thần kinh V",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 317,
+   "ten": "Phẫu thuật cắt nhánh hàm dưới của dây thần kinh V",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 318,
+   "ten": "Phẫu thuật tạo hình các khuyết hổng lớn vùng hàm mặt bằng vạt da cơ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 319,
+   "ten": "Cắt tuyến bọt mang tai bảo tồn dây thần kinh VII",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 320,
+   "ten": "Phẫu thuật cắt u men xương hàm dưới để lại bờ nền",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 321,
+   "ten": "Phẫu thuật cắt lồi xương",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 322,
+   "ten": "Phẫu thuật làm sâu ngách tiền đình",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 323,
+   "ten": "Phẫu thuật mở xoang hàm để lấy chóp răng hoặc răng ngầm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 324,
+   "ten": "Phẫu thuật điều trị viêm xoang hàm do răng",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 325,
+   "ten": "Phẫu thuật lấy xương chết, nạo rò điều trị viêm xương hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 326,
+   "ten": "Phẫu thuật điều trị hoại tử xương hàm do tia xạ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 327,
+   "ten": "Phẫu thuật điều trị hoại tử xương hàm và phần mềm do tia xạ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 328,
+   "ten": "Phẫu thuật cắt nang do răng xương hàm trên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 329,
+   "ten": "Phẫu thuật cắt nang không do răng xương hàm trên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 330,
+   "ten": "Phẫu thuật cắt nang do răng xương hàm trên có can thiệp xoang",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 331,
+   "ten": "Phẫu thuật cắt nang do răng xương hàm dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 332,
+   "ten": "Phẫu thuật cắt nang không do răng xương hàm dưới",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 333,
+   "ten": "Phẫu thuật rạch dẫn lưu viêm tấy lan tỏa vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 334,
+   "ten": "Phẫu thuật rạch dẫn lưu áp xe nông vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 335,
+   "ten": "Nắn sai khớp thái dương hàm",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 336,
+   "ten": "Nắn sai khớp thái dương hàm đến muộn có gây mê",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 337,
+   "ten": "Nắn sai khớp thái dương hàm đến muộn có gây tê",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 338,
+   "ten": "Chọc thăm dò u, nang vùng hàm mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 339,
+   "ten": "Điều trị u lợi bằng LASER",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 340,
+   "ten": "Điều trị viêm lợi loét hoại tử cấp",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 341,
+   "ten": "Phẫu thuật điều trị khe hở môi một bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 342,
+   "ten": "Phẫu thuật điều trị khe hở môi hai bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 343,
+   "ten": "Phẫu thuật điều trị khe hở chéo mặt một bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 344,
+   "ten": "Phẫu thuật điều trị khe hở chéo mặt hai bên",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 345,
+   "ten": "Phẫu thuật điều trị khe hở vòm miệng không toàn bộ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 346,
+   "ten": "Phẫu thuật điều trị khe hở vòm miệng toàn bộ",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  },
+  {
+   "stt": 347,
+   "ten": "Phẫu thuật điều trị khe hở ngang mặt",
+   "sec": "K. Phẫu thuật hàm mặt (quy trình 242 đến 347)",
+   "ep": "",
+   "sp": ""
+  }
+ ]
+}

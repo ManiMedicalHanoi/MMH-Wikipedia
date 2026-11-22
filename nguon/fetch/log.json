@@ -1,0 +1,153 @@
+{
+ "tt23-2024-pdf": {
+  "tries": [],
+  "ok": true,
+  "url": "https://storage-vnportal.vnpt.vn/cbg-ubnd/4797/Nam2024/T10/TT%2023-%202024%20BYT%20danh%20muc%20ky%20thuat%20trong%20KCB.pdf",
+  "ext": "pdf",
+  "bytes": 5470081,
+  "sha1": "b06ac964899daed4cea3b9ffd97ba8dc6192732f",
+  "at": "2026-11-22 05:17",
+  "pages": 1649
+ },
+ "tt25-2026": {
+  "tries": [],
+  "ok": true,
+  "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/25-byt.signed.pdf",
+  "ext": "pdf",
+  "bytes": 851444,
+  "sha1": "cb553fd9f1f471e26b607cd2dc83c0535f63ed89",
+  "at": "2026-11-22 05:17",
+  "pages": 6
+ },
+ "tt39-2024-b": {
+  "tries": [],
+  "ok": true,
+  "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/39-byt.pdf",
+  "ext": "pdf",
+  "bytes": 769827,
+  "sha1": "427cfd3cd64079b3ce46b5fd6bb083c4f321be5e",
+  "at": "2026-11-22 05:17",
+  "pages": 12
+ },
+ "vbhn17-2024-dvkt": {
+  "tries": [],
+  "ok": true,
+  "url": "https://hiephoibenhvientu.com.vn/wp-content/uploads/2025/01/Thong-tu-17-vbhn-byt.pdf",
+  "ext": "pdf",
+  "bytes": 19264555,
+  "sha1": "a27274608439ee5b2964b752cbb8a4f4171c6d28",
+  "at": "2026-11-22 05:18",
+  "pages": 52
+ },
+ "vbhn14-2025-vtyt": {
+  "tries": [],
+  "ok": true,
+  "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/8/14-vbhn-byt.pdf",
+  "ext": "pdf",
+  "bytes": 1637428,
+  "sha1": "3c9b8b7dda449efea9e9b96378e2623497ce5112",
+  "at": "2026-11-22 05:18",
+  "pages": 53
+ },
+ "tt24-2025-vtyt": {
+  "tries": [],
+  "ok": true,
+  "url": "https://svhttdl.laichau.gov.vn/upload/105045/20250708/TT_24-2025_cua_BYT_a33d4.pdf",
+  "ext": "pdf",
+  "bytes": 843791,
+  "sha1": "1d0211b492834cc5395f6f5f8fd8999b28cc0099",
+  "at": "2026-11-22 05:18",
+  "pages": 10
+ },
+ "tt22-2023-pl": {
+  "tries": [
+   {
+    "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/documents/PL%20Thong%20tu%20BHYT%20T11.2023.pdf",
+    "err": "<urlopen error [Errno 104] Connection reset by peer>"
+   }
+  ],
+  "ok": true,
+  "url": "https://yte.daklak.gov.vn/images_upload/imgND/BHKN/files/tt22.PDF",
+  "ext": "pdf",
+  "bytes": 710408,
+  "sha1": "fa6908044f2694b4a93e1f8ee314bd4ca47c594d",
+  "at": "2026-11-22 05:24",
+  "pages": 45
+ },
+ "qtkt-mat-tap1": {
+  "tries": [],
+  "ok": true,
+  "url": "https://benhviendhnct.com.vn/benhviendhnct/wp-content/uploads/2026/05/Quy-trinh-ky-thuat-ve-mat-tap-1.pdf",
+  "ext": "pdf",
+  "bytes": 10345344,
+  "sha1": "14f983861c2ecb06aed58a41392d9ee4efc8aa41",
+  "at": "2026-11-22 05:18",
+  "pages": 1322
+ },
+ "kcb-98755": {
+  "tries": [],
+  "ok": true,
+  "url": "https://kcb.vn/upload/2005611/20260702/uploadiframe_openFile_do_98755.pdf",
+  "ext": "pdf",
+  "bytes": 575121,
+  "sha1": "160af4f32ead31fcbdb458253a5c6747d6a638b5",
+  "at": "2026-11-22 05:18",
+  "pages": 4
+ },
+ "luat-bhyt-vbhn-2026": {
+  "tries": [],
+  "ok": true,
+  "url": "https://vov4.vov.vn/sites/default/files/documents/document224/2026%20-%20LUAT%20BHYT%20-%20VBHN.docx",
+  "ext": "docx",
+  "bytes": 45146,
+  "sha1": "2f0c94ecba4ab27227eb96882493f6b8a39a5852",
+  "at": "2026-11-22 05:24",
+  "tables": 2,
+  "rows": 3
+ },
+ "gia-tvpl-642258": {
+  "tries": [],
+  "ok": true,
+  "url": "https://cdn.thuvienphapluat.vn/uploads/DanLuat-BanAn/2025/2/642258.pdf",
+  "ext": "pdf",
+  "bytes": 2716920,
+  "sha1": "81ede85ce35d9f10a0d9b80e558afaac94799619",
+  "at": "2026-11-22 05:24",
+  "pages": 543
+ },
+ "gia-hue-311-2025": {
+  "tries": [],
+  "ok": true,
+  "url": "https://static.luatvietnam.vn/xem-noi-dung-file-quyet-dinh-311-qd-byt-2025-gia-kham-chua-benh-ap-dung-tai-benh-vien-truong-dai-hoc-y-duoc-hue-387244-d1/uploaded/vietlawfile/2025/2/311_qd_byt_030225171841.pdf.aspx",
+  "ext": "pdf",
+  "bytes": 19212427,
+  "sha1": "5e8385e134a74fac1606814dc2dff4d824cea873",
+  "at": "2026-11-22 05:24",
+  "pages": 955
+ },
+ "qtkt-rhm-tap1": {
+  "tries": [
+   {
+    "url": "https://www.quangtrihospital.vn/vi/download/Tai-lieu-tham-khao/Huong-dan-quy-trinh-ky-thuat-ve-Rang-Ham-Mat-Tap-1.html",
+    "err": "không phải file văn bản (html, 90346 byte)"
+   }
+  ],
+  "ok": true,
+  "url": "https://benhviendhnct.com.vn/benhviendhnct/wp-content/uploads/2026/05/Quy-trinh-ky-thuat-ve-rang-ham-mat-tap-1.pdf",
+  "ext": "pdf",
+  "bytes": 23075449,
+  "sha1": "9c941ed38c4a6a97df9bd6969e27579f6e42dbb0",
+  "at": "2026-11-22 05:24",
+  "pages": 1119
+ },
+ "qd3207-rhm-2013": {
+  "tries": [],
+  "ok": true,
+  "url": "https://kcb.vn/upload/2005611/20210723/R%C4%83ng-H%C3%A0m-M%E1%BA%B7t.pdf",
+  "ext": "pdf",
+  "bytes": 4286735,
+  "sha1": "30e55d283e08feec41de559f672c209fe91feb0c",
+  "at": "2026-11-22 05:24",
+  "pages": 920
+ }
+}
