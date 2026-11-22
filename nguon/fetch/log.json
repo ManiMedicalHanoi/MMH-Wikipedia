@@ -1,17 +1,4 @@
 {
- "tt23-2024": {
-  "tries": [
-   {
-    "url": "https://vbpl.moj.gov.vn/TW/Lists/vbpq/Attachments/170581/23_2024_TT-BYT_618548.doc",
-    "err": "<urlopen error [Errno -2] Name or service not known>"
-   },
-   {
-    "url": "https://vbpl.vn/TW/Lists/vbpq/Attachments/170581/23_2024_TT-BYT_618548.doc",
-    "err": "HTTP Error 403: Forbidden"
-   }
-  ],
-  "ok": false
- },
  "tt23-2024-pdf": {
   "tries": [],
   "ok": true,
@@ -31,15 +18,6 @@
   "sha1": "cb553fd9f1f471e26b607cd2dc83c0535f63ed89",
   "at": "2026-11-22 05:17",
   "pages": 6
- },
- "tt39-2024": {
-  "tries": [
-   {
-    "url": "https://vbpl.vn/FileData/TW/Lists/vbpq/Attachments/171885/VanBanGoc_631518.pdf",
-    "err": "HTTP Error 403: Forbidden"
-   }
-  ],
-  "ok": false
  },
  "tt39-2024-b": {
   "tries": [],
@@ -81,19 +59,6 @@
   "at": "2026-11-22 05:18",
   "pages": 10
  },
- "tt04-2017-vtyt": {
-  "tries": [
-   {
-    "url": "https://khanhhoa.baohiemxahoi.gov.vn:4545/File_Server_BHXH/documents//Content/FileManager/files/TT%2004.doc",
-    "err": "<urlopen error [Errno 104] Connection reset by peer>"
-   },
-   {
-    "url": "https://bqllang.gov.vn/van-ban/vbpq-do-nha-nuoc-ban-hanh/6249-thong-tu-so-04-2017-tt-byt-ngay-14-4-2017-cua-bo-y-te-ban-hanh-danh-muc-va-ty-le-dieu-kien-thanh-toan-doi-voi-vat-tu-y-te-thuoc-pham-vi-duoc-huong-cua-nguoi-tham-gia-bao-hiem-y-te.html",
-    "err": "<urlopen error [Errno 110] Connection timed out>"
-   }
-  ],
-  "ok": false
- },
  "tt22-2023-pl": {
   "tries": [
    {
@@ -129,34 +94,6 @@
   "at": "2026-11-22 05:18",
   "pages": 4
  },
- "qtkt-mat-sm": {
-  "tries": [
-   {
-    "url": "https://benhviendakhoasongma.gov.vn/Uploads/Attachments/20260115-143633-quytrnhkthutchuynkhoamtnm2025.pdf",
-    "err": "HTTP Error 503: Service Unavailable"
-   }
-  ],
-  "ok": false
- },
- "gia-vietduc-2024": {
-  "tries": [],
-  "ok": true,
-  "url": "https://benhvienvietduc.org/wp-content/uploads/2024/11/Bang-gia-BV-Viet-Duc-VB-suasigned_241101_102323.pdf",
-  "ext": "pdf",
-  "bytes": 17711856,
-  "sha1": "2d8336ad5cb4a0cd8cadbcc1f7394f830348fd9b",
-  "at": "2026-11-22 05:18",
-  "pages": 792
- },
- "tt50-2014": {
-  "tries": [
-   {
-    "url": "https://bvbdien.thuathienhue.gov.vn/UploadFiles/TinTuc/2016/1/27/50.2014.tt.bytphau_thuat_thu_thuat(1).doc",
-    "err": "<urlopen error [Errno -2] Name or service not known>"
-   }
-  ],
-  "ok": false
- },
  "luat-bhyt-vbhn-2026": {
   "tries": [],
   "ok": true,
@@ -188,25 +125,6 @@
   "at": "2026-11-22 05:24",
   "pages": 955
  },
- "gia-ninhhoa-2025": {
-  "tries": [],
-  "ok": true,
-  "url": "https://benhvienninhhoa.khanhhoa.gov.vn/TMBAOGIA/PL3%20BV%20%C4%90KKV%20Ninh%20H%C3%B2a%20gi%C3%A1%20DVKT%20theo%20NQ157%20%C3%A1p%20d%E1%BB%A5ng%2001.01.2025.pdf",
-  "ext": "pdf",
-  "bytes": 4450508,
-  "sha1": "9a087c770c11c848c52bebd6aa8252769e5053dc",
-  "at": "2026-11-22 05:24",
-  "pages": 378
- },
- "gia-hatinh-2025": {
-  "tries": [
-   {
-    "url": "https://honglinh.hatinh.gov.vn/portal/DinhKemTinBai/2024-12/217.PhuLuc3.NQ.GiaDichVu.KhamChuaBenh.BanHanh.xlsx(24.12.2024_08h13p39)_signed_N6zz0LgOIk6ImRzm.pdf",
-    "err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)>"
-   }
-  ],
-  "ok": false
- },
  "qtkt-rhm-tap1": {
   "tries": [
    {
@@ -231,14 +149,5 @@
   "sha1": "30e55d283e08feec41de559f672c209fe91feb0c",
   "at": "2026-11-22 05:24",
   "pages": 920
- },
- "qtkt-mat-tap1-page": {
-  "tries": [
-   {
-    "url": "https://benhviendhnct.com.vn/benhviendhnct/quy-trinh-ky-thuat/quy-trinh-ky-thuat-ve-mat",
-    "err": "HTTP Error 404: Not Found"
-   }
-  ],
-  "ok": false
  }
 }

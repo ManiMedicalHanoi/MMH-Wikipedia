@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MMH Wikipedia · Thủ thuật nhãn khoa &amp; răng hàm mặt</title>
+<meta name="description" content="Tra cứu thủ thuật, phẫu thuật nhãn khoa và răng hàm mặt theo danh mục kỹ thuật Bộ Y tế (TT 23/2024), quy trình kỹ thuật 2025, giá và bảo hiểm y tế, kèm sản phẩm MMH đáp ứng.">
+<meta name="theme-color" content="#2C4A5E">
+<link rel="icon" href="img/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="stylesheet" href="app.css?v=1.0">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/"><span class="logo"><img src="img/mani.png" alt="MANI"></span><span>MMH WIKIPEDIA<small>Thủ thuật · BHYT · Sản phẩm MMH</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-k="home">Trang chủ</a>
+      <a href="#/tt/mat" data-k="mat">Nhãn khoa</a>
+      <a href="#/tt/rhm" data-k="rhm">Răng hàm mặt</a>
+      <a href="#/sp" data-k="sp">Sản phẩm MMH</a>
+      <a href="#/bhyt" data-k="bhyt">BHYT &amp; vật tư</a>
+      <a href="#/vb" data-k="vb">Văn bản</a>
+    </nav>
+    <div class="qs" id="qs">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="qsIn" type="search" placeholder="Tìm thủ thuật, mã kỹ thuật…" autocomplete="off" aria-label="Tìm nhanh">
+      <div class="res" id="qsRes"></div>
+    </div>
+  </div>
+</header>
+<main id="app" class="wrap page"><div class="loading">Đang tải…</div></main>
+<footer class="wrap foot" id="foot"></footer>
+<script src="data/meta.js?v=1.0"></script>
+<script src="app.js?v=1.0"></script>
+<script>if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(function () {});</script>
+</body>
+</html>

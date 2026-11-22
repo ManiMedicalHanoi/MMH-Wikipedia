@@ -20,6 +20,7 @@ def vn(s):
     s = unicodedata.normalize('NFC', (s or '').lower())
     for a, b in TONE.items(): s = s.replace(b, a)  # một kiểu bỏ dấu
     s = s.replace('º', ' độ').replace('°', ' độ')
+    s = re.sub(r'(\d)\s?o\b', r'\1 độ', s)
     return re.sub(r'\s+', ' ', s).strip()
 def ascii_(s):
     s = unicodedata.normalize('NFD', vn(s)).replace('đ', 'd')
@@ -79,15 +80,17 @@ VT = {r['ma']: r for r in load('nguon/data/vtyt.json')}
 # ---------- Sản phẩm MMH ----------
 SP = load('nguon/mmh/san-pham.json'); PF = load('nguon/mmh/profiles.json')
 GROUPS = {g['id']: g for g in SP['groups']}
-NEG_BEFORE = re.compile(r'(cắt|tháo|rút|bỏ)\s+$')
+GENERIC = {vn(x) for x in ('dao vi phẫu', 'dao phẫu thuật', 'dao mổ', 'chỉ phẫu thuật', 'chỉ khâu', 'mũi khoan', 'kim chỉ', 'chỉ không tiêu')}
+NEG_BEFORE = re.compile(r'(cắt|tháo|rút|bỏ|cắt đứt|kẹp|đứt)\s+$')
 def kw_hits(text, gid):
     """Tìm cụm từ sản phẩm trong 1 đoạn chữ QTKT ⇒ [(cụm, gợi ý)]"""
     t = vn(text); out = []
+    if gid == 'trocar' and not re.search(r'trocar|dịch kính|pars plana', t): return out
     for kw, sug in GROUPS[gid]['kw']:
         k = vn(kw)
         pat = r'(?<![\wà-ỹ])' + re.escape(k) + r'(?![\wà-ỹ])' if len(k) <= 5 or k in ('file', 'bond', 'ilm', 'ipr', 'pga') else re.escape(k)
         for m in re.finditer(pat, t):
-            pre = t[max(0, m.start() - 8):m.start()]
+            pre = t[max(0, m.start() - 12):m.start()]
             if gid in ('chi', 'chink') and NEG_BEFORE.search(pre): continue
             if gid == 'dao' and re.match(r'\s*(điện|laser|siêu âm|plasma|radio)', t[m.end():m.end() + 10]): continue
             out.append((kw, sug)); break
@@ -95,28 +98,28 @@ def kw_hits(text, gid):
 
 # Hồ sơ ứng dụng MMH theo tên kỹ thuật (từ MMH Library) — regex trên chữ không dấu
 MAT_PROF = [
-    ('phaco', r'phaco|tan nhuyen|the thuy tinh|thuy tinh the|ngoai bao|trong bao|\biol\b', r'^(do|sieu am|chup|xet nghiem|test|kham|soi|laser|cat bao sau bang laser)'),
+    ('phaco', r'phaco|tan nhuyen|the thuy tinh|thuy tinh the|ngoai bao|trong bao|\biol\b', r'^(do|sieu am|chup|xet nghiem|test|kham|soi|laser|cat bao sau bang laser)\b'),
     ('lri', r'thu gian.*(ria|giac mac)|rach giac mac.*loan thi|loan thi.*rach', None),
-    ('glaucoma', r'cat be|glocom|glaucom|bong tham|lo do|ong dan luu|van dan luu|cung giac mac', r'^(do|soi|laser|chup|xet nghiem)'),
-    ('pterygium', r'\bmong\b|ghep ket mac|mang oi', r'^(do|soi|chup)'),
-    ('vitrectomy', r'dich kinh|pars plana|boc mang|lo hoang diem|dau silicon|noi nhan', r'^(do|soi|sieu am|chup|tiem|xet nghiem|laser)'),
+    ('glaucoma', r'cat be|glocom|glaucom|bong tham|lo do|ong dan luu|van dan luu|cung giac mac', r'^(do|soi|laser|chup|xet nghiem)\b'),
+    ('pterygium', r'\bmong\b(?! mat)|ghep ket mac|mang oi', r'^(do|soi|chup)\b'),
+    ('vitrectomy', r'dich kinh|pars plana|boc mang|lo hoang diem|dau silicon|noi nhan', r'^(do|soi|sieu am|chup|tiem|xet nghiem|laser)\b'),
 ]
 CHI_PROF = [
-    ('cataract', r'phaco|tan nhuyen|the thuy tinh|thuy tinh the|ngoai bao|trong bao', r'^(do|sieu am|chup|xet nghiem|test|kham|soi|laser)|co dinh|treo|khau'),
+    ('cataract', r'phaco|tan nhuyen|the thuy tinh|thuy tinh the|ngoai bao|trong bao', r'^(do|sieu am|chup|xet nghiem|test|kham|soi|laser)\b|co dinh|treo|khau'),
     ('iol-fix', r'(co dinh|khau|treo).*(the thuy tinh|thuy tinh the|iol|ttt)|(the thuy tinh|iol).*(cung mac|mong mat)', None),
     ('keratoplasty', r'ghep giac mac|ghep noi mo|ghep mang bowman', None),
-    ('pterygium', r'\bmong\b|ghep ket mac|ghep mang oi|gian ket mac', r'^(do|soi)'),
+    ('pterygium', r'\bmong\b(?! mat)|ghep ket mac|ghep mang oi|gian ket mac', r'^(do|soi)\b'),
     ('chalazion', r'chap|leo', None),
-    ('iris', r'mong mat|dong tu', r'^(do|soi|chup|laser)'),
+    ('iris', r'mong mat|dong tu', r'^(do|soi|chup|laser)\b'),
     ('vitrectomy', r'cat dich kinh|pars plana|boc mang|lo hoang diem', None),
-    ('retina', r'bong vong mac|don cung mac|dai cung mac|ap lanh', r'^(laser|do|soi|chup)'),
-    ('glaucoma', r'cat be|glocom|bong tham|ong dan luu|van dan luu', r'^(do|soi|laser|chup)'),
-    ('strabismus', r'\blac\b|co truc|co cheo|co van nhan|lui co|rut ngan co', r'^(do|xac dinh|kham)'),
-    ('eyelid', r'quam|mi doi|nep mi|da mi|bo mi|tao hinh mi|cung may|khe mi|epicanthus', r'^(do|cat chi)'),
+    ('retina', r'bong vong mac|don cung mac|dai cung mac|ap lanh', r'^(laser|do|soi|chup)\b'),
+    ('glaucoma', r'cat be|glocom|bong tham|ong dan luu|van dan luu', r'^(do|soi|laser|chup)\b'),
+    ('strabismus', r'\blac\b|co truc|co cheo|co van nhan|lui co|rut ngan co', r'^(do|xac dinh|kham)\b'),
+    ('eyelid', r'quam|mi doi|nep mi|da mi|bo mi|tao hinh mi|cung may|khe mi|epicanthus', r'^(do|cat chi)\b'),
     ('ptosis', r'sup mi|co nang mi|treo co mi|co muller|treo mi', None),
 ]
-MAT_TOOL_PROF = [('trocar', r'cat dich kinh|pars plana|dau silicon|noi nhan|boc mang', r'cat dich kinh truoc|^(do|soi|sieu am|chup|tiem)'),
-                 ('kvp', r'boc mang|lo hoang diem|di vat noi nhan|di vat trong buong dich kinh|ilm', r'^(do|soi|chup)'),
+MAT_TOOL_PROF = [('trocar', r'cat dich kinh|pars plana|dau silicon|boc mang|di vat (noi nhan|trong buong dich kinh|phan sau)', r'cat dich kinh truoc|nam cham|^(do|soi|sieu am|chup|tiem|laser)\b'),
+                 ('kvp', r'boc mang|lo hoang diem|di vat noi nhan|di vat trong buong dich kinh|ilm', r'^(do|soi|chup)\b'),
                  ('moc', r'mo (goc tien phong|vung be)|mo be tu phia trong|trabeculotom', None)]
 DIA_PROF = [
     ('xoang', r'(han|tram).*(rang|composite|amalgam|glass|gic)|phuc hoi.*(sau|than rang)|sau rang', r'su |nhua lam san|chup|rang sua|co rang|ho ranh|tai khoang'),
@@ -161,7 +164,7 @@ def sp_split(sptext):
 MAT_SEC = [
     ('mi', 'Mi mắt · lông mày', r'\bmi\b|mi mat|bo mi|da mi|cung may|chap|leo|quam|sup mi|nang mi|khe mi|go mi|epicanthus|co cung mi|co mi|nep mi|goc mat|long xieu|long quam'),
     ('le', 'Lệ đạo', r'\ble\b|le dao|le quan|tui le|diem le|tuyen le|ong le'),
-    ('km', 'Kết mạc · mộng', r'ket mac|\bmong\b|mang oi|cung do|gia mac|kho mat|bong mat|rua mat'),
+    ('km', 'Kết mạc · mộng', r'ket mac|\bmong\b(?! mat)|mang oi|cung do|gia mac|kho mat|bong mat|rua mat'),
     ('gm', 'Giác mạc', r'giac mac|noi mo'),
     ('cm', 'Củng mạc', r'cung mac'),
     ('ttt', 'Thể thủy tinh · IOL', r'the thuy tinh|thuy tinh the|phaco|\biol\b|bao sau|ngoai bao|trong bao|ttt|cataract'),
@@ -171,10 +174,10 @@ MAT_SEC = [
     ('lac', 'Lác · vận nhãn', r'\blac\b|van nhan|co truc|co cheo|song thi|rung giat|nhuoc thi|chinh thi'),
     ('hm', 'Hốc mắt · nhãn cầu', r'hoc mat|nhan cau|mat gia|day mat|thi than kinh|lom mat|o mat|than kinh thi giac|hau phong|u mau'),
     ('kx', 'Khúc xạ · laser', r'khuc xa|lasik|smile|prk|laser|can thi|loan thi'),
-    ('cd', 'Khám · đo · chẩn đoán', r'^(do|kham|thu|soi|chup|sieu am|xet nghiem|test|ghi|dien|nghiem phap|danh gia|lam|xac dinh|nuoi cay|nhuom|dinh luong)'),
+    ('cd', 'Khám · đo · chẩn đoán', r'^(do|kham|thu|soi|chup|sieu am|xet nghiem|test|ghi|dien|nghiem phap|danh gia|lam|xac dinh|nuoi cay|nhuom|dinh luong)\b'),
 ]
 RHM_SEC = [
-    ('cd', 'Khám · chẩn đoán hình ảnh', r'^(kham|chup|xet nghiem|lay dau|do|ghi)'),
+    ('cd', 'Khám · chẩn đoán hình ảnh', r'^(kham|chup|xet nghiem|lay dau|do|ghi)\b'),
     ('impl', 'Implant · tái tạo xương', r'implant|nang san xoang|ghep xuong|tai tao xuong|mang sinh hoc'),
     ('nc', 'Nha chu · mô mềm', r'nha chu|loi|lap|cao rang|nao tui|ghep mo|phanh|dai rang|lung lay|tui quanh rang|che phu chan rang|tien dinh|quanh rang'),
     ('nn', 'Nội nha', r'tuy|ong tuy|noi nha|cuong rang|chop rang'),
@@ -194,18 +197,18 @@ def section(name, ck):
     return 'khac'
 def kind_of(name):
     a = ascii_(name)
-    if re.match(r'^(phau thuat|cat bo|ghep|tao hinh|tai tao|khoet|muc|nao vet|lay|dat|khau|ghep)', a): return 'PT' if a.startswith('phau thuat') else 'TT'
-    if re.match(r'^(laser|dot|chieu|ap lanh)', a): return 'LS'
-    if re.match(r'^(do|kham|thu|soi|chup|sieu am|xet nghiem|test|ghi|danh gia|xac dinh|nghiem phap|nuoi cay|nhuom|dinh luong|phan tich)', a): return 'CD'
+    if re.match(r'^(phau thuat|cat bo|ghep|tao hinh|tai tao|khoet|muc|nao vet|lay|dat|khau|ghep)\b', a): return 'PT' if a.startswith('phau thuat') else 'TT'
+    if re.match(r'^(laser|dot|chieu|ap lanh)\b', a): return 'LS'
+    if re.match(r'^(do|kham|thu|soi|chup|sieu am|xet nghiem|test|ghi|danh gia|xac dinh|nghiem phap|nuoi cay|nhuom|dinh luong|phan tich)\b', a): return 'CD'
     return 'TT'
 
 # ---------- BHYT: Điều 23 Luật BHYT (VBHN 2026) ----------
 def bhyt_flags(name, ck):
     a = ascii_(name); f = []
     if ck == 'mat' and re.search(r'\blac\b', a) and kind_of(name) != 'CD': f.append('lac')
-    if re.search(r'khuc xa|can thi|vien thi|loan thi|lasik|smile|\bprk\b|phakic|kinh tiep xuc|orthok|ortho-k', a) and not re.match(r'^(do|kham|soi|chup)', a): f.append('khucxa')
+    if re.search(r'khuc xa|can thi|vien thi|loan thi|lasik|smile|\bprk\b|phakic|kinh tiep xuc|orthok|ortho-k', a) and not re.match(r'^(do|kham|soi|chup)\b', a): f.append('khucxa')
     if re.search(r'tham my|mi doi|nep mi|cat da thua|lay mo|botox|filler|tay trang|veneer|chinh hinh mui', a): f.append('thammy')
-    if ck == 'rhm' and re.search(r'ham gia|rang gia|phuc hinh|cau rang|\bchup (su|kim loai|thep|nhua|zirconia|toan su|kim loai su)|mao rang|implant|ham khung|ham thao lap|rang su(?! dung)|attachment', a) and not re.match(r'^(chup x|chup cat lop|kham)', a): f.append('ranggia')
+    if ck == 'rhm' and re.search(r'ham gia|rang gia|phuc hinh|cau rang|\bchup (su|kim loai|thep|nhua|zirconia|toan su|kim loai su)|mao rang|implant|ham khung|ham thao lap|rang su(?! dung)|attachment', a) and not re.match(r'^(chup x|chup cat lop|kham)\b', a): f.append('ranggia')
     if ck == 'mat' and re.search(r'mat gia|lap kinh|kinh tiep xuc|cap kinh', a): f.append('kinh')
     return f
 
@@ -220,7 +223,8 @@ EX_VT = [(r'th[uủ]y tinh thể nhân tạo|thể th[uủ]y tinh nhân tạo', 
          (r'xương bảo quản', 'N06.04.070'), (r'laser nội nhãn|đầu laser|dây dẫn sáng', 'N07.03.130'), (r'máy dò thần kinh', 'N07.03.240'), (r'thiết bị cố định mắt|patient interface|pateient interface', None)]
 
 # ---------- Dựng thực thể ----------
-def products_for(ck, name, qrec):
+def products_for(ck, name, qrec, sec=None, own=None):
+    sec = sec or section(name, ck); own = own or name
     res = OrderedDict()
     def add(gid, lv, ev=None, sug=None, steps=None, codes=None):
         r = res.setdefault(gid, {'g': gid, 'lv': set(), 'ev': [], 'sug': [], 'steps': [], 'codes': []})
@@ -230,17 +234,24 @@ def products_for(ck, name, qrec):
         if steps: r['steps'].extend(s for s in steps if s not in r['steps'])
         if codes: r['codes'].extend(c for c in codes if c not in r['codes'])
     gids = [g for g, x in GROUPS.items() if x['ck'] == ck]
+    if re.match(r'^(cat|thao|rut) chi\b', ascii_(name)): gids = [g for g in gids if g not in ('chi', 'chink')]
     # 1) Theo chữ của QTKT Bộ Y tế 2025
     if qrec:
         parts = [('5.3 Thiết bị y tế', x) for x in qrec.get('tb', [])] + [('5.2 Thuốc', x) for x in qrec.get('thuoc', [])] + [(h or 'Các bước', x) for h, x in qrec.get('buoc', [])]
         for src, text in parts:
+            lab = re.sub(r'^6\.\d+\.\s*', '', src).rstrip('.:') or 'Các bước'
             for gid in gids:
                 if gid in ('comp', 'bond', 'shine') or src != '5.2 Thuốc':
-                    for kw, sug in kw_hits(text, gid):
-                        q = sp(text); i = vn(q).find(vn(kw))
-                        if i < 0: i = 0
-                        a = max(0, i - 70); b = min(len(q), i + len(kw) + 90)
-                        add(gid, 'q', (src.rstrip('.:'), ('…' if a else '') + q[a:b] + ('…' if b < len(q) else '')), sug)
+                    hits = kw_hits(text, gid)
+                    if not hits: continue
+                    q = sp(text); i = max(0, vn(q).find(vn(hits[0][0])))
+                    if len(q) <= 260: snip = q
+                    else:
+                        a = max(0, i - 90); b = min(len(q), i + 170)
+                        snip = ('…' if a else '') + q[a:b] + ('…' if b < len(q) else '')
+                    spec = any(vn(kw) not in GENERIC for kw, _ in hits)
+                    add(gid, 'q' if spec else 'g', (lab, snip))
+                    for kw, sug in hits: add(gid, 'q' if spec else 'g', sug=sug)
     # 2) Theo tài liệu MMH (MMH Library)
     if ck == 'mat':
         for pid in profile_hits(name, MAT_PROF):
@@ -250,7 +261,7 @@ def products_for(ck, name, qrec):
             p = PF_CHI[pid]
             add('chi', 'm', steps=[[p['vi'], '', '', p.get('lede', '')]], codes=[c for c in p['codes']])
         for gid, inc, exc in MAT_TOOL_PROF:
-            if profile_hits(name, [(gid, inc, exc)]): add(gid, 'm')
+            if profile_hits(own, [(gid, inc, exc)]): add(gid, 'm')
     else:
         for pid in profile_hits(name, DIA_PROF):
             p = PF_DIA[pid]
@@ -259,16 +270,20 @@ def products_for(ck, name, qrec):
         q, s = best3207(name)
         if q and s >= 0.5 and q['sp']:
             for gid in sp_split(q['sp']): add(gid, 'm', sug='Đối chiếu QĐ 3207 (MMH): ' + q['sp'])
-    if ck == 'rhm' and 'dia' in res and section(name, ck) in ('nr', 'hm', 'impl') and all('mũi khoan' in (e[1].lower()) for e in res['dia']['ev']) and not res['dia']['steps']:
+    # Chỉ ghi chung "dao phẫu thuật / dao mổ" ở phẫu thuật mi, lệ, hốc mắt… = dao mổ thường, không phải dao vi phẫu nhãn khoa
+    if ck == 'mat' and 'dao' in res and res['dao']['lv'] == {'g'} and sec not in ('ttt', 'glc', 'vm', 'gm', 'cm', 'mm', 'kx'):
+        res.pop('dao')
+    if ck == 'rhm' and 'dia' in res and sec in ('nr', 'hm', 'impl') and res['dia']['lv'] <= {'g', 'q'} and not res['dia']['steps']:
         d = res.pop('dia'); c = res.setdefault('carbide', {'g': 'carbide', 'lv': set(), 'ev': [], 'sug': [], 'steps': [], 'codes': []})
         c['lv'] |= d['lv']; c['ev'] += [e for e in d['ev'] if e not in c['ev']]
         c['sug'] = ['Surgical / Carbide MANI (mở xương, chia chân răng)'] + [x for x in c['sug'] if 'QĐ 3207' in x]
     out = []
     for r in res.values():
-        r['lv'] = ''.join(sorted(r['lv'], key=lambda x: 'qm'.index(x)))
+        if 'q' in r['lv']: r['lv'].discard('g')
+        r['lv'] = ''.join(sorted(r['lv'], key=lambda x: 'qmg'.index(x)))
         if len(r['sug']) > 1: r['sug'] = [x for x in r['sug'] if '(chọn' not in x] or r['sug']
         out.append(r)
-    out.sort(key=lambda r: (0 if 'q' in r['lv'] else 1, list(GROUPS).index(r['g'])))
+    out.sort(key=lambda r: (0 if 'q' in r['lv'] else 1 if 'm' in r['lv'] else 2, list(GROUPS).index(r['g'])))
     return out
 
 def item(ck, iid, name, s2, lks, qmap):
@@ -280,11 +295,14 @@ def item(ck, iid, name, s2, lks, qmap):
     for k in lks:
         for g in GIA.get(k, []): pr.append([g[0], g[1], g[2], g[3], g[4], g[5]])
     # bỏ trùng (cùng nguồn, cùng giá, cùng loại)
-    seen = set(); pr2 = []
-    for p in sorted(pr, key=lambda x: (x[0], x[5] != 'bhyt', x[3])):
-        s = (p[0], p[3], p[5], p[2])
-        if s in seen: continue
-        seen.add(s); pr2.append(p)
+    pr2, idx = [], {}
+    for p in sorted(pr, key=lambda x: (list(GIA_SRC).index(x[0]), x[5] != 'bhyt', x[3], x[1])):
+        k = (p[0], p[3], p[5], p[4])
+        if k in idx:
+            q = pr2[idx[k]]
+            if p[1] not in q[1].split(' · '): q[1] += ' · ' + p[1]
+            continue
+        idx[k] = len(pr2); pr2.append(list(p))
     flags = bhyt_flags(name, ck)
     has_bhyt = any(p[5] in ('bhyt', 'gayte') for p in pr2)
     if has_bhyt: flags = [f for f in flags if f not in ('thammy', 'ranggia')]
@@ -296,7 +314,7 @@ def item(ck, iid, name, s2, lks, qmap):
             for x in re.split(r',\s*|\s+và\s+', m.group(1)):
                 x = x.strip().rstrip(')').strip()
                 if x and x.lower() not in [e.lower() for e in ex]: ex.append(x)
-    pts = products_for(ck, name + ' ' + ' '.join(l[2] for l in links), qrec)
+    pts = products_for(ck, name + ' ' + ' '.join(l[2] for l in links), qrec, section(name, ck), name)
     for pt in pts:
         pat = PAY_PAT.get(pt['g'])
         hit = [e for e in ex if pat and re.search(pat, e.lower()) and not re.search(r'siêu âm|hàn (mô|mạch)|cắt nối|cắt gan', e.lower())]
@@ -343,7 +361,10 @@ QD = {}
 for ck in ('mat', 'rhm'):
     d = {}
     for n, x in QT[ck]['qt'].items():
-        d[n] = {'t': x['title'], 'p': x['page'], 'dc': x['dc'][:900], 'cd': x['cd'][:900], 'ccd': x['ccd'][:600], 'tt': x['tt'][:500],
+        t = x['raw_title'].capitalize() if x['raw_title'].isupper() else x['raw_title']
+        for a in ('iol', 'ilm', 'lasik', 'smile', 'prk', 'yag', 'co2', 'oct', 'ttt', 'mmc', 'icl', 'dmek', 'dsaek', 'dalk', 'cad/cam', 'vii', 'le fort'):
+            t = re.sub(r'(?<![\wà-ỹ])' + re.escape(a) + r'(?![\wà-ỹ])', a.upper() if a != 'le fort' else 'Le Fort', t)
+        d[n] = {'t': t, 'p': x['page'], 'dc': x['dc'][:900], 'cd': x['cd'][:900], 'ccd': x['ccd'][:600], 'tt': x['tt'][:500],
                 'tb': x['tb'][:60], 'th': x['thuoc'][:30], 'b': [[h, t[:700]] for h, t in x['buoc'][:30]], 'td': x['td'][:900]}
     QD[ck] = d
 
@@ -351,7 +372,7 @@ for ck in ('mat', 'rhm'):
 SEC_LAB = {'mat': [[s, l] for s, l, _ in MAT_SEC] + [['khac', 'Khác']], 'rhm': [[s, l] for s, l, _ in RHM_SEC] + [['khac', 'Khác']]}
 vt_need = sorted({m for g in SP['groups'] for m in g['vtyt']} | {m for m in VT if m.startswith(('N05', 'N06.03', 'N07.03'))} | {'N08.00.330', 'N08.00.360', 'N08.00.260'})
 vtyt = [[VT[m]['stt'], m, VT[m]['ten'], VT[m]['dvt'], VT[m]['tt'], VT[m]['trang']] for m in vt_need if m in VT]
-groups = [{k: g[k] for k in ('id', 'ck', 'name', 'short', 'page', 'desc', 'vtyt')} for g in SP['groups']]
+groups = [dict({k: g[k] for k in ('id', 'ck', 'name', 'short', 'page', 'desc', 'vtyt')}, kw=[k for k, _ in g['kw']]) for g in SP['groups']]
 meta = {'built': datetime.date.today().isoformat(), 'wiki': SP['wiki'], 'groups': groups, 'sec': SEC_LAB, 'qtdoc': QTDOC,
         'gia': {k: {kk: v[kk] for kk in ('ten', 'vb', 'pdf')} for k, v in GIA_SRC.items()}, 'vtyt': vtyt,
         'count': {ck: len(DATA[ck]) for ck in DATA}}

@@ -7,11 +7,10 @@
      "vtyt": ["N05.03.030", "N05.03.020", "N05.03.080"],
      "kw": [
        ["dao chọc tiền phòng", "MSP10 / MST15 / MVR — chọc tiền phòng, cổng bên"],
-       ["dao 15", "MST15, MSP10 (dao 15°) — đường rạch phụ, cổng bên"],
+       ["dao 15 độ", "MST15, MSP10 (dao 15°) — đường rạch phụ, cổng bên"], ["dao mở tiền phòng", "MSP10 / MST15 — chọc tiền phòng"],
        ["dao tạo cổng", "MSP10 — cổng bên 1,0 mm"],
        ["keratome", "MSL (dao rạch giác mạc) — MSL22, MSL24, MSL28…"],
-       ["dao phẫu thuật 2", "MSL — đường rạch chính 2,2–3,2 mm (MSL22–MSL32)"],
-       ["dao 2,2", "MSL22 — đường rạch chính 2,2 mm"], ["dao 2,8", "MSL28 — đường rạch chính 2,8 mm"], ["dao 3,2", "MSL32 — đường rạch chính 3,2 mm"],
+              ["2,2 mm", "MSL22 — đường rạch chính 2,2 mm"], ["2.2 mm", "MSL22 — đường rạch chính 2,2 mm"], ["2,8 mm", "MSL28 — đường rạch chính 2,8 mm"], ["2.8 mm", "MSL28 — đường rạch chính 2,8 mm"], ["3,2 mm", "MSL32 — đường rạch chính 3,2 mm"], ["3.2 mm", "MSL32 — đường rạch chính 3,2 mm"], ["dao 2,2", "MSL22 — đường rạch chính 2,2 mm"], ["dao 2,8", "MSL28 — đường rạch chính 2,8 mm"], ["dao 3,2", "MSL32 — đường rạch chính 3,2 mm"],
        ["dao 2.2", "MSL22 — đường rạch chính 2,2 mm"], ["dao 2.8", "MSL28 — đường rạch chính 2,8 mm"], ["dao 3.2", "MSL32 — đường rạch chính 3,2 mm"],
        ["dao phẫu thuật phaco", "MSL — dao rạch đường hầm giác mạc"],
        ["crescent", "MCU (dao lưỡi liềm) — tạo đường hầm, tạo vạt"],
@@ -43,7 +42,7 @@
     {"id": "trocar", "ck": "mat", "name": "Trocar Kit MANI (23G · 25G · 27G)", "short": "Trocar Kit", "page": "san-pham/",
      "desc": "Bộ trocar – cannula dùng một lần mở 3 cổng qua pars plana cho cắt dịch kính.",
      "vtyt": ["N07.03.020"],
-     "kw": [["trocar", "Trocar Kit 23G / 25G / 27G"], ["cannula", "Trocar Kit (cannula)"], ["23g", "Trocar Kit 23G"], ["25g", "Trocar Kit 25G"], ["27g", "Trocar Kit 27G"], ["3 cổng", "Trocar Kit — 3 cổng pars plana"]]},
+     "kw": [["trocar", "Trocar Kit 23G / 25G / 27G"]]},
     {"id": "kvp", "ck": "mat", "name": "Kìm vi phẫu MANI (Micro Forceps)", "short": "Kìm vi phẫu", "page": "san-pham/kim-vi-phau/",
      "desc": "10 mã, tay cầm Wide Grip 28 mm / Slim Grip 33 mm, dạng đầu kìm tròn · vuông · ILM, mức 25G / 27G.",
      "vtyt": ["N07.03.160", "N07.03.210"],
@@ -73,7 +72,7 @@
     {"id": "jizai", "ck": "rhm", "name": "Trâm máy NiTi MANI JIZAI", "short": "JIZAI", "page": "san-pham/jizai/",
      "desc": "Trâm máy NiTi tạo hình ống tủy (JIZAI), dùng với máy nội nha.",
      "vtyt": [],
-     "kw": [["trâm máy", "JIZAI"], ["trâm xoay", "JIZAI"], ["niti", "JIZAI (NiTi)"], ["máy nội nha", "JIZAI"], ["động cơ nội nha", "JIZAI"]]},
+     "kw": [["file máy", "JIZAI — trâm máy NiTi tạo hình ống tủy"], ["file tạo hình", "JIZAI / trâm MANI tạo hình ống tủy"], ["trâm máy", "JIZAI"], ["trâm xoay", "JIZAI"], ["niti", "JIZAI (NiTi)"], ["máy nội nha", "JIZAI"], ["động cơ nội nha", "JIZAI"]]},
     {"id": "chink", "ck": "rhm", "name": "Chỉ khâu nha khoa MANI", "short": "Chỉ nha khoa", "page": "san-pham/chi-khau-nha-khoa/",
      "desc": "Chỉ liền kim nha khoa (nylon, PGA, lụa, polypropylene; cỡ 3-0 đến 7-0 vi phẫu nha chu).",
      "vtyt": ["N05.02.040", "N05.02.030", "N05.02.050", "N05.02.060", "N05.02.090"],
@@ -89,6 +88,6 @@
     {"id": "shine", "ck": "rhm", "name": "Tẩy trắng MANIShine (MMG)", "short": "MANIShine", "page": "san-pham/",
      "desc": "Active White 35 (tẩy trắng tại ghế), Gingiva Guard, Remin Care.",
      "vtyt": [],
-     "kw": [["tẩy trắng", "MANIShine Active White 35"], ["peroxide", "MANIShine Active White 35"], ["gel tẩy", "MANIShine"]]}
+     "kw": [["tẩy trắng", "MANIShine Active White 35"], ["gel tẩy", "MANIShine"]]}
   ]
 }
