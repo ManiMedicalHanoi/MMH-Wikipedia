@@ -6,7 +6,7 @@
 (VBHN 14/VBHN-BYT = TT 04/2017 + TT 24/2025), sản phẩm MMH (san-pham.json + profiles.json).
 Đầu ra: data/meta.js, data/mat.js, data/rhm.js, data/qtkt-mat.js, data/qtkt-rhm.js.
 Chạy: python3 tools/build.py"""
-import json, os, re, unicodedata, datetime
+import glob, json, os, re, unicodedata, datetime
 from collections import defaultdict, OrderedDict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -170,7 +170,7 @@ MAT_SEC = [
     ('ttt', 'Thể thủy tinh · IOL', r'the thuy tinh|thuy tinh the|phaco|\biol\b|bao sau|ngoai bao|trong bao|ttt|cataract'),
     ('glc', 'Glôcôm', r'glocom|glaucom|be cung|cat be|goc tien phong|nhan ap|bong tham|vung be|mong mat chu bien|schlemm|mo be'),
     ('mm', 'Mống mắt · tiền phòng', r'mong mat|dong tu|tien phong|thuy dich'),
-    ('vm', 'Dịch kính · võng mạc', r'dich kinh|vong mac|hoang diem|hac mac|noi nhan|silicon|pars plana|trong mat'),
+    ('vm', 'Dịch kính · võng mạc', r'dich kinh|vong mac|hoang diem|hac mac|noi nhan|dau silicon|pars plana|trong mat'),
     ('lac', 'Lác · vận nhãn', r'\blac\b|van nhan|co truc|co cheo|song thi|rung giat|nhuoc thi|chinh thi'),
     ('hm', 'Hốc mắt · nhãn cầu', r'hoc mat|nhan cau|mat gia|day mat|thi than kinh|lom mat|o mat|than kinh thi giac|hau phong|u mau'),
     ('kx', 'Khúc xạ · laser', r'khuc xa|lasik|smile|prk|laser|can thi|loan thi'),
@@ -401,3 +401,20 @@ def js(name, var, obj):
 js('meta.js', 'MW_META', meta)
 for ck in DATA: js(f'{ck}.js', 'MW_' + ck.upper(), DATA[ck])
 for ck in QD: js(f'qtkt-{ck}.js', 'MW_QT_' + ck.upper(), QD[ck])
+
+# ---------- Sổ tay minh họa (nguon/notes/<id>.json) ----------
+NOTES = {}
+for fn in sorted(glob.glob(D('nguon', 'notes', '*.json'))):
+    nt = json.load(open(fn, encoding='utf-8'))
+    idx = {it['id']: it for it in DATA[nt['ck']]}
+    if nt['id'] not in idx: raise SystemExit('notes: không có kỹ thuật ' + nt['id'])
+    cmp_ = nt.get('compare')
+    if cmp_:
+        for r in cmp_['rows']:
+            it = idx.get(r[0])
+            if not it: raise SystemExit('notes: so sánh không có ' + r[0])
+            r.append({'t': it['t'], 'q': it['q']['n'] if it.get('q') else None,
+                      'pt': {p['g']: ''.join(sorted(set(p['lv']))) for p in it['pt']},
+                      'pr': min([x[3] for x in it['pr']], default=None)})
+    NOTES[nt['id']] = nt
+js('notes.js', 'MW_NOTES', NOTES)

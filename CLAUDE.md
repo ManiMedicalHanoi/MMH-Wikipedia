@@ -9,6 +9,10 @@ App tĩnh: `index.html` + `app.js` + `app.css`, dữ liệu `data/*.js` do `tool
   chi tiết `#/k/<id>` tự theo khu của kỹ thuật). Nút chuyển khu `#sw` ở đầu trang, màu nhấn theo khu (`body[data-ck]`, `--acc`); tìm kiếm, sản phẩm, BHYT (cột khu `v[6]` của
   `meta.vtyt`), văn bản (cột 7 của `DOCS`) chỉ hiện nội dung khu đang mở; tìm không thấy ⇒ gợi ý "Có n kết quả ở khu kia". Trang chủ `#/` = chọn khu + tìm cả hai khu (kết quả chia 2 nhóm).
   Tính năng mới phải theo khu, không trộn 2 chuyên khoa trên cùng một danh sách.
+- **Sổ tay minh họa (v1.2, 22/11/2026, người dùng yêu cầu — mẫu tờ học "Types of IOL")**: `nguon/notes/<id>.json` ⇒ `data/notes.js` ⇒ thẻ đầu tiên ở trang thủ thuật (`tabSo` trong app.js),
+  chip + bộ lọc "Có sổ tay minh họa", dải `.sostrip` ở danh sách khu. Thí điểm: `m9-210` Cắt dịch kính qua pars plana. Hình mắt CHỈ vẽ bằng `eye.js` (khung cố định, cùng màu / nét / tỉ lệ cho MỌI thủ thuật
+  — người dùng yêu cầu hình giống nhau giữa các thủ thuật); thiếu kiểu hình thì thêm vào `eye.js`, không vẽ SVG riêng trong JSON. Nha khoa sau này: làm bộ hình răng dùng chung tương tự (`tooth.js`).
+  Mọi chữ trong sổ tay lấy từ QTKT (ghi mục 6.x) + MMH Library; số liệu thị trường / so sánh hãng / tài liệu `Confidential/` không đưa vào.
 - Máy Claude bị chặn trang luật / Bộ Y tế ⇒ tải văn bản bằng workflow **Tải văn bản gốc** (thêm dòng vào `nguon/fetch/urls.tsv`, push).
 - Đối chiếu sản phẩm: sửa `nguon/mmh/san-pham.json` (cụm từ `kw`, cụm chung trong `GENERIC` của build.py) rồi `python3 tools/build.py`.
   Không suy luận ngoài tài liệu: chữ "Theo QTKT" phải trích nguyên văn quy trình; "Gợi ý MMH" lấy từ MMH Library (`tools/import_mmh.py`).

@@ -2,7 +2,7 @@
    Dữ liệu: data/*.js do tools/build.py sinh từ văn bản Bộ Y tế (nguon/raw) + sản phẩm MMH (nguon/mmh). */
 (function () {
   'use strict';
-  var VER = '1.1';
+  var VER = '1.2';
   var M = window.MW_META;
   var CK = { mat: { name: 'Nhãn khoa', full: 'Nhãn khoa (Mắt)', ch1: '14. MẮT', ch2: '9. Mắt' },
              rhm: { name: 'Nha khoa', full: 'Nha khoa · Răng hàm mặt', ch1: '16. RĂNG HÀM MẶT', ch2: '11. Mũi họng miệng' } };
@@ -17,6 +17,7 @@
     kinh: ['warn', 'Kính mắt · mắt giả', 'Kính mắt, mắt giả là thiết bị y tế thay thế, không được BHYT thanh toán (Điều 23 khoản 8).'],
     ngoaids: ['bad', 'Ngoài danh mục BHYT', 'Trong bảng giá tham chiếu, dịch vụ này nằm ở danh mục không do quỹ BHYT thanh toán.']
   };
+  var NOTES = window.MW_NOTES || {};
   var DATA = {}, QT = {}, LOADING = {};
   var G = {}; M.groups.forEach(function (g) { G[g.id] = g; });
   var VT = {}; M.vtyt.forEach(function (v) { VT[v[1]] = v; });
@@ -167,7 +168,7 @@
     if (qs && qs.s) st.sec = qs.s;
     if (qs && qs.q != null) st.q = qs.q;
     app.innerHTML = '<div class="crumb"><a href="#/">Trang chủ</a> › ' + CK[ck].name + '</div>' + ckBadge(ck) +
-      '<h1 class="h1" style="margin-top:8px">Thủ thuật ' + CK[ck].name.toLowerCase() + '</h1><div class="sub">Danh mục kỹ thuật TT 23/2024/TT-BYT · quy trình ' + M.qtdoc[ck].qd + ' · giá 2025 · sản phẩm MMH</div>' +
+      '<h1 class="h1" style="margin-top:8px">Thủ thuật ' + CK[ck].name.toLowerCase() + '</h1><div class="sub">Danh mục kỹ thuật TT 23/2024/TT-BYT · quy trình ' + M.qtdoc[ck].qd + ' · giá 2025 · sản phẩm MMH</div>' + soStrip(ck) +
       '<div class="listing" style="margin-top:18px"><aside class="side" id="side"></aside><section><div class="tools">' +
       '<input id="lq" type="search" placeholder="Lọc theo tên, mã kỹ thuật…" value="' + esc(st.q) + '">' +
       '<select id="ls"><option value="pl">' + (ck === 'rhm' ? 'Theo nhóm' : 'Thứ tự danh mục') + '</option><option value="ten">Tên A–Z</option><option value="gia">Giá cao → thấp</option><option value="mmh">Nhiều sản phẩm MMH</option></select>' +
@@ -200,6 +201,7 @@
         if (st.only === 'bh' && !it.bh.length) return false;
         if (st.only === 'ex' && !it.ex.length) return false;
         if (st.only === 'new' && !it.only1) return false;
+        if (st.only === 'so' && !NOTES[it.id]) return false;
       }
       return true;
     });
@@ -210,7 +212,7 @@
     var h = '<h4>Nhóm</h4><div class="fl">' + M.sec[ck].map(function (s) { var n = cnt('sec', s[0]); return n ? '<button data-f="sec" data-v="' + s[0] + '" class="' + (st.sec === s[0] ? 'on' : '') + '">' + esc(s[1]) + '<small>' + n + '</small></button>' : ''; }).join('') + '</div>';
     h += '<h4>Loại</h4><div class="fl">' + Object.keys(KIND).map(function (k) { var n = cnt('kind', k); return n ? '<button data-f="kind" data-v="' + k + '" class="' + (st.kind === k ? 'on' : '') + '">' + KIND[k] + '<small>' + n + '</small></button>' : ''; }).join('') + '</div>';
     h += '<h4>Sản phẩm MMH</h4><div class="fl">' + M.groups.filter(function (g) { return g.ck === ck; }).map(function (g) { var n = cnt('prod', g.id); return '<button data-f="prod" data-v="' + g.id + '" class="' + (st.prod === g.id ? 'on' : '') + '">' + esc(g.short) + '<small>' + n + '</small></button>'; }).join('') + '</div>';
-    var O = [['mmh', 'Có sản phẩm MMH'], ['q', 'Sản phẩm có trong QTKT'], ['qt', 'Có quy trình kỹ thuật 2025'], ['gia', 'Có giá tham chiếu'], ['ex', 'Có vật tư thanh toán riêng'], ['bh', 'Lưu ý BHYT'], ['new', 'Chỉ ở Phụ lục 01']];
+    var O = [['so', 'Có sổ tay minh họa'], ['mmh', 'Có sản phẩm MMH'], ['q', 'Sản phẩm có trong QTKT'], ['qt', 'Có quy trình kỹ thuật 2025'], ['gia', 'Có giá tham chiếu'], ['ex', 'Có vật tư thanh toán riêng'], ['bh', 'Lưu ý BHYT'], ['new', 'Chỉ ở Phụ lục 01']];
     h += '<h4>Điều kiện</h4><div class="fl">' + O.map(function (o) { return '<button data-f="only" data-v="' + o[0] + '" class="' + (st.only === o[0] ? 'on' : '') + '">' + o[1] + '<small>' + cnt('only', o[0]) + '</small></button>'; }).join('') + '</div>';
     if (st.sec || st.kind || st.prod || st.only) h += '<p><a href="javascript:void 0" id="clr">Bỏ lọc</a></p>';
     $('#side').innerHTML = h;
@@ -235,7 +237,7 @@
     var pm = priceMain(it);
     return '<a class="row" href="#/k/' + it.id + '"><div><div class="t">' + esc(it.t) + '</div><div class="meta">' +
       '<span class="chip k">' + esc(SEC[it.ck][it.sec] || '') + '</span>' + codes + (it.q ? '<span class="chip ok">QTKT ' + it.q.n + '</span>' : '') +
-      (it.bh.length ? '<span class="chip warn">Lưu ý BHYT</span>' : '') + chipsPT(it, 5) + '</div></div>' +
+      (NOTES[it.id] ? '<span class="chip so">Sổ tay minh họa</span>' : '') + (it.bh.length ? '<span class="chip warn">Lưu ý BHYT</span>' : '') + chipsPT(it, 5) + '</div></div>' +
       '<div class="pr">' + (pm ? pm + '<small>giá tham chiếu 2025</small>' : '<small>chưa có giá tham chiếu</small>') + '</div></a>';
   }
 
@@ -245,20 +247,21 @@
     byId(id).then(function (it) {
       if (!it) { app.innerHTML = '<div class="empty">Không tìm thấy kỹ thuật.</div>'; return; }
       var ck = it.ck; space(ck); setNav('tt'); title(it.t);
-      tab = tab || 'mmh';
+      var NT = NOTES[id], def = NT ? 'so' : 'mmh'; tab = tab || def;
       var hd = '<div class="crumb"><a href="#/">Trang chủ</a> › <a href="#/' + ck + '">' + CK[ck].name + '</a> › ' + esc(SEC[ck][it.sec] || '') + '</div>' +
         '<div class="dhead">' + ckBadge(ck) + '<div class="lbl" style="margin-top:8px">' + KIND[it.k] + ' · ' + esc(SEC[ck][it.sec] || '') + '</div><h1 class="h1" style="text-transform:none;letter-spacing:0;margin-top:4px">' + esc(it.t) + '</h1>' +
         '<div class="chips">' + (it.s2 != null && !it.only1 ? '<span class="chip">Phụ lục 02 · ' + esc(it.c2 || CK[ck].ch2) + ' · STT ' + it.s2 + '</span>' : '') +
         it.l.map(function (l) { return '<span class="chip" title="' + esc(l[2] + ' — ' + l[3]) + '">Mã <b>' + esc(l[1]) + '</b></span>'; }).join('') +
         (it.q ? '<span class="chip ok">Quy trình ' + M.qtdoc[ck].qd + ' · số ' + it.q.n + '</span>' : '<span class="chip">Chưa có quy trình 2025 tập 1</span>') +
         (it.only1 ? '<span class="chip warn">Chỉ ở Phụ lục 01 (đến 31/12/2027)</span>' : '') + '</div></div>' +
-        '<div class="tabs" id="tabs">' + [['mmh', 'MMH đáp ứng (' + it.pt.length + ')'], ['gia', 'Giá & BHYT'], ['qt', 'Quy trình kỹ thuật'], ['dm', 'Danh mục & mã']].map(function (t) { return '<button data-t="' + t[0] + '" class="' + (tab === t[0] ? 'on' : '') + '">' + t[1] + '</button>'; }).join('') + '</div><div id="tb"></div>';
+        '<div class="tabs" id="tabs">' + (NT ? [['so', 'Sổ tay minh họa']] : []).concat([['mmh', 'MMH đáp ứng (' + it.pt.length + ')'], ['gia', 'Giá & BHYT'], ['qt', 'Quy trình kỹ thuật'], ['dm', 'Danh mục & mã']]).map(function (t) { return '<button data-t="' + t[0] + '" class="' + (tab === t[0] ? 'on' : '') + '">' + t[1] + '</button>'; }).join('') + '</div><div id="tb"></div>';
       app.innerHTML = hd;
       var show = function (t) {
         document.querySelectorAll('#tabs button').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-t') === t); });
-        history.replaceState(null, '', '#/k/' + id + (t === 'mmh' ? '' : '/' + t));
+        history.replaceState(null, '', '#/k/' + id + (t === def ? '' : '/' + t));
         var box = $('#tb');
-        if (t === 'mmh') box.innerHTML = tabMMH(it);
+        if (t === 'so') { box.innerHTML = tabSo(it, NT); eyeFit(); var pb = $('#soPrint'); if (pb) pb.onclick = function () { window.print(); }; }
+        else if (t === 'mmh') box.innerHTML = tabMMH(it);
         else if (t === 'gia') box.innerHTML = tabGia(it);
         else if (t === 'dm') box.innerHTML = tabDM(it);
         else { box.innerHTML = '<div class="loading">Đang tải quy trình…</div>'; tabQT(it).then(function (h) { box.innerHTML = h; }); }
@@ -267,6 +270,61 @@
       app.onclick = function (e) { var b = e.target.closest('[data-go]'); if (b) { e.preventDefault(); show(b.getAttribute('data-go')); window.scrollTo(0, 0); } };
       show(tab);
     });
+  }
+
+  /* ---------- Sổ tay minh họa (v1.2) — hình vẽ dùng chung eye.js ---------- */
+  var PT_COL = { trocar: 'Trocar', kvp: 'Kìm vi phẫu', dao: 'Dao', chi: 'Chỉ khâu', moc: 'Móc', dia: 'DIA-BURS', tram: 'Trâm', jizai: 'JIZAI', comp: 'Composite', bond: 'Bond' };
+  function fig(o, cls) {
+    if (!window.EYE || !o) return '';
+    var key = (o.labels || []).map(function (l) { return '<li class="' + (l.mani ? 'mani' : '') + '">' + esc(String(l.t).replace(/\n/g, ' ')) + '</li>'; }).join('');
+    return '<figure class="sofig ' + (cls || '') + '">' + window.EYE.draw(o) + (key ? '<ol class="figkey">' + key + '</ol>' : '') + '</figure>';
+  }
+  var NARROW = window.matchMedia ? window.matchMedia('(max-width:720px)') : null;
+  function eyeFit() { if (window.EYE && window.EYE.fit) window.EYE.fit(app, NARROW && NARROW.matches); }
+  window.addEventListener('beforeprint', function () { if (window.EYE && window.EYE.fit) window.EYE.fit(app, true); });
+  window.addEventListener('afterprint', eyeFit);
+  if (NARROW) { var nf = function () { eyeFit(); }; if (NARROW.addEventListener) NARROW.addEventListener('change', nf); else NARROW.addListener(nf); }
+  function soMMH(m) { return '<div class="somm"><div class="lbl">Sản phẩm MANI</div>' + m.map(function (x) { return '<div class="mi"><a href="#/' + (G[x.g] ? G[x.g].ck : 'mat') + '/sp/' + x.g + '"><b>' + esc(x.t) + '</b></a><span>' + esc(x.d) + '</span></div>'; }).join('') + '</div>'; }
+  function soStrip(ck) {
+    var l = Object.keys(NOTES).filter(function (k) { return NOTES[k].ck === ck; });
+    return l.length ? '<div class="sostrip"><span class="lbl">Sổ tay minh họa</span>' + l.map(function (k) { return '<a href="#/k/' + k + '">' + esc(NOTES[k].title) + '</a>'; }).join('') + '<span class="small mute">hình vẽ theo từng bước, sản phẩm MANI ở mỗi bước</span></div>' : '';
+  }
+  function tabSo(it, N) {
+    var h = '<div class="so">';
+    h += '<div class="sohd"><div><div class="lbl">Sổ tay minh họa · ' + esc(CK[it.ck].name) + '</div><h2>' + esc(N.title) + '</h2><div class="en">' + esc(N.en) + '</div><p>' + esc(N.lead) + '</p></div>' +
+      '<button class="btn2" id="soPrint" type="button">In / lưu PDF</button></div>';
+    // 1 · giải phẫu
+    h += '<section class="sosec"><h3><span class="no">1</span>Giải phẫu cần nhớ</h3><div class="soana">' + fig(N.anatomy.fig, 'big') +
+      '<ol class="sonotes">' + N.anatomy.notes.map(function (n) { return '<li><b>' + esc(n[0]) + '</b><span>' + esc(n[1]) + '</span></li>'; }).join('') + '</ol></div></section>';
+    // 2 · chỉ định
+    h += '<section class="sosec"><h3><span class="no">2</span>Chỉ định</h3><div class="soind">' + N.indications.map(function (c) { return '<div><div class="lbl">' + esc(c[0]) + '</div><div>' + esc(c[1]) + '</div></div>'; }).join('') + '</div><p class="small mute">' + esc(N.contra) + '</p></section>';
+    // 3 · các bước
+    h += '<section class="sosec"><h3><span class="no">3</span>' + N.steps.length + ' bước tiến hành</h3><div class="sosteps">' + N.steps.map(function (st, i) {
+      return '<article class="sostep"><div class="sth"><span class="n">' + (i + 1) + '</span><div><b>' + esc(st.t) + '</b><small>QTKT mục ' + esc(st.q) + '</small></div></div>' +
+        '<div class="stf">' + fig(st.fig) + (st.fig2 ? fig(st.fig2) : '') + '</div>' +
+        '<div class="stt"><ul class="ul">' + st.pts.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' + (st.mmh ? soMMH(st.mmh) : '') + '</div></article>';
+    }).join('') + '</div>' + (window.EYE ? window.EYE.legend() : '') + '</section>';
+    // 4 · so sánh
+    if (N.compare) {
+      var cols = N.compare.cols;
+      h += '<section class="sosec"><h3><span class="no">4</span>' + esc(N.compare.title) + '</h3><div class="tbl"><table class="socmp"><thead><tr><th>Kỹ thuật</th><th>Dùng khi (theo QTKT)</th>' +
+        cols.map(function (c) { return '<th class="c">' + esc(PT_COL[c] || c) + '</th>'; }).join('') + '<th class="num">Giá tham chiếu</th></tr></thead><tbody>' +
+        N.compare.rows.map(function (r) {
+          var x = r[2], cur = r[0] === it.id;
+          return '<tr class="' + (cur ? 'cur' : '') + '"><td>' + (cur ? '<b>' + esc(x.t) + '</b>' : '<a href="#/k/' + r[0] + '">' + esc(x.t) + '</a>') + (x.q ? '<div class="small mute">QTKT ' + x.q + '</div>' : '') + '</td><td class="small">' + esc(r[1]) + '</td>' +
+            cols.map(function (c) { var lv = x.pt[c] || ''; return '<td class="c">' + (lv.indexOf('q') >= 0 ? '<span class="dot q" title="QTKT ghi rõ">●</span>' : lv ? '<span class="dot m" title="' + (lv.indexOf('m') >= 0 ? 'Gợi ý MMH' : 'QTKT ghi chung') + '">○</span>' : '<span class="mute">–</span>'); }).join('') +
+            '<td class="num">' + (x.pr ? vnd(x.pr) : '<span class="mute small">chưa có</span>') + '</td></tr>';
+        }).join('') + '</tbody></table></div><p class="small mute">● quy trình kỹ thuật ghi rõ dụng cụ · ○ quy trình ghi chung hoặc gợi ý từ tài liệu MMH · giá: thấp nhất trong 2 bảng giá 2025 tham chiếu.</p></section>';
+    }
+    // 5 · chọn sản phẩm
+    if (N.choose) h += '<section class="sosec"><h3><span class="no">5</span>Chọn sản phẩm MANI theo tình huống</h3><div class="sochoose">' + N.choose.map(function (c) { return '<div><span>' + esc(c[0]) + '</span><b>' + esc(c[1]) + '</b></div>'; }).join('') + '</div></section>';
+    // 6 · ôn nhanh + câu nhớ
+    h += '<section class="sosec sorev"><div><h3><span class="no">6</span>Ôn nhanh</h3><ul class="ul">' + N.recap.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' +
+      '<div class="lbl" style="margin-top:14px">Tai biến cần biết</div>' + N.risks.map(function (r) { return '<div class="small"><b>' + esc(r[0]) + ':</b> ' + esc(r[1]) + '</div>'; }).join('') + '</div>' +
+      '<div class="somn"><div class="lbl">Câu nhớ</div><b>' + esc(N.mnemonic.t) + '</b><ol>' + N.mnemonic.items.map(function (m) { return '<li><b>' + esc(m[0]) + '</b> ' + esc(m[1]) + '</li>'; }).join('') + '</ol></div></section>';
+    if (N.bhyt) h += '<section class="sosec"><div class="lbl">BHYT và vật tư</div><ul class="ul small">' + N.bhyt.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul><p class="small"><a href="#/k/' + it.id + '/gia" data-go="gia">Xem giá &amp; BHYT của kỹ thuật này</a></p></section>';
+    h += '<div class="sosrc small mute"><b>Nguồn:</b> ' + N.src.map(esc).join(' · ') + '</div></div>';
+    return h;
   }
   function payHtml(p, it) {
     var g = G[p.g], v = (g.vtyt || []).map(function (c) { return VT[c] ? '<span class="code" title="' + esc(VT[c][2]) + '">' + c + '</span>' : ''; }).join(' ');

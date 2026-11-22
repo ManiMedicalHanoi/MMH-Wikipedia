@@ -15,6 +15,13 @@ Trang tĩnh (GitHub Pages, không cần máy chủ): `index.html` + `app.js` + `
 
 Mức đối chiếu sản phẩm: **Theo QTKT** (quy trình Bộ Y tế ghi rõ, trích nguyên văn) · **QTKT ghi chung** ("dao / chỉ / mũi khoan các loại") · **Gợi ý MMH** (tài liệu sản phẩm, đào tạo MMH).
 
+## Sổ tay minh họa (v1.2)
+Thẻ đầu tiên ở trang thủ thuật có sổ tay: giải phẫu cần nhớ · chỉ định · các bước có hình vẽ + sản phẩm MANI từng bước · so sánh trong nhóm (tự lấy từ dữ liệu) · chọn sản phẩm · ôn nhanh + câu nhớ · BHYT · nguồn. Có nút In / lưu PDF.
+- Nội dung: `nguon/notes/<id kỹ thuật>.json` (mẫu: `m9-210.json`, Cắt dịch kính qua pars plana). Chữ theo quy trình kỹ thuật Bộ Y tế + tài liệu sản phẩm MMH Library, không suy luận thêm.
+- Hình vẽ: `eye.js` — bộ hình mắt DÙNG CHUNG (`section` mặt cắt · `front` nhìn chính diện · `retina` phóng to võng mạc), khung và tỉ lệ cố định ⇒ mọi thủ thuật nhìn giống nhau. Thủ thuật mới chỉ khai báo lớp phủ (cổng, dụng cụ, chất độn, nhãn neo theo tên điểm giải phẫu), không vẽ lại giải phẫu. Sản phẩm MANI luôn màu vàng đậm.
+- Màn hình hẹp và bản in: nhãn đổi thành số chú thích, chữ ở danh sách dưới hình.
+- `python3 tools/build.py` đọc `nguon/notes/*.json` ⇒ `data/notes.js` (bảng so sánh lấy tên, số quy trình, mức sản phẩm, giá từ dữ liệu).
+
 ## Cập nhật dữ liệu
 1. Văn bản gốc: thêm đường dẫn vào `nguon/fetch/urls.tsv` ⇒ workflow **Tải văn bản gốc** (GitHub Actions) tải về `nguon/raw/` + chữ `nguon/txt/` (máy Claude bị chặn các trang luật).
 2. Tách bảng: `tools/extract_tt23.py`, `tools/extract_qtkt.py`, `tools/extract_gia.py`, `tools/extract_vtyt.py` ⇒ `nguon/data/*.json` (cần `pip install pdfplumber`).

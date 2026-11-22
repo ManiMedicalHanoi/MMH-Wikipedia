@@ -1,0 +1,664 @@
+{
+ "id": "m9-210",
+ "ck": "mat",
+ "title": "Cắt dịch kính qua pars plana",
+ "en": "Pars plana vitrectomy · PPV",
+ "lead": "Loại bỏ một phần hoặc toàn bộ khối dịch kính qua 3 cổng nhỏ ở vùng pars plana. Thường đi kèm bóc màng trước võng mạc, trao đổi khí – dịch, bơm khí hoặc dầu silicone, laser võng mạc.",
+ "anatomy": {
+  "fig": {
+   "view": "section",
+   "fill": "gel",
+   "alt": "Mặt cắt nhãn cầu: giác mạc, thể thủy tinh, pars plana, buồng dịch kính, võng mạc, hoàng điểm, thị thần kinh",
+   "labels": [
+    {
+     "a": "cornea",
+     "x": 60,
+     "y": 130,
+     "t": "Giác mạc"
+    },
+    {
+     "a": "lens",
+     "x": 120,
+     "y": 236,
+     "t": "Thể thủy tinh",
+     "anchor": "middle"
+    },
+    {
+     "a": "ppUp",
+     "x": 70,
+     "y": 30,
+     "t": "Pars plana\nvùng đặt cổng",
+     "b": 1
+    },
+    {
+     "a": "vit",
+     "x": 250,
+     "y": 20,
+     "t": "Buồng dịch kính",
+     "anchor": "middle"
+    },
+    {
+     "a": "retina",
+     "x": 372,
+     "y": 236,
+     "t": "Võng mạc"
+    },
+    {
+     "a": "macula",
+     "x": 380,
+     "y": 112,
+     "t": "Hoàng điểm"
+    },
+    {
+     "a": "nerve",
+     "x": 392,
+     "y": 176,
+     "t": "Thị thần kinh"
+    }
+   ]
+  },
+  "notes": [
+   [
+    "Pars plana",
+    "Vùng phẳng của thể mi, không có võng mạc, ít mạch máu — cửa vào an toàn của buồng dịch kính."
+   ],
+   [
+    "Khoảng cách đặt cổng",
+    "Cách rìa 3,5 mm với mắt còn thể thủy tinh; 3 mm với mắt đã lấy thể thủy tinh hoặc có thể thủy tinh nhân tạo; có thể < 3 mm tùy trường hợp."
+   ],
+   [
+    "3 cổng, 3 việc",
+    "Cổng dụng cụ · cổng truyền dịch (giữ nhãn áp) · cổng đèn nội nhãn; thêm cổng thứ 4 cho ca khó cần thao tác hai tay."
+   ]
+  ]
+ },
+ "indications": [
+  [
+   "Hoàng điểm",
+   "Lỗ hoàng điểm · màng trước võng mạc · co kéo dịch kính – võng mạc · phù hoàng điểm kéo dài không đáp ứng điều trị nội khoa"
+  ],
+  [
+   "Võng mạc",
+   "Bong võng mạc co kéo · bong võng mạc có vết rách · bệnh võng mạc đái tháo đường có biến chứng (tăng sinh xơ mạch, xuất huyết dịch kính, bong võng mạc co kéo)"
+  ],
+  [
+   "Dịch kính",
+   "Xuất huyết dịch kính · các bệnh lý đục dịch kính khác · sinh thiết dịch kính – võng mạc"
+  ],
+  [
+   "Khác",
+   "Viêm nội nhãn · dị vật nội nhãn · lệch, rơi thể thủy tinh hoặc thể thủy tinh nhân tạo vào buồng dịch kính · sót chất nhân · glôcôm ác tính"
+  ]
+ ],
+ "contra": "Chống chỉ định: tình trạng toàn thân không cho phép. Thận trọng: viêm nhiễm cấp tính tại bề mặt nhãn cầu.",
+ "steps": [
+  {
+   "t": "Đặt 3 cổng qua pars plana",
+   "q": "6.1",
+   "pts": [
+    "Mở kết mạc sát rìa; phẫu thuật không khâu dùng trocar 23G / 25G / 27G thì không cần mở kết mạc",
+    "Tạo 3 đường vào qua pars plana bằng trocar hoặc dao chọc củng mạc: cách rìa 3,5 mm (còn thể thủy tinh) · 3 mm (đã lấy thể thủy tinh / có thể thủy tinh nhân tạo)",
+    "Đo khoảng cách từ rìa bằng thước trên cán trocar, xuyên chéo qua kết mạc và củng mạc"
+   ],
+   "fig": {
+    "view": "front",
+    "alt": "Nhìn chính diện: 3 cổng trocar trên vòng pars plana",
+    "ports": [
+     {
+      "clock": 10
+     },
+     {
+      "clock": 2
+     },
+     {
+      "clock": 8,
+      "infusion": 1
+     }
+    ],
+    "labels": [
+     {
+      "a": "port10",
+      "x": 60,
+      "y": 34,
+      "t": "Cổng dụng cụ"
+     },
+     {
+      "a": "port2",
+      "x": 360,
+      "y": 34,
+      "t": "Cổng đèn nội nhãn"
+     },
+     {
+      "a": "port8",
+      "x": 60,
+      "y": 236,
+      "t": "Cổng truyền dịch"
+     },
+     {
+      "a": [
+       276,
+       186
+      ],
+      "x": 360,
+      "y": 236,
+      "t": "Vòng 3 – 3,5 mm\nsau rìa giác mạc",
+      "b": 1
+     }
+    ]
+   },
+   "mmh": [
+    {
+     "g": "trocar",
+     "t": "MANI Trocar Kit 23G · 25G · 27G",
+     "d": "Cán có thước 3,0 / 4,0 mm để đặt cổng đúng khoảng cách; mỗi gói 3 trocar + 1 cannula truyền dịch."
+    },
+    {
+     "g": "dao",
+     "t": "Dao MVR19 – MVR24 · MVR25 (0,55 mm)",
+     "d": "Đường rạch củng mạc ban đầu khi làm kỹ thuật trocar 2 bước."
+    }
+   ],
+   "fig2": {
+    "view": "section",
+    "fill": "gel",
+    "measure": 1,
+    "alt": "Mặt cắt: cổng đặt ở pars plana, cách rìa giác mạc 3,5 mm",
+    "ports": [
+     {
+      "at": "up",
+      "mani": 1
+     },
+     {
+      "at": "dn",
+      "mani": 1,
+      "infusion": 1
+     }
+    ],
+    "labels": [
+     {
+      "a": "measure",
+      "x": 70,
+      "y": 28,
+      "t": "3,5 mm từ rìa\n(còn thể thủy tinh)",
+      "b": 1
+     },
+     {
+      "a": "ppUp",
+      "x": 215,
+      "y": 12,
+      "t": "Trocar qua pars plana",
+      "mani": 1,
+      "anchor": "middle"
+     },
+     {
+      "a": "ora",
+      "x": 330,
+      "y": 22,
+      "t": "Võng mạc bắt đầu\nsau pars plana"
+     },
+     {
+      "a": "ppDn",
+      "x": 70,
+      "y": 240,
+      "t": "Cổng truyền dịch",
+      "mani": 1
+     }
+    ]
+   }
+  },
+  {
+   "t": "Cố định kim truyền dịch",
+   "q": "6.2",
+   "pts": [
+    "Cố định kim (cannula) truyền dịch vào nhãn cầu để duy trì nhãn áp",
+    "Kiểm tra đầu ống nằm trong buồng dịch kính trước khi mở dịch",
+    "Đặt đèn chandelier nếu cần"
+   ],
+   "fig": {
+    "view": "section",
+    "fill": "gel",
+    "alt": "Mặt cắt: cannula truyền dịch ở cổng dưới",
+    "ports": [
+     {
+      "at": "up",
+      "mani": 1
+     },
+     {
+      "at": "dn",
+      "mani": 1,
+      "infusion": 1
+     }
+    ],
+    "labels": [
+     {
+      "a": "ppDn",
+      "x": 70,
+      "y": 240,
+      "t": "Cannula truyền dịch",
+      "mani": 1
+     },
+     {
+      "a": "ppUp",
+      "x": 70,
+      "y": 28,
+      "t": "Cannula van",
+      "mani": 1
+     },
+     {
+      "a": "vit",
+      "x": 330,
+      "y": 20,
+      "t": "Dịch truyền đẳng trương\ngiữ nhãn áp"
+     }
+    ]
+   },
+   "mmh": [
+    {
+     "g": "trocar",
+     "t": "Cannula truyền dịch (trong Trocar Kit)",
+     "d": "Dài 200 mm; cắm hết vào cannula van, không để hở trước khi dùng."
+    },
+    {
+     "g": "chi",
+     "t": "Chỉ 3370 · 5-0 polyester",
+     "d": "Giữ canuyn truyền dịch, giữ mấu chặn thấu kính phẫu thuật."
+    }
+   ]
+  },
+  {
+   "t": "Cắt dịch kính",
+   "q": "6.3",
+   "pts": [
+    "Dưới kính hiển vi với lăng kính gián tiếp và đèn nội nhãn (hoặc camera nội nhãn)",
+    "Cắt từ trung tâm ra chu biên; có thể nhuộm dịch kính bằng corticosteroid hoặc thuốc nhuộm",
+    "Làm bong dịch kính sau, cắt sạch dịch kính"
+   ],
+   "fig": {
+    "view": "section",
+    "fill": "cleared",
+    "alt": "Mặt cắt: đầu cắt dịch kính và đèn nội nhãn, cắt từ trung tâm ra chu biên",
+    "ports": [
+     {
+      "at": "up",
+      "mani": 1,
+      "aim": [
+       235,
+       122
+      ]
+     },
+     {
+      "at": "dn",
+      "mani": 1,
+      "aim": [
+       262,
+       150
+      ]
+     }
+    ],
+    "tools": [
+     {
+      "from": "up",
+      "to": [
+       235,
+       122
+      ],
+      "kind": "cutter"
+     },
+     {
+      "from": "dn",
+      "to": [
+       262,
+       150
+      ],
+      "kind": "light"
+     }
+    ],
+    "arrows": [
+     [
+      [
+       228,
+       112
+      ],
+      [
+       262,
+       78
+      ],
+      [
+       292,
+       72
+      ]
+     ],
+     [
+      [
+       226,
+       140
+      ],
+      [
+       250,
+       190
+      ],
+      [
+       286,
+       196
+      ]
+     ]
+    ],
+    "labels": [
+     {
+      "a": [
+       130,
+       40
+      ],
+      "x": 70,
+      "y": 26,
+      "t": "Đầu cắt\ndịch kính (máy)"
+     },
+     {
+      "a": [
+       132,
+       222
+      ],
+      "x": 70,
+      "y": 240,
+      "t": "Đèn nội nhãn"
+     },
+     {
+      "a": [
+       292,
+       72
+      ],
+      "x": 340,
+      "y": 20,
+      "t": "Cắt từ trung tâm\nra chu biên",
+      "b": 1
+     },
+     {
+      "a": [
+       296,
+       196
+      ],
+      "x": 340,
+      "y": 244,
+      "t": "Dịch kính còn lại\nở chu biên"
+     }
+    ]
+   },
+   "mmh": [
+    {
+     "g": "trocar",
+     "t": "Cannula van của Trocar Kit",
+     "d": "Giữ cổng khi thay dụng cụ; thiết kế ít rò qua van."
+    }
+   ]
+  },
+  {
+   "t": "Xử lý theo chỉ định",
+   "q": "6.4",
+   "pts": [
+    "Bóc màng trước võng mạc / màng giới hạn trong bằng kẹp nội nhãn; có thể nhuộm màng trước",
+    "Trao đổi khí – dịch; điện đông, laser võng mạc",
+    "Bơm khí nở hoặc dầu silicone nội nhãn khi cần"
+   ],
+   "fig": {
+    "view": "retina",
+    "peel": 1,
+    "alt": "Phóng to võng mạc: kìm vi phẫu bóc màng giới hạn trong đã nhuộm",
+    "labels": [
+     {
+      "a": "tip",
+      "x": 320,
+      "y": 30,
+      "t": "Kìm vi phẫu\nđầu ILM",
+      "mani": 1
+     },
+     {
+      "a": "flap",
+      "x": 70,
+      "y": 70,
+      "t": "Mép màng đã nhuộm\nđược kẹp, bóc"
+     },
+     {
+      "a": "ilm",
+      "x": 70,
+      "y": 122,
+      "t": "Màng giới hạn\ntrong"
+     },
+     {
+      "a": "fovea",
+      "x": 300,
+      "y": 186,
+      "t": "Hố trung tâm\nhoàng điểm"
+     }
+    ]
+   },
+   "fig2": {
+    "view": "section",
+    "fill": "gas",
+    "alt": "Mặt cắt: trao đổi khí – dịch, laser quanh vết rách",
+    "laser": [
+     -50,
+     -44,
+     -38
+    ],
+    "ports": [
+     {
+      "at": "up",
+      "mani": 1
+     },
+     {
+      "at": "dn",
+      "mani": 1,
+      "infusion": 1
+     }
+    ],
+    "labels": [
+     {
+      "a": [
+       283,
+       65
+      ],
+      "x": 345,
+      "y": 26,
+      "t": "Laser quanh vết rách"
+     },
+     {
+      "a": [
+       235,
+       95
+      ],
+      "x": 345,
+      "y": 106,
+      "t": "Khí nở / dầu silicone\n(ấn độn nội nhãn)"
+     }
+    ]
+   },
+   "mmh": [
+    {
+     "g": "kvp",
+     "t": "Kìm vi phẫu MANI 25G · 27G",
+     "d": "Đầu ILM (MIL25A28, MIL27A28), đầu tròn / vuông (MRD…, MSQ…). Đầu kìm không dịch khỏi vị trí mục tiêu khi đóng."
+    },
+    {
+     "g": "dao",
+     "t": "MPK25 (0,45 mm) · MPK27 (0,40 mm)",
+     "d": "Đưa qua cannula 25G, 27G; dùng đầu lưỡi để bóc tách màng."
+    }
+   ]
+  },
+  {
+   "t": "Đóng vết mổ",
+   "q": "6.5",
+   "pts": [
+    "Rút trocar; có thể khâu đóng các vết mở nhãn cầu (khi rò)",
+    "Tiêm kháng sinh kết hợp chống viêm cạnh nhãn cầu hoặc dưới kết mạc; tra thuốc, băng mắt"
+   ],
+   "fig": {
+    "view": "front",
+    "alt": "Nhìn chính diện: đã rút trocar, khâu 1 cổng rò",
+    "ports": [
+     {
+      "clock": 10,
+      "removed": 1
+     },
+     {
+      "clock": 2,
+      "suture": 1,
+      "removed": 1
+     },
+     {
+      "clock": 8,
+      "removed": 1
+     }
+    ],
+    "labels": [
+     {
+      "a": "port2",
+      "x": 360,
+      "y": 34,
+      "t": "Khâu cổng nếu rò",
+      "mani": 1
+     },
+     {
+      "a": "port10",
+      "x": 60,
+      "y": 34,
+      "t": "Cổng nhỏ\nthường tự đóng"
+     }
+    ]
+   },
+   "mmh": [
+    {
+     "g": "chi",
+     "t": "Chỉ 1421 · 8-0 nylon · 2058 · 7-0 nylon",
+     "d": "Khâu đóng cổng củng mạc (cổng MVR)."
+    },
+    {
+     "g": "chi",
+     "t": "Chỉ 2090 · 8-0 PGA",
+     "d": "Khâu đóng kết mạc tại cổng."
+    }
+   ]
+  }
+ ],
+ "risks": [
+  [
+   "Trong mổ",
+   "Xuất huyết · rách, bong võng mạc · bong hắc mạc · chạm thể thủy tinh, rơi thể thủy tinh vào buồng dịch kính · phù giác mạc"
+  ],
+  [
+   "Sau mổ",
+   "Hạ nhãn áp, hở mép mổ (khâu lại) · xuất huyết nội nhãn · bong hắc mạc · tăng nhãn áp"
+  ]
+ ],
+ "compare": {
+  "title": "So sánh trong nhóm dịch kính – võng mạc",
+  "rows": [
+   [
+    "m9-210",
+    "Loại bỏ dịch kính bệnh lý, giải phóng co kéo của dịch kính vào võng mạc"
+   ],
+   [
+    "m9-207",
+    "Màng trước võng mạc nguyên phát, thứ phát; lỗ hoàng điểm"
+   ],
+   [
+    "m9-208",
+    "Lỗ hoàng điểm; co kéo dịch kính võng mạc vùng hoàng điểm"
+   ],
+   [
+    "m9-219",
+    "Bong võng mạc có vết rách không tiếp cận được bằng đai / độn hoặc bóng khí"
+   ],
+   [
+    "m9-220",
+    "Bong võng mạc có tăng sinh dịch kính võng mạc, nhiều vết rách, vết rách khổng lồ"
+   ],
+   [
+    "m9-327",
+    "Dầu silicone nhuyễn hóa, tăng nhãn áp do dầu, đã đủ thời gian ấn độn"
+   ]
+  ],
+  "cols": [
+   "trocar",
+   "kvp",
+   "dao",
+   "chi"
+  ]
+ },
+ "choose": [
+  [
+   "Đặt cổng",
+   "Trocar Kit 23G / 25G / 27G"
+  ],
+  [
+   "Kỹ thuật 2 bước",
+   "Dao MVR19 – MVR24, MVR25"
+  ],
+  [
+   "Giữ cannula truyền dịch",
+   "Chỉ 3370 (5-0 polyester)"
+  ],
+  [
+   "Bóc màng giới hạn trong",
+   "Kìm vi phẫu đầu ILM: MIL25A28, MIL27A28"
+  ],
+  [
+   "Bóc màng trước võng mạc",
+   "Kìm đầu tròn / vuông: MRD25A28, MSQ25A28…; MPK25, MPK27"
+  ],
+  [
+   "Mắt có trục nhãn cầu bình thường",
+   "Kìm tay cầm bản rộng (Wide Grip), thân kìm 28 mm: mã hậu tố A28"
+  ],
+  [
+   "Mắt có trục nhãn cầu dài",
+   "Kìm tay cầm mảnh (Slim Grip), thân kìm 33 mm: MRD25, MSQ25, MRD27, MSQ27"
+  ],
+  [
+   "Cổng rò khi rút trocar",
+   "Chỉ 1421 (8-0 nylon), 2058 (7-0 nylon); kết mạc 2090 (8-0 PGA)"
+  ]
+ ],
+ "recap": [
+  "3 cổng, 3 việc: dụng cụ · truyền dịch · đèn",
+  "Cổng ở pars plana: không có võng mạc, ít mạch máu",
+  "Cắt từ trung tâm ra chu biên, làm bong dịch kính sau",
+  "Bóc màng bằng kẹp nội nhãn, có thể nhuộm màng trước",
+  "Rút trocar, kiểm tra rò, khâu khi cần"
+ ],
+ "mnemonic": {
+  "t": "5 bước: CỔNG – NƯỚC – CẮT – XỬ LÝ – ĐÓNG",
+  "items": [
+   [
+    "CỔNG",
+    "đặt 3 trocar ở pars plana"
+   ],
+   [
+    "NƯỚC",
+    "cố định kim truyền dịch"
+   ],
+   [
+    "CẮT",
+    "cắt dịch kính, bong dịch kính sau"
+   ],
+   [
+    "XỬ LÝ",
+    "bóc màng, khí – dịch, laser, độn"
+   ],
+   [
+    "ĐÓNG",
+    "rút trocar, khâu nếu rò"
+   ]
+  ]
+ },
+ "bhyt": [
+  "Trocar Kit thuộc nhóm thiết bị y tế BHYT N07.03.020 — bộ dao củng mạc dùng một lần trong phẫu thuật cắt dịch kính, võng mạc.",
+  "Kìm vi phẫu bóc màng: N07.03.160 (kẹp bóc màng ngăn trong dùng một lần), N07.03.210 (pince bóc màng).",
+  "Chỉ thanh toán riêng khi bảng giá dịch vụ ghi \"chưa bao gồm\" vật tư đó; không ghi thì đã nằm trong giá dịch vụ."
+ ],
+ "src": [
+  "QĐ 3517/QĐ-BYT (12/11/2025) · Hướng dẫn quy trình kỹ thuật về Mắt – Tập 1 · quy trình 203",
+  "MMH Library · Thủ thuật nhãn khoa, Tập 8: Cắt dịch kính qua pars plana; hồ sơ Trocar Kit, Micro Forceps; catalogue chỉ khâu (CAT-VN 08/2025)",
+  "VBHN 14/VBHN-BYT (19/8/2025) · danh mục thiết bị y tế BHYT"
+ ]
+}
